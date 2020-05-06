@@ -2,11 +2,43 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
+        <title>{% block title %}{{ controller_name }}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
         {% block stylesheets %}{% endblock %}
     </head>
+
     <body>
-        {% block body %}{% endblock %}
+         <!-- HEADER - NAVIGATION -->
+
+  <header class="container">
+    <h1 id= "logo"><a href="{{ path('general_accueil') }}">Les créations de Lyline</a><span class="violet">.</span></h1>
+
+    <div class="connexion-inscription">
+      <input class="connexion" value="Se connecter" type="submit">
+        <h5>Pas encore inscrit ? <a class="lien-inscription" href="#">Venez c'est par ici</a></h5>
+    </div>
+
+      <nav>
+        <ul>
+          <li><a class="nav" href="{{ path('general_accueil') }}"><span class="couleurs">.</span>Accueil</a></li>
+          <li><a class="nav" href="{{ path('general_mes_creations') }}"><span class="couleurs">.</span>Mes créations</a></li>
+          <li><a class="nav" href="{{ path('general_a_propos') }}"><span class="couleurs">.</span>A propos de moi</a></li>
+          <li><a class="nav" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
+        </ul>
+      </nav>
+  </header>
+
+      {% block body %} {% endblock %}
+
+         <script src="{{ asset('js/script.js') }}"></script>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>

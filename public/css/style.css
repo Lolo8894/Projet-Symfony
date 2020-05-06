@@ -1,0 +1,551 @@
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- CSS 3 - GENERAL ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+/* Réinitialisation des paramètres de la page web */
+/* Outline, Border concernent les anciens navigateurs */
+
+/* -------------------------------------------------------------------------- */
+/*---------------------------------- BODY ----------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  background: url("/images/background.jpg");
+}
+/* Style par défaut si pas de style précis appliqué */
+
+/* -------------------------------------------------------------------------- */
+/*----------------------------- HEADER - NAVIGATION ------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  height: 120px; /*Hauteur du container contenant logo + navbar */
+  position:sticky absolute;
+  top: 0;
+  background-color:#fff;
+}
+/* Position fixe de la navbar avec Sticky et absolute + ajustement hauteur + largeur + ajout background blanc. */
+
+#logo {
+  font-family: 'Pacifico', cursive;
+  margin-left: 20px;
+  height: 80px;
+  float: left;
+  margin-top: 32px;
+}
+/* Flottement à gauche du logo */
+
+.violet {
+  color: #cb8fff;
+}
+/* Style du point sur le logo */
+
+nav {
+  float: right;
+  padding-top: 50px;
+}
+/* Flottement à droite de la navbar + ajustement en haut et à droite*/
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+/* La navbar alignée sur une ligne + Espacement entre les éléments de la nav*/
+
+
+nav ul li a {
+  font-family: 'Indie Flower', cursive;
+  color: #0086ad;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* Font + couleur appliquée sur la navbar */
+
+.couleurs {
+  font-size: 32px;
+  color: #fa8072;
+}
+/* Style des points sur chaque élément de la nav */
+
+a {
+  text-decoration: none;
+  color: #ffb3ba;
+} /* Couleur du texte du logo */
+
+.nav {
+  text-decoration: none;
+}
+/* Supprime le soulignement des liens de la navnar */
+
+.nav:hover {
+  color: #4ca3dd;
+}
+
+ul {
+  list-style: none;
+}
+/* Supprime les puces de la navbar */
+
+.connexion-inscription {
+  float: left;
+  margin-left: 380px;
+  margin-top: 30px; /* Règlage en hauteur de la div .connexion-inscription */
+/* Réglages de la position du bouton + inscription */
+}
+
+.connexion {
+
+  margin-bottom: 12px; /* Règlage espace entre bouton connexion et lien vers inscription */
+  line-height: 36px;
+  text-align: center;
+  color:#fff;
+  font-size:18px;
+  background-color: #0A4589;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 9px 24px;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+}
+/* Styliser le bouton "Connexion" */
+
+.connexion:hover {
+  background: #fff;
+  color: #777;
+  border: 0.5px solid #777;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+}
+/* Styliser le bouton "Connexion" au survol */
+
+h5 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 12px;
+  color: #777;
+}
+
+.lien-inscription {
+  color: #0086ad;
+}
+
+/* -------------------------------------------------------------------------- */
+/*------------------------------- IMAGE PRINCIPALE -------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#image_principale {
+  height: 280px;
+  background: url("/images/multiwools.jpg") no-repeat;
+  border-radius: 0 0 20px 20px;
+}
+
+#image_principale h2 {
+  color: #f5f5f5;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px #00000078;
+  text-align: center;
+  padding: 50px 0 40px 0;
+}
+
+.transparent {
+  height: 190px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 1px 1px 3px #00000078;
+  background: #00000036;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*------------------------------- CARROUSEL D'IMAGES ------------------------ */
+/* -------------------------------------------------------------------------- */
+
+#galleryContainer{
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    margin: auto;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #00000078;
+    border: 10px solid white;
+    box-sizing: border-box;
+} /* Container du carrousel + contour ombré */
+
+.slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+} /* Placement du container */
+
+#playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background: url("/images/playPause.png");
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#playPause:hover{
+    opacity: 0.7;
+}
+
+.imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+
+.imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+
+.imageHolder .captionText{
+    display: none;
+}
+
+.leftArrow, .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.leftArrow:hover, .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+
+.arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+
+.arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+
+.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.captionText{
+    margin: 0;
+    color: #fff;
+}
+
+#dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  background: #fff;
+}
+
+#dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+
+#dotsContainer .dots:hover, #dotsContainer .dots.active{
+    background-color: #717171;
+}
+
+.moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+
+.moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+} /* Animation du mouvement vers la gauche */
+
+
+.moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+.moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+} /* Animation du mouvement vers la droite */
+
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+} /* Animation du mouvement du haut vers le bas du texte */
+
+/* -------------------------------------------------------------------------- */
+/*------------------------------- QUI SUIS-JE ? ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#mes_creations {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 480px;
+  box-shadow: 0 0 7px 0 #fa8072;
+}
+/* Stylisation de l'encadré */
+
+h2 {
+  color: #0086ad;
+  font-size: 40px;
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+
+p {
+  color: #777;
+  font-size: 23px;
+  text-align: center;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.salutations {
+  text-align: center;
+}
+
+.signature {
+  color: #ffb3ba;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*-------------------------- FORMULAIRE DE CONTACT -------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#formulaire {
+  padding: 20px 0px 60px 0px;
+  background: #fff;
+  border-radius: 30px;
+  text-align: center;
+  width: 590px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 15px;
+  box-shadow: 0 0px 3px 3px #c39797;
+}
+
+h3 {
+  color: #777;
+  font-size: 21px;
+}
+
+.contact {
+  border: 0.07px solid #CFACAC;
+  background-color:#c39797;
+}
+
+.champs {
+  color: #0A4589;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Label mis dans des paragraphes de la classe "champs" */
+
+.commentaires {
+  color: brown;
+  font-size: 15px;
+  font-style: italic;
+}
+/* Messages d'erreurs mis dans des paragraphes de la classe "commentaires" */
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #777;
+}
+
+input[type="email"] {
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #777;
+}
+
+textarea {
+  padding: 0px;
+  width: 300px;
+  height: 300px;
+  font-size: 15px;
+  resize: none;
+  border: 1px solid #777;
+  font-family: 'Varela Round', sans-serif;
+}
+/* Pour styliser les inputs (ou champs de saisie de type texte) */
+
+.rouge {
+  color: brown;
+}
+
+.envoyer {
+  width: 100px;
+  margin-bottom: 21px;
+  line-height: 36px;
+  text-align: center;
+  color:#777;
+  font-size:18px;
+  font-weight: bold;
+  background:#fff;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 9px 24px;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+}
+/* Styliser le bouton "Envoyer" */
+
+.envoyer:hover {
+  background: #0A4589;
+  margin-bottom: 19px;
+  color: #fff;
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 0px #fff;
+}
+/* Styliser le bouton "Envoyer" au survol */
+
+.merci {
+  color: #fff;
+  font-size: 17px;
+}
+
+.info-requises {
+  color: #0A4589;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*---------------------------------- FOOTER --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background: #fff;
+  min-width: 480px;
+  font-size: 23px;
+  box-shadow: 0 0 7px 0 #cb8fff;
+}
+
+h6 {
+  padding-top: 40px;
+  text-align: center;
+  color: #808080;
+}
