@@ -71,7 +71,7 @@ class GeneralController extends AbstractController
           // on crée le message
           ->subject('Un message du site Les créations de Lyline')
           ->text("{$contact->getContent()}" )
-          ->html("<h1>{$contact->getContent()}<h1>" );
+          ->html("<h1>{$contact->getContent()}</h1>" );
 
         // on envoie le message
         $mailer->send($email);
@@ -83,7 +83,7 @@ class GeneralController extends AbstractController
 
         }
         return $this->render('general/accueil.html.twig',[
-          'form' => $form->createView(),
+          'form'=> $form->createView(),
         ]);
     }
 
