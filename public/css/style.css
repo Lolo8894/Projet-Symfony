@@ -441,93 +441,30 @@ p {
   font-size: 15px;
   box-shadow: 0 0px 3px 3px #c39797;
 }
+/* Style de la box-shaddow qui contient tout */
 
 h3 {
+  font-weight: bold;
   color: #777;
   font-size: 21px;
 }
+/* Intéressé ? Contactez-moi ! */
 
 .contact {
   border: 0.07px solid #CFACAC;
   background-color:#c39797;
 }
+/* Style de la div .contact à l'intérieur du bloc #formulaire */
 
 .champs {
   color: #0A4589;
   font-size: 18px;
   font-weight: bold;
 }
-/* Label mis dans des paragraphes de la classe "champs" */
+/* Style des champs nom, prénom, email et message */
 
-.commentaires {
-  color: brown;
-  font-size: 15px;
-  font-style: italic;
-}
-/* Messages d'erreurs mis dans des paragraphes de la classe "commentaires" */
-
-input[type="text"] {
-  padding: 5px;
-  font-size: 15px;
-  border: 1px solid #777;
-}
-
-input[type="email"] {
-  padding: 5px;
-  font-size: 15px;
-  border: 1px solid #777;
-}
-
-textarea {
-  padding: 0px;
-  width: 300px;
-  height: 300px;
-  font-size: 15px;
-  resize: none;
-  border: 1px solid #777;
-  font-family: 'Varela Round', sans-serif;
-}
-/* Pour styliser les inputs (ou champs de saisie de type texte) */
-
-.rouge {
-  color: brown;
-}
-
-.envoyer {
-  width: 100px;
-  margin-bottom: 21px;
-  line-height: 36px;
-  text-align: center;
-  color:#777;
-  font-size:18px;
-  font-weight: bold;
-  background:#fff;
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 9px 24px;
-  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
-}
-/* Styliser le bouton "Envoyer" */
-
-.envoyer:hover {
-  background: #0A4589;
-  margin-bottom: 19px;
-  color: #fff;
-  border: 1px solid grey;
-  box-shadow: 3px 3px 3px 0px #fff;
-}
-/* Styliser le bouton "Envoyer" au survol */
-
-.merci {
-  color: #fff;
-  font-size: 17px;
-}
-
-.info-requises {
-  color: #0A4589;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
+form {
+  
 }
 
 /* -------------------------------------------------------------------------- */
