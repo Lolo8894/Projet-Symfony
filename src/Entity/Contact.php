@@ -19,12 +19,12 @@ class Contact
     /**
      * @ORM\Column(type="text")
      */
-    private $firstname;
+    private $nom;
 
    /**
      * @ORM\Column(type="string", length=255)
      */
-    private $lastname;
+    private $prenom;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -34,7 +34,7 @@ class Contact
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $content;
+    private $message;
 
 
 
@@ -43,26 +43,26 @@ class Contact
         return $this->id;
     }
 
-    public function getFirstname(): ?string
+    public function getNom(): ?string
     {
-        return $this->firstname;
+        return $this->nom;
     }
 
-    public function setFirstname(string $firstname): self
+    public function setNom(string $nom): self
     {
-        $this->firstname = $firstname;
+        $this->nom = $nom;
 
         return $this;
     }
 
-   public function getLastname(): ?string
+   public function getPrenom(): ?string
     {
-        return $this->lastname;
+        return $this->prenom;
     }
 
-    public function setLastname(string $lastname): self
+    public function setPrenom(string $prenom): self
     {
-        $this->lastname = $lastname;
+        $this->prenom = $prenom;
 
         return $this;
     }
@@ -79,14 +79,14 @@ class Contact
         return $this;
     }
 
-    public function getContent(): ?string
+    public function getMessage(): ?string
     {
-        return $this->content;
+        return $this->message;
     }
 
-    public function setContent(string $content): self
+    public function setMessage(string $message): self
     {
-        $this->content = $content;
+        $this->message = $message;
 
         return $this;
     }

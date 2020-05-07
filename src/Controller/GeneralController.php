@@ -13,16 +13,6 @@ use Symfony\Component\Mime\Email;
 class GeneralController extends AbstractController
 {
     /**
-     * @Route("/accueil", name="general_accueil")
-     */
-    public function accueil() {
-
-        return $this->render('general/accueil.html.twig', [
-            'title' => "Les créations de Lyline",
-        ]);
-    }
-
-    /**
      * @Route("/mes_creations", name="general_mes_creations")
      */
     public function mesCreations() { // /mes_creations c'est l'URL et name est le nom de la route quand on l'appelle
@@ -42,7 +32,7 @@ class GeneralController extends AbstractController
     }
 
     /**
-     * @Route("/contact", name="contact", methods={"POST", "GET"})
+     * @Route("/accueil", name="general_accueil", methods={"POST", "GET"})
      */
     public function contact(MailerInterface $mailer, Request $request) {
 
@@ -70,8 +60,8 @@ class GeneralController extends AbstractController
           ->to($contact->getEmail())
           // on crée le message
           ->subject('Un message du site Les créations de Lyline')
-          ->text("{$contact->getContent()}" )
-          ->html("<h1>{$contact->getContent()}</h1>" );
+          ->text("{$contact->getMessage()}" )
+          ->html("<h1>{$contact->getMessage()}</h1>" );
 
         // on envoie le message
         $mailer->send($email);
@@ -82,9 +72,16 @@ class GeneralController extends AbstractController
         return $this->redirectToRoute('general_accueil');
 
         }
-        return $this->render('general/accueil.html.twig',[
-          'form'=> $form->createView(),
+      
+       return $this->render(
+         'general/accueil.html.twig', [
+         'title' => 'Les créations de Lyline',
+         'form'  => $form->createView(),
         ]);
+      
+        //return $this->render('general/accueil.html.twig',[
+        //  'form'=> $form->createView(),
+        //]);
     }
 
 }
