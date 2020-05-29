@@ -8,56 +8,49 @@
 
                      <!-- IMAGE PRINCIPALE -->
   <section id="image_principale">
-      <h2 class="transparent">Bienvenue sur mon site !</h2>
+     <h2 class="transparent">Bienvenue dans mon univers !</h2>
   </section>
   <br><br>
                       <!-- CARROUSEL D'IMAGES  -->
 
-<section id="galleryContainer">
-    <div class="slideShowContainer">
-        <div id="playPause" onclick="playPauseSlides()"></div>
-        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
-        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
-        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
-        <div class="imageHolder">
-            <img src="{{ asset('/images/img_1.jpg') }}">
-            <p class="captionText">Caption Text-01</p>
-        </div>
-        <div class="imageHolder">
-            <img src="{{ asset('/images/img_2.jpg') }}">
-            <p class="captionText">Caption Text-02</p>
-        </div>
-        <div class="imageHolder">
-            <img src="{{ asset('/images/img_3.jpg') }}">
-            <p class="captionText">Caption Text-03</p>
-        </div>
-        <div class="imageHolder">
-            <img src="{{ asset('/images/img_4.jpg') }}">
-            <p class="captionText">Caption Text-04</p>
-        </div>
-    </div>
-    <div id="dotsContainer"></div>
+<section id="carrousel">
+                      <!--Image bitmoji -->
+  <div class="bitmoji-image-principale">
+    <img class="bitmoji-coeur" src="{{ asset('images/bitmoji(1).jpeg') }}" alt="Lyline-coeur">
+  </div>
+  
+   <div class="slider">
+       <figure>
+       <img class="images-carrousel" src="images/stormtrooper.png" alt="stormtrooper">
+       <img class="images-carrousel" src="images/chats-gris-jaune.jpeg" alt="chats-gris-jaune">
+       <img class="images-carrousel" src="images/licorne.jpeg" alt="licorne">
+       <img  class="images-carrousel"src="images/chaussons-roses.png" alt="chaussons-roses">
+       <img class="images-carrousel" src="images/stormtrooper.png" alt="stormtrooper">
+     </figure>
+   </div>
 </section>
 
     <br/><br/>
 
                           <!-- FORMULAIRE DE CONTACT -->
-                           
+                              
 <section id="formulaire">  
   <h3>Intéressé ? Contactez-moi !</h3>
    <br>
     <div class="contact">
-      <br><br>
+      <br>
       <div class="champs">
-       
-        {{ (form(form)) }}        
-      
+
+        {{ (form(form)) }}
+
       <br>
       </div>
     </div>
 </section>
-   
-    <br/><br/>
+ 
+ <div class="bitmoji-image">
+    <img class="bitmoji-enveloppe" src="{{ asset('images/bitmoji(6).jpeg') }}" alt="Lyline-enveloppe"> 
+ </div>
 
           <!-- FOOTER -->
         <footer>

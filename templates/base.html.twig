@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">  
         
 
-        <title>{% block title %}{{ controller_name }}{% endblock %}</title>
+        <title>{% block title %}Bienvenue sur mon site{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
         {% block stylesheets %}{% endblock %}
@@ -23,7 +23,7 @@
 
     <div class="connexion-inscription">
       <input class="connexion" value="Se connecter" type="submit">
-        <h5>Pas encore inscrit ? <a class="lien-inscription" href="#">Venez c'est par ici</a></h5>
+        <h5>Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
     </div>
 
       <nav>
@@ -37,9 +37,12 @@
   </header>
 
       {% block body %} {% endblock %}
-
-         <script src="{{ asset('js/script.js') }}"></script>
-
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+        <script src="{{ asset('js/script.js') }}"></script>
+        <script src="{{ asset('js/parallax.min.js') }}"></script>
+        
         {% block javascripts %}{% endblock %}
     </body>
 </html>

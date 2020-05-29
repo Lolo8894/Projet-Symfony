@@ -22,6 +22,9 @@ body {
 }
 /* Style par défaut si pas de style précis appliqué */
 
+
+/* ----------------------------- PAGE D'ACCUEIL ----------------------------- */
+
 /* -------------------------------------------------------------------------- */
 /*----------------------------- HEADER - NAVIGATION ------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -29,8 +32,6 @@ body {
 .container {
   width: 100%;
   height: 120px; /*Hauteur du container contenant logo + navbar */
-  position:sticky absolute;
-  top: 0;
   background-color:#fff;
 }
 /* Position fixe de la navbar avec Sticky et absolute + ajustement hauteur + largeur + ajout background blanc. */
@@ -160,275 +161,141 @@ h5 {
   background: #00000036;
 }
 
+/* -------------------------------------------------------------------------- */
+/*------------------------------- IMAGES SUR LE COTE DU CARROUSEL ------------------------ */
+/* -------------------------------------------------------------------------- */
+
+ @keyframes movetop {
+   from {
+        top: 0px;
+    }
+    to {       
+        top: 45%;
+    }
+} 
+
+.bitmoji-image-principale {
+/*  background: yellow; / Pour y voir plus clair LOL */
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: 110px; /* Espace de la div côté gauche */
+  position: absolute;
+  top: 45%; /* Permet au bloc de se fixer suite à l'animation */
+  left: 0;
+  animation: 3s movetop;
+} /* Animation qui fonctionne avec la Keyframes juste au-dessus */
+
+.bitmoji-coeur {
+  height: 302px;
+  width: 302px;
+  border-radius: 90px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 7px 0 #cb8fff;
+}
 
 /* -------------------------------------------------------------------------- */
 /*------------------------------- CARROUSEL D'IMAGES ------------------------ */
 /* -------------------------------------------------------------------------- */
 
-#galleryContainer{
-    width: 100%;
-    height: 500px;
-    max-width: 1000px;
-    margin: auto;
-    user-select: none;
-    box-shadow: 0px 0px 3px 1px #00000078;
-    border: 10px solid white;
-    box-sizing: border-box;
-} /* Container du carrousel + contour ombré */
-
-.slideShowContainer{
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-    background-color: gainsboro;
-    position: relative;
-} /* Placement du container */
-
-#playPause{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    background: url("/images/playPause.png");
-    background-repeat: no-repeat;
-    z-index: 5;
-    background-size: cover;
-    margin: 5px;
-    cursor: pointer;
+#carrousel {
+  display: flex;
+  justify-content: center;
+  margin-left: 0 auto; /* Espace entre la bitmojo et le carrousel */
 }
 
-#playPause:hover{
-    opacity: 0.7;
-}
+.slider {
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+  border: 30px solid white;
+  box-shadow: 1px 1px 3px #00000078;
+} /* div qui contient le carrousel + dimensions du carrousel */
 
-.imageHolder{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-}
+figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+} /* div qui contient les images */
 
-.imageHolder img{
-    width: 100%;
-    height: 100%;
-}
+.images-carrousel {
+  float: left;
+  width: 20%;
+} /* Chaque image 
+     Le width: 20% place correctement une image par séquence */ 
 
-.imageHolder .captionText{
-    display: none;
-}
-
-.leftArrow, .rightArrow{
-    width: 50px;
-    background: #00000036;
-    position: absolute;
+@keyframes slider {
+  0% {
     left: 0;
-    z-index: 1;
-    transition: background 0.5s;
-    height: 72px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.rightArrow{
-    left: auto;
-    right: 0;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.leftArrow:hover, .rightArrow:hover{
-    background: #000000a8;
-    cursor: pointer;
-}
-
-.arrow{
-    display: inline-block;
-    border: 3px solid white;
-    width: 10px;
-    height: 10px;
-    border-left: none;
-    border-bottom: none;
-    margin: auto;
-    position: absolute;
+  }
+  
+  20% {
     left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+  }
+  
+  25% {
+    left: -100%;
+  }
+  
+  45% {
+    left: -100%;
+  }
+  
+  50% {
+    left: -200%;
+  }
+  
+  70% {
+    left: -200%;
+  }
+  
+  75% {
+    left: -300%;
+  }
+  
+  95% {
+    left: -300%;
+  }
+  
+  100% {
+    left: -400%;
+  }
 }
-
-.arrow.arrowLeft{
-    transform: rotateZ(-135deg);
-}
-
-.arrow.arrowRight{
-    transform: rotateZ(45deg);
-}
-
-.captionTextHolder{
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    color: white;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    background: #00000047;
-    height: 50px;
-    line-height: 50px;
-    overflow: hidden;
-}
-
-.captionText{
-    margin: 0;
-    color: #fff;
-}
-
-#dotsContainer{
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    padding-top: 20px;
-    box-sizing: border-box;
-  background: #fff;
-}
-
-#dotsContainer .dots{
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-left: 5px;
-    background-color: #bbb;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-#dotsContainer .dots:first-child{
-    margin-left: 0;
-}
-
-#dotsContainer .dots:hover, #dotsContainer .dots.active{
-    background-color: #717171;
-}
-
-.moveLeftCurrentSlide{
-    animation-name: moveLeftCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-
-}
-
-.moveLeftNextSlide{
-    animation-name: moveLeftNext;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-
-@keyframes moveLeftCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: -100%;opacity: 1;}
-}
-@keyframes moveLeftNext {
-    from {margin-left: 100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-} /* Animation du mouvement vers la gauche */
-
-
-.moveRightCurrentSlide{
-    animation-name: moveRightCurrent;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-
-.moveRightPrevSlide{
-    animation-name: moveRightPrev;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode:forwards;
-}
-
-@keyframes moveRightCurrent {
-    from {margin-left: 0;opacity: 1;}
-    to {margin-left: 100%;opacity: 1;}
-}
-
-@keyframes moveRightPrev {
-    from {margin-left: -100%;opacity: 1;}
-    to {margin-left: 0%;opacity: 1;}
-} /* Animation du mouvement vers la droite */
-
-.slideTextFromBottom {
-    animation-name: slideTextFromBottom;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes slideTextFromBottom {
-    from {opacity: 0;margin-top: 100px}
-    to {opacity: 1;margin-top: 0px;}
-}
-
-.slideTextFromTop {
-    animation-name: slideTextFromTop;
-    animation-duration: 0.7s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes slideTextFromTop {
-    from {opacity: 0;margin-top: -100px}
-    to {opacity: 1;margin-top: 0px;}
-} /* Animation du mouvement du haut vers le bas du texte */
-
-/* -------------------------------------------------------------------------- */
-/*------------------------------- QUI SUIS-JE ? ----------------------------- */
-/* -------------------------------------------------------------------------- */
-
-#mes_creations {
-  width: 80%;
-  margin: 0 auto;
-  background: #fff;
-  min-width: 480px;
-  box-shadow: 0 0 7px 0 #fa8072;
-}
-/* Stylisation de l'encadré */
-
-h2 {
-  color: #0086ad;
-  font-size: 40px;
-  text-align: center;
-  padding: 25px 0 25px 0;
-}
-
-p {
-  color: #777;
-  font-size: 23px;
-  text-align: center;
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-.salutations {
-  text-align: center;
-}
-
-.signature {
-  color: #ffb3ba;
-  font-family: 'Pacifico', cursive;
-  text-align: center;
-  font-size: 30px;
-}
-
 
 /* -------------------------------------------------------------------------- */
 /*-------------------------- FORMULAIRE DE CONTACT -------------------------- */
 /* -------------------------------------------------------------------------- */
+
+ @keyframes movelyline {
+    from {
+        right: 50%;
+    }
+    to {       
+        right: 0px;
+    }
+}
+
+.bitmoji-image {
+/*  background: blue; Pour y voir plus clair LOL */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  right: 0; /* Permet au bloc de se fixer suite à l'animation */
+  animation: 3s movelyline;
+}
+
+.bitmoji-enveloppe {
+  height: 302px;
+  width: 302px;
+  border-radius: 90px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 7px 0 #cb8fff;
+}
 
 #formulaire {
   padding: 20px 0px 60px 0px;
@@ -461,20 +328,287 @@ h3 {
   font-size: 18px;
   font-weight: bold;
 }
-/* Style des champs nom, prénom, email et message */
+/* Style des labels nom, prénom, email et message */
 
-form {
+#contact_Nom, #contact_Prenom, #contact_email {
+/*  background-color: aqua;*/
+  width: 290px; /* largeur de l'input */
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 147px; /* Règlage au centre de l'input */
+} /* Inputs nom, prénom et email */
+
+.form-group {
+/*  background-color: blueviolet;*/
+  display: flex;
+  flex-direction: column; /* Centre le tout en colonne */
+  padding-top: 5px; /* Espace en haut entre input et submit */
+  padding-bottom: 5px; /* complète le padding-top: 5px; */
+} /* div entourant les labels + les inputs */
+
+.control-label {
+/*  background-color: brown;*/
+  margin-bottom: 5px; /* Espacement du haut entre label et input */
+} /* div contenant les labels nom / prénom / email /message */
+
+#contact_Message {
+  margin-left: 147px; /* Règlage au centre de l'input */
+  width: 300px;
+  height: 300px;
+  font-size: 15px;
+  resize: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  font-family: 'Varela Round', sans-serif;
+} /* Input textarea */
+
+#contact_Envoyer {
+  margin-left: 249px; /* Règlage au centre du submit */
+  width: 100px;
+  margin-bottom: 21px;
+  line-height: 36px; 
+  text-align: center;
+  color:#777;
+  font-size:18px;
+  font-weight: bold;
+  background:#fff;
+  padding: 8px;
+  cursor: pointer; 
+  border-radius: 9px 24px;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99); 
+} /* Bouton Envoyer */
+
+#contact_Envoyer:hover {
+  background: #0A4589;
+  margin-bottom: 19px;
+  color: #fff;
+  border: 1px solid grey;
+  box-shadow: 3px 3px 3px 0px #fff;
+} /* Animation au survol du bouton Envoyer */
+
+
+/* -------------------------------------------------------------------------- */
+/*-------------------------- MES CREATIONS -------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.ensemble-creations {
+  
+  width:500px;
+}
+
+/* ----------------------------- DESCRIPTION 1 ------------------------------ */
+
+.titre-creation {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  /* Pour régler le top et le bottom les 0 correspondent au règlage gauche et droite du heading  */
+  margin: 30px 290px 0 290px;
+  background-color: #fff;
+  font-size: 35px;
+}
+
+#affichage {
+  display:flex;
+  align-items: center; /* Ajuster l'espace en haut du block centré */
+  justify-content: center;
+  background: Rgba(255, 255, 255, 0.5);
+  margin: 0 290px 0 290px; /* règlage bloc transparent gauche et droite */
+} /* Le bloc qui contient toutes les images avec filtre transparent */
+
+#picture {
+  width: 600px;
+  height: 600px; /* Dimensions contenant de l'image */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  border: 3px solid #c39797;
+  border-radius: 8px;
+} /* L'image sélectionnée */
+
+.choix {
+  padding: 20px 0 20px 0;
+} /* La div qui entoure toutes les vignettes */
+
+.creation img {
+  margin-top: 5px; /* Espace entre les vignettes */
+  width: 110px;
+  border: 3px solid #c39797;
+  border-radius: 8px;
+  cursor: pointer;
+} /* Les vignettes alignées les unes en dessous des autres */
+
+.details {
+  padding: 20px 0 20px 0;
+  margin: 0 290px 0 290px;
+  background-color: #fff;
+  line-height: 30px;
+} /* Texte de la description */
+
+.description-creation {
+  margin-left: 150px;
+}
+
+.texte {
+  text-align: justify;
+/*  line-height: 30px;*/
+}
+
+                            /* COMMENTAIRE */
+
+.commentaires {
+  padding-top: 30px;
+  padding: 20px 0 20px 0;
+  margin: 0 290px 0 290px;
+  background-color: Rgba(255, 255, 255, 0.5);
+  line-height: 30px;
   
 }
+
+.commentaires-creation {
+  margin-left: 150px;
+}
+
+/* ----------------------------- A PROPOS DE MOI ---------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*------------------------------- QUI SUIS-JE ? ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#lyline-hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* La section qui contient l'image de Lyline */
+
+.lyline-se-presente {
+  margin-top: 30px;
+  width: 280px;
+  border: 1px solid #808080;
+  border-radius: 200px;
+} /* L'image en elle-même de Lyline */
+
+/* ------ PARTIE QUI SUIS-JE ? ------ */
+
+#qui-suis-je {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  min-width: 480px;
+  box-shadow: 0 0 7px 0 #fa8072;
+}
+/* Stylisation de l'encadré */
+
+h2 {
+  color: #0086ad;
+  font-size: 30px;
+  text-align: center;
+  padding: 25px 0 25px 0;
+} /* Qui suis-je ? */
+
+p {
+  color: #777;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 150px;
+  margin-left: 150px;
+} /* Le texte */
+
+.salutations {
+  text-align: center;
+} /* La signature "Lyline." centrée */
+
+.signature {
+  color: #ffb3ba;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 30px;
+} /* Style octroyé à la signature */
+
+/* ------ PARTIE MES FOURNISSEURS ------ */
+
+#mes-fournisseurs {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  min-width: 480px;
+  box-shadow: 0 0 7px 0 #fa8072;
+} /* Stylisation de l'encadré */
+
+.zeeman-yarnparadis {
+  color: #777;
+  font-size: 20px;
+}
+
+/* ------ PARTIE MES INSPIRATIONS ET ASTUCES ------ */
+
+#mes-inspirations-astuces {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  min-width: 480px;
+  box-shadow: 0 0 7px 0 #fa8072;
+} /* Stylisation de l'encadré */
+
+/* ------ PARTIE MES ACTIONS CARITATIVES ------ */
+
+#actions-caritatives {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+  min-width: 480px;
+  box-shadow: 0 0 7px 0 #fa8072;
+} /* Stylisation de l'encadré */
+
+#bonnet-innocent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.affiche-innocent {
+  border: 1px solid #808080;
+  width: 380px;
+}
+
+.bonnet1 {
+  margin-right: 200px;
+  height: 302px;
+  width: 302px;
+  border-radius: 90px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 7px 0 #cb8fff;
+}
+
+.bonnet2 {
+  margin-left: 200px;
+  height: 300px;
+  width: 350px;
+  border-radius: 90px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 7px 0 #98CE54;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*---------------------------------- FOOTER --------------------------------- */
 /* -------------------------------------------------------------------------- */
 
 footer {
+  margin-top: 30px;
   width: 100%;
   height: 100px;
-  margin: 0 auto;
   background: #fff;
   min-width: 480px;
   font-size: 23px;

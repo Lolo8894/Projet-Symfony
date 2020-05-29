@@ -20,6 +20,15 @@ class GeneralController extends AbstractController
             'title' => "Les créations de Lyline",
         ]);
     }
+  
+    /**
+       * @Route("/description1", name="description1")
+       */
+      public function description1() { 
+          return $this->render('general/description1.html.twig', [
+              'title' => "Les créations de Lyline",
+          ]);
+      }
 
      /**
      * @Route("/a_propos", name="general_a_propos")

@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+<h3 class="titre-creation">Doudou Licorne</h3>
+
+	<section id ="affichage">
+		<div class="description">
+			<img src="{{ asset('/images/licorne.jpeg') }}" alt="imageCiblée" id="picture">
+		</div>		
+    <!-- Ne fonctionne que s'il y a un id -->
+		<div class="choix">
+			<div class="creation">
+				<img src="{{ asset('/images/licorne.jpeg') }}" alt="Vignette1" onclick="affiche(this.src);">
+			</div>
+
+			<div class="creation">
+				<img src="{{ asset('/images/licorne-2.jpg') }}" alt="Vignette2" onclick="affiche(this.src);">
+			</div>
+      
+		    <div class="creation">
+				<img src="{{ asset('/images/licorne-3.jpg') }}" alt="Vignette3" onclick="affiche(this.src);">
+			</div>
+
+			<div class="creation">
+				<img src="{{ asset('/images/licorne-4.jpg') }}" alt="Vignette4" onclick="affiche(this.src);">
+			</div>
+        </div>   
+    </section>
+    
+        <div class="details">
+          <h3 class="description-creation">Description :</h3>
+      
+          <p class="texte">Un doudou licorne trop choupinou !
+          <br><br>Je vous présente ici deux styles différents pour cette création. <br>Mais n'oubliez pas, les possibilités sont infinies ;)</p>
+        </div>  
+        
+        <div class="commentaires">
+          <h3 class="commentaires-creation">Commentaires :</h3>
+      
+          <p class="texte">Pseudo</p>
+        </div>    
+  
+<!-- FOOTER -->
+<footer>
+    <h6>&copy; Copyright</h6>
+</footer>
+
+<script src="{{ asset('js/script.js') }}"></script>
+
+{% endblock %}
