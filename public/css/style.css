@@ -87,11 +87,12 @@ a {
 
 .nav {
   text-decoration: none;
+  transition: .5s ease-in-out;
 }
 /* Supprime le soulignement des liens de la navnar */
 
 .nav:hover {
-  color: #4ca3dd;
+  color: #c471ed;
 }
 
 ul {
@@ -118,6 +119,7 @@ ul {
   cursor: pointer;
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  transition: .5s ease-in-out;
   height: 3rem; 
 }
 /* Styliser le bouton "Connexion" */
@@ -382,7 +384,9 @@ h3 {
   padding: 8px;
   cursor: pointer; 
   border-radius: 9px 24px;
-  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99); 
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  transition: .5s ease-in-out;
+  height: 3rem;
 } /* Bouton Envoyer */
 
 #contact_Envoyer:hover {
@@ -391,6 +395,7 @@ h3 {
   color: #fff;
   border: 1px solid grey;
   box-shadow: 3px 3px 3px 0px #fff;
+  height: 3.5rem;
 } /* Animation au survol du bouton Envoyer */
 
 
