@@ -118,6 +118,7 @@ ul {
   cursor: pointer;
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  height: 3rem; 
 }
 /* Styliser le bouton "Connexion" */
 
@@ -126,6 +127,7 @@ ul {
   color: #777;
   border: 0.5px solid #777;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  height: 3rem; /* Associé à la hauteur du .connexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
 }
 /* Styliser le bouton "Connexion" au survol */
 
