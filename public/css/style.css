@@ -19,6 +19,9 @@ body {
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
   background: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 /* Style par défaut si pas de style précis appliqué */
 
