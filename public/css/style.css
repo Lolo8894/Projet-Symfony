@@ -32,21 +32,23 @@ body {
 /*----------------------------- HEADER - NAVIGATION ------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.container {
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 120px; /*Hauteur du container contenant logo + navbar */
+  height: 100px; /*Hauteur du container contenant logo + navbar */
   background-color:#fff;
 }
 /* Position fixe de la navbar avec Sticky et absolute + ajustement hauteur + largeur + ajout background blanc. */
 
 #logo {
   font-family: 'Pacifico', cursive;
-  margin-left: 20px;
-  height: 80px;
-  float: left;
-  margin-top: 32px;
+  margin-top: 25px;
 }
-/* Flottement à gauche du logo */
+/* Ajustement écart du haut du logo */
 
 .violet {
   color: #cb8fff;
@@ -54,10 +56,9 @@ body {
 /* Style du point sur le logo */
 
 nav {
-  float: right;
-  padding-top: 50px;
+  padding-top: 27px;
 }
-/* Flottement à droite de la navbar + ajustement en haut et à droite*/
+/* Ajustement écart du haut de la navbar */
 
 nav ul li {
   display: inline-block;
@@ -101,14 +102,10 @@ ul {
 /* Supprime les puces de la navbar */
 
 .connexion-inscription {
-  float: left;
-  margin-left: 380px;
-  margin-top: 30px; /* Règlage en hauteur de la div .connexion-inscription */
-/* Réglages de la position du bouton + inscription */
-}
+  margin-top: 12px; 
+} /* Règlage en hauteur de la div .connexion-inscription */
 
 .connexion {
-
   margin-bottom: 12px; /* Règlage espace entre bouton connexion et lien vers inscription */
   line-height: 36px;
   text-align: center;
@@ -275,13 +272,13 @@ figure {
 /*-------------------------- FORMULAIRE DE CONTACT -------------------------- */
 /* -------------------------------------------------------------------------- */
 
- @keyframes movelyline {
-    from {
-        right: 50%;
-    }
-    to {       
-        right: 0px;
-    }
+@keyframes movelyline {
+  from {
+      right: 50%;
+  }
+  to {       
+      right: 0px;
+  }
 }
 
 .bitmoji-image {
@@ -403,9 +400,33 @@ h3 {
 /*-------------------------- MES CREATIONS -------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#mes-creations {
+  padding-top: 30px;
+}
+
+.carte {
+  height: 17rem;
+  width: 12rem;
+  margin: 12px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 1px 1px 6px grey;
+}
+
 .ensemble-creations {
+  max-height: 5rem;
+}
+
+.titre {
   
-  width:500px;
+  font-size: 20px;
+  color: #0086ad;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1rem;
 }
 
 /* ----------------------------- DESCRIPTION 1 ------------------------------ */
@@ -519,7 +540,7 @@ h2 {
   padding: 25px 0 25px 0;
 } /* Qui suis-je ? */
 
-p {
+.paragraphe-a-propos {
   color: #777;
   font-size: 20px;
   text-align: center;
@@ -615,18 +636,35 @@ p {
 /*---------------------------------- FOOTER --------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
   width: 100%;
   height: 100px;
   background: #fff;
-  min-width: 480px;
-  font-size: 23px;
+  font-size: 19px;
   box-shadow: 0 0 7px 0 #cb8fff;
 }
 
-h6 {
+.copyright {
   padding-top: 40px;
+  margin-right: 5rem; /* Distance entre les élements du footer */
   text-align: center;
   color: #808080;
+}
+
+.confidentialite {
+  padding-top: 40px;
+  margin-right: 5rem;
+  text-align: center;
+  color: #808080;
+}
+
+.instagram {
+  padding-top: 25px;
+  height: 3rem;
+  width: 3rem;
 }

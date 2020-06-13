@@ -1,0 +1,58 @@
+easy_admin:
+  site_name: 'Les créations de Lyline'
+  design:
+    form_theme:
+      - '@EasyAdmin/form/bootstrap_4.html.twig'
+      - '@FOSCKEditor/Form/ckeditor_widget.html.twig'
+    brand_color: '#1ABC9C'
+    menu:
+      -
+        entity : Utilisateurs
+        label : Utilisateurs
+        icon: home
+      -
+        entity : Creations
+        label : Créations
+        icon: file
+  entities:
+    Utilisateurs :
+      class: App\Entity\Utilisateurs
+      form:
+        fields:
+          - { property: email, label: Mail }
+          - { property: pseudo, label: Identifiant }
+          - { property: motdepasse, label: Mot de passe }
+          - { property: confirm_motdepasse, label: Text }
+          - { property: imageFile, type: file }
+          - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
+    Creations :
+      class: App\Entity\Creations
+      form:
+        fields:
+          - { property: titre, label: Titre de la création }
+          - { property: description, label: Description, type: 'fos_ckeditor' }
+          - { property: miseEnAvant, label: Création mise en avant }
+          - { property: imageFile, type: file }
+          - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
+      list:
+        fields:
+          - { property: miseEnAvant, label: Création mise en avant }
+          - { property: image, type: image, base_path: '%app.path.project_image%', label: Image }
+          - { property: titre, label: Titre de la création }
+    Accueil :
+      class: App\Entity\Accueil
+      form:
+        fields:
+          - { property: titre, label: Titre }
+          - { property: imageFile, type: file }
+          - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
+      list:
+        fields:
+          - { property: image, type: image, base_path: '%app.path.project_image%', label: Image }
+          - { property: titre, label: Titre de la création }
+
+
+#        # List the entity class name you want to manage
+#        - App\Entity\Contact
+#        - App\Entity\Utilisateurs
+#        - App\Entity\User

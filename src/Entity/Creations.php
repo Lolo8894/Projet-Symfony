@@ -7,10 +7,10 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- *@ORM\Entity(repositoryClass="App\Repository\UtilisateursRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\CreationsRepository")
  *@Vich\Uploadable
  */
-class Utilisateurs
+class Creations
 {
     /**
      * @ORM\Id()
@@ -18,31 +18,23 @@ class Utilisateurs
      * @ORM\Column(type="integer")
      */
     private $id;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $email;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $pseudo;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $motdepasse;
-
-    public $confirm_motdepasse;
   
-    /**
-     * @ORM\Column(type="string", length=255)
-     * @var string
+   /**
+     * @ORM\Column(type="string")
+     */
+    private $titre;
+  
+     /**
+     * @ORM\Column(type="text")
+     */
+    private $description;
+  
+  /**
+     * @ORM\Column(type="text")
      */
     private $image;
-
-    /**
+  
+     /**
      * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
      * @var File
      */
@@ -54,6 +46,38 @@ class Utilisateurs
      */
     private $updatedAt;
   
+     /**
+     * @var bool
+     *
+     * @ORM\Column(type="boolean", options={"default" : false})
+     */
+    private $miseEnAvant = false;
+  /**
+     * Get the value of active
+     *
+     * @return  bool
+     */ 
+    public function getMiseEnAvant()
+    {
+        return $this->miseEnAvant;
+    }
+
+    /**
+     * Set the value of active
+     *
+     * @param  bool  $active
+     *
+     * @return  self
+     */ 
+    public function setMiseEnAvant(bool $miseEnAvant)
+    {
+        $this->miseEnAvant = $miseEnAvant;
+
+        return $this;
+    }
+  
+  
+
     public function getId(): ?int
     {
         return $this->id;
@@ -76,50 +100,34 @@ class Utilisateurs
     {
         return $this->imageFile;
     }
-
-    public function setImage($image)
+  
+    public function getTitre(): ?string
     {
-        $this->image = $image;
+        return $this->titre;
     }
-
+  
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+    }
+  
+    public function getDescription()
+    {
+        return $this->description;
+    }
+  
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+  
     public function getImage()
     {
         return $this->image;
     }
-
-    public function getEmail(): ?string
+  
+    public function setImage($image)
     {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
-
-        return $this;
-    }
-
-    public function getPseudo(): ?string
-    {
-        return $this->pseudo;
-    }
-
-    public function setPseudo(string $pseudo): self
-    {
-        $this->pseudo = $pseudo;
-
-        return $this;
-    }
-
-    public function getMotdepasse(): ?string
-    {
-        return $this->motdepasse;
-    }
-
-    public function setMotdepasse(string $motdepasse): self
-    {
-        $this->motdepasse = $motdepasse;
-
-        return $this;
+        $this->image = $image;
     }
 }

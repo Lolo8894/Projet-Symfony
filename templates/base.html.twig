@@ -11,6 +11,8 @@
 
         <title>{% block title %}Bienvenue sur mon site{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/mediaqueries.css') }}">
+       
 
         {% block stylesheets %}{% endblock %}
     </head>
@@ -18,13 +20,8 @@
     <body>
          <!-- HEADER - NAVIGATION -->
 
-  <header class="container">
-    <h1 id= "logo"><a href="{{ path('general_accueil') }}">Les créations de Lyline</a><span class="violet">.</span></h1>
-
-    <div class="connexion-inscription">
-      <input class="connexion" value="Se connecter" type="submit">
-        <h5>Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
-    </div>
+  <header class="header">
+    <h1 id= "logo"><a href="{{ path('general_accueil') }}">Les créations de Lyline</a><span class="violet">.</span></h1>   
 
       <nav>
         <ul>
@@ -34,6 +31,11 @@
           <li><a class="nav" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
         </ul>
       </nav>
+      
+       <div class="connexion-inscription">
+      <input class="connexion" value="Se connecter" type="submit">
+        <h5>Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
+    </div>
   </header>
 
       {% block body %} {% endblock %}
@@ -44,5 +46,14 @@
         <script src="{{ asset('js/parallax.min.js') }}"></script>
         
         {% block javascripts %}{% endblock %}
+        
+  <footer class="footer">
+    <h6 class="copyright">&copy; <script>document.write(new Date(). getFullYear());</script> Les créations de Lyline - Tous droits réservés</h6>
+    <h6 class="confidentialite"><a class="politique_de_confidentialite" href="{{ path('politique_de_confidentialite') }}">Politique de confidentialité</a></h6>
+    <img class="instagram" src="{{ asset('images/instagram-logo.jpg') }}" alt="instagram-logo">
+  </footer>
+  
+   <!-- UN PETIT CODE JAVASCRIPT QUI PERMET A LA DATE DE SE GENERER ET DE SE METTRE A JOUR AUTOMATIQUEMENT -->
+   
     </body>
 </html>

@@ -4,18 +4,20 @@
 
 {% block body %}
 
-<h3>Mes créations en travaux</h3>
-
-<section id="page_creations">
-      <img class ="ensemble-creations" src="{{ asset('/images/img_1.jpg') }}" alt="creation1">   
-      <img class ="ensemble-creations" src="{{ asset('/images/img_2.jpg') }}" alt="creation2">   
-      <img class ="ensemble-creations" src="{{ asset('/images/img_3.jpg') }}" alt="creation3">  
-      <img class ="ensemble-creations" src="{{ asset('/images/img_4.jpg') }}" alt="creation4">
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <h6>&copy; Copyright</h6>
-</footer>
+<section id="mes-creations">
+ <div class="carte">
+ 
+<!-- Boucle for relié à celle définie dans mon controller General  -->
+  {% for i in crea %}
+  
+  <img class ="ensemble-creations" src="{{ asset('/images/' ~ i.image) }}
+" alt="Licorne">
+  <p class="titre">{{ i.titre }}</p>
+  <hr>
+  <p class="description">{{ i.description }}</p>
+ </div>
+ 
+  {% endfor %}
 
 {% endblock %}
+
