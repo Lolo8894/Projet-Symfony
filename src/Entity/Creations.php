@@ -108,8 +108,6 @@ class Creations
 
         return $this;
     }
-  
-  
 
     public function getId(): ?int
     {

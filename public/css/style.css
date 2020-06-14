@@ -19,10 +19,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  padding-bottom: 130px;
+  padding-bottom: 100px;
   position: relative;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
+  color: #777;
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +51,7 @@
   height: 100px; /*Hauteur du container contenant logo + navbar */
   background-color:#fff;
 }
-/* Position fixe de la navbar avec Sticky et absolute + ajustement hauteur + largeur + ajout background blanc. */
+/* Position fixe de la navbar avec Sticky et absolute sur le footer */
 
 #logo {
   font-family: 'Pacifico', cursive;
@@ -295,6 +296,7 @@ figure {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   position: relative;
   top: 0;
   right: 0; /* Permet au bloc de se fixer suite à l'animation */
@@ -681,4 +683,24 @@ h2 {
   padding-top: 25px;
   height: 3rem;
   width: 3rem;
+}
+
+                  /*PAGE POLITIQUE DE CONFIDENTIALITE ET CGU*/
+
+#CGU-container {
+  background-color: #00000028;
+  color: black;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+.CGU-h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CGU-h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
 }
