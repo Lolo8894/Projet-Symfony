@@ -29,16 +29,27 @@ class Creations
      */
     private $description;
   
-  /**
+    /**
      * @ORM\Column(type="text")
      */
-    private $image;
+    private $image; 
+  
+    /**
+     * @ORM\Column(type="text")
+     */
+    private $image2;
   
      /**
      * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
      * @var File
      */
-    private $imageFile;
+    private $imageFile;    
+  
+    /**
+     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile2;
 
     /**
      * @ORM\Column(type="datetime")
@@ -96,6 +107,24 @@ class Creations
         }
     }
 
+    public function getImageFile2()
+    {
+        return $this->imageFile2;
+    }
+  
+    public function setImageFile2(File $image2 = null)
+    {
+        $this->imageFile2 = $image2;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image2) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
     public function getImageFile()
     {
         return $this->imageFile;
@@ -129,5 +158,15 @@ class Creations
     public function setImage($image)
     {
         $this->image = $image;
+    }
+  
+    public function getImage2()
+    {
+        return $this->image2;
+    }
+  
+    public function setImage2($image2)
+    {
+        $this->image2 = $image2;
     }
 }

@@ -5,19 +5,23 @@
 {% block body %}
 
 <section id="mes-creations">
- <div class="carte">
+
+ {% for creation in creations %}
+ 
+  <div class="carte">
  
 <!-- Boucle for relié à celle définie dans mon controller General  -->
-  {% for i in crea %}
-  
-  <img class ="ensemble-creations" src="{{ asset('/images/' ~ i.image) }}
-" alt="Licorne">
-  <p class="titre">{{ i.titre }}</p>
-  <hr>
-  <p class="description">{{ i.description }}</p>
- </div>
+   
+    <img class ="ensemble-creations" src="{{ asset('/images/' ~ creation.image) }}
+  " alt="Licorne">
+    <h3 class="titre"><a href="{{ path('description-creation', {id: creation.id}) }}">{{ creation.titre }}</a></h3>
+    <hr>
+    <p class="description">{{ creation.description | raw }}</p> 
+ <!-- | raw permet de prendre en compte les balises et l'utf-8 de twig -->
+  </div>
  
   {% endfor %}
+</section>
 
 {% endblock %}
 

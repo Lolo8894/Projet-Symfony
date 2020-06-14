@@ -34,6 +34,8 @@ easy_admin:
           - { property: miseEnAvant, label: Création mise en avant }
           - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
+          - { property: imageFile2, type: file }
+          - { property: imageFile2, type: vich_image, label: Création - Ajout d'images }
       list:
         fields:
           - { property: miseEnAvant, label: Création mise en avant }

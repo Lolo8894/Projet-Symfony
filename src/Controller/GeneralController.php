@@ -95,20 +95,26 @@ class GeneralController extends AbstractController
       
         $repo = $this->getDoctrine()->getRepository(Creations::class);
 
-        $crea = $repo->findAll();
+        $creations = $repo->findAll();
 
         return $this->render('general/mes_creations.html.twig', [
             'title' => "Les créations de Lyline",
-            'crea' => $crea
+            'creations' => $creations
         ]);
     }
   
     /**
-       * @Route("/description1", name="description1")
+       * @Route("/description/{id}", name="description-creation")
        */
-      public function description1() { 
+      public function description1($id) { 
+        
+          $repo = $this->getDoctrine()->getRepository(Creations::class);
+
+          $creations = $repo->find($id);
+        
           return $this->render('general/description1.html.twig', [
               'title' => "Les créations de Lyline",
+              'creations' => $creations
           ]);
       }
 

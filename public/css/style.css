@@ -322,7 +322,7 @@ figure {
 }
 /* Style de la box-shaddow qui contient tout */
 
-h3 {
+.titre-formulaire {
   font-weight: bold;
   color: #777;
   font-size: 21px;
@@ -409,7 +409,11 @@ h3 {
 /* -------------------------------------------------------------------------- */
 
 #mes-creations {
-  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 30px 0 30px;
 }
 
 .carte {
