@@ -25,6 +25,12 @@ easy_admin:
           - { property: confirm_motdepasse, label: Text }
           - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
+      list:
+        fields:
+          - { property: email, label: Mail }
+          - { property: pseudo, label: Identifiant }
+          - { property: imageFile, type: file }
+          - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
     Creations :
       class: App\Entity\Creations
       form:
@@ -36,6 +42,10 @@ easy_admin:
           - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
           - { property: imageFile2, type: file }
           - { property: imageFile2, type: vich_image, label: Création - Ajout d'images }
+          - { property: imageFile3, type: file }
+          - { property: imageFile3, type: vich_image, label: Création - Ajout d'images }
+          - { property: imageFile4, type: file }
+          - { property: imageFile4, type: vich_image, label: Création - Ajout d'images }
       list:
         fields:
           - { property: miseEnAvant, label: Création mise en avant }

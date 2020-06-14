@@ -8,7 +8,7 @@
 
 	<section id ="affichage">
 		<div class="description">
-			<img src="{{ asset('/images/licorne.jpeg') }}" alt="imageCiblée" id="picture">
+			<img src="{{ asset('/images/' ~ creations.image) }}" alt="imageCiblée" id="picture">
 		</div>		
     <!-- Ne fonctionne que s'il y a un id -->
 		<div class="choix">
@@ -17,15 +17,15 @@
 			</div>
 
 			<div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image) }}" alt="Vignette2" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creations.image2) }}" alt="Vignette2" onclick="affiche(this.src);">
 			</div>
       
 		    <div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image) }}" alt="Vignette3" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creations.image3) }}" alt="Vignette3" onclick="affiche(this.src);">
 			</div>
 
 			<div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image) }}" alt="Vignette4" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creations.image4) }}" alt="Vignette4" onclick="affiche(this.src);">
 			</div>
         </div>   
     </section>
@@ -33,8 +33,7 @@
         <div class="details">
           <h3 class="description-creation">Description :</h3>
       
-          <p class="texte">Un doudou licorne trop choupinou !
-          <br><br>Je vous présente ici deux styles différents pour cette création. <br>Mais n'oubliez pas, les possibilités sont infinies 😉</p>
+          <p class="texte">{{ creations.description | raw }}</p>
         </div>  
         
         <div class="commentaires">
