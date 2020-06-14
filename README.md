@@ -13,3 +13,8 @@ Pour installer le projet, faire un clone du projet :
 ```
 git clone https://github.com/Lolo8894/Projet-Symfony.git
 ```
+
+## ASTUCES
+
+- Les images se trouvent dans le dossier `public/images`
+- Le CSS se trouve dans le dossier `public/css`
