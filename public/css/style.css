@@ -55,17 +55,20 @@
 
 #logo {
   font-family: 'Pacifico', cursive;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 /* Ajustement écart du haut du logo */
 
 .violet {
+  font-size: 32px;
   color: #cb8fff;
 }
 /* Style du point sur le logo */
 
-nav {
-  padding-top: 27px;
+.nav-bar{
+  padding-top: 10px;
+  display: inline-block;
+  
 }
 /* Ajustement écart du haut de la navbar */
 
@@ -75,14 +78,22 @@ nav ul li {
 }
 /* La navbar alignée sur une ligne + Espacement entre les éléments de la nav*/
 
-
 nav ul li a {
   font-family: 'Indie Flower', cursive;
   color: #0086ad;
   font-weight: bold;
   font-size: 25px;
+  transition: .4s ease-in-out;
 }
 /* Font + couleur appliquée sur la navbar */
+
+nav ul li a:hover {
+  font-family: 'Indie Flower', cursive;
+  color: #0086ad;
+  font-weight: bold;
+  font-size: 25px;
+  color: #cb8fff;
+}
 
 .couleurs {
   font-size: 32px;
@@ -91,19 +102,22 @@ nav ul li a {
 /* Style des points sur chaque élément de la nav */
 
 a {
-  text-decoration: none;
   color: #ffb3ba;
-} /* Couleur du texte du logo */
+  font-size: 29px;
+  margin-top: 25px;
+} /* Couleur du texte du logo + taille du logo + positionnement */
+
+a:hover {
+  color: #ffb3ba;
+  font-size: 29px;
+  text-decoration: none;
+}
 
 .nav {
   text-decoration: none;
   transition: .5s ease-in-out;
 }
 /* Supprime le soulignement des liens de la navnar */
-
-.nav:hover {
-  color: #cb8fff;
-}
 
 ul {
   list-style: none;
@@ -141,16 +155,21 @@ ul {
 
 h5 {
   font-family: 'Varela Round', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   color: #777;
 }
 
 .lien-inscription {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
   color: #0086ad;
   transition: .5s ease-in-out;
 }
 
 .lien-inscription:hover {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 13px;
   color: #cb8fff;
 }
 
@@ -173,7 +192,7 @@ h5 {
 }
 
 .transparent {
-  height: 155px;
+  height: 280px;
   border-radius: 0 0 20px 20px;
   box-shadow: 1px 1px 3px #00000078;
   background: #00000036;
@@ -424,8 +443,8 @@ figure {
 }
 
 .carte {
-  height: 17rem;
-  width: 12rem;
+  height: 25rem;
+  width: 20rem;
   margin: 12px;
   padding: 20px;
   border-radius: 5px;
@@ -433,19 +452,34 @@ figure {
   box-shadow: 1px 1px 6px grey;
 }
 
-.ensemble-creations {
-  max-height: 5rem;
+.div-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #00000028;
 }
 
-.titre {
-  
-  font-size: 20px;
-  color: #0086ad;
+.ensemble-creations {
+  max-height: 10rem;
+  border-radius: 10px;
 }
 
 .description {
   text-align: justify;
   font-size: 1rem;
+}
+
+.lien-description {
+  font-size: 15px;
+  font-weight: bold;
+  color: #777;
+  transition: .2s ease-in-out;
+}
+
+.lien-description:hover {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0086ad;
 }
 
 /* ----------------------------- DESCRIPTION 1 ------------------------------ */
@@ -685,7 +719,7 @@ h2 {
 }
 
 .instagram {
-  padding-top: 25px;
+  margin-top: 1.5rem;
   height: 3rem;
   width: 3rem;
 }
@@ -708,4 +742,15 @@ h2 {
   font-size: 18px;
   font-weight: bold;
   color: black;
+}
+
+.politique_de_confidentialite {
+  font-size: 15px;
+  color: #ffb3ba;
+  text-shadow: 1px 1px 1.5px #00000007;
+}
+
+.politique_de_confidentialite:hover {
+  font-size: 15px;
+  color: #0086ad;
 }

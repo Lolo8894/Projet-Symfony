@@ -110,15 +110,15 @@ class GeneralController extends AbstractController
         
           $repo = $this->getDoctrine()->getRepository(Creations::class);
 
-          $creations = $repo->find($id);
+          $creation = $repo->find($id);
         
-          If ($creations === null) {
+          if ($creation === null) {
           Throw $this->createNotFoundException();
           }
         
           return $this->render('general/description1.html.twig', [
               'title' => "Les créations de Lyline",
-              'creations' => $creations
+              'creation' => $creation
           ]);
       }
 

@@ -4,36 +4,42 @@
 
 {% block body %}
 
-<h3 class="titre-creation">{{ creations.titre }}</h3>
+<h3 class="titre-creation">{{ creation.titre }}</h3>
 
 	<section id ="affichage">
 		<div class="description">
-			<img src="{{ asset('/images/' ~ creations.image) }}" alt="imageCiblée" id="picture">
+			<img src="{{ asset('/images/' ~ creation.image) }}" alt="imageCiblée" id="picture">
 		</div>		
-    <!-- Ne fonctionne que s'il y a un id -->
+	<!-- Ne fonctionne que s'il y a un id -->
+	<!-- Ne s'affiche que si il y a une seconde image -->
+	{% if creation.image2 is not null or creation.image3 is not null or creation.image4 is not null %}
 		<div class="choix">
 			<div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image) }}" alt="Vignette1" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creation.image) }}" alt="Vignette1" onclick="affiche(this.src);">
 			</div>
-
+			{% if creation.image2 is not null %}
 			<div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image2) }}" alt="Vignette2" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creation.image2) }}" alt="Vignette2" onclick="affiche(this.src);">
 			</div>
-      
+			{% endif %}	
+			{% if creation.image3 is not null %}
 		    <div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image3) }}" alt="Vignette3" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creation.image3) }}" alt="Vignette3" onclick="affiche(this.src);">
 			</div>
-
+			{% endif %}	
+			{% if creation.image4 is not null %}
 			<div class="creation">
-				<img src="{{ asset('/images/' ~ creations.image4) }}" alt="Vignette4" onclick="affiche(this.src);">
+				<img src="{{ asset('/images/' ~ creation.image4) }}" alt="Vignette4" onclick="affiche(this.src);">
 			</div>
-        </div>   
+			{% endif %}	
+		</div>   
+	{% endif %}	
     </section>
     
         <div class="details">
           <h3 class="description-creation">Description :</h3>
       
-          <p class="texte">{{ creations.description | raw }}</p>
+          <p class="texte">{{ creation.description | raw }}</p>
         </div>  
         
         <div class="commentaires">

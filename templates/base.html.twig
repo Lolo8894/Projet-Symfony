@@ -10,7 +10,7 @@
         
 
         <title>{% block title %}Bienvenue sur mon site{% endblock %}</title>
-       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/mediaqueries.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
        
@@ -26,10 +26,10 @@
 
       <nav>
         <ul>
-          <li><a class="nav" href="{{ path('general_accueil') }}"><span class="couleurs">.</span>Accueil</a></li>
-          <li><a class="nav" href="{{ path('general_mes_creations') }}"><span class="couleurs">.</span>Mes créations</a></li>
-          <li><a class="nav" href="{{ path('general_a_propos') }}"><span class="couleurs">.</span>A propos de moi</a></li>
-          <li><a class="nav" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
+          <li><a class="nav-bar" href="{{ path('general_accueil') }}"><span class="couleurs">.</span>Accueil</a></li>
+          <li><a class="nav-bar" href="{{ path('general_mes_creations') }}"><span class="couleurs">.</span>Mes créations</a></li>
+          <li><a class="nav-bar" href="{{ path('general_a_propos') }}"><span class="couleurs">.</span>A propos de moi</a></li>
+          <li><a class="nav-bar" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
         </ul>
       </nav>
       

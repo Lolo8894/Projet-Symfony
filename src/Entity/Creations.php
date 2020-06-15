@@ -35,19 +35,19 @@ class Creations
     private $image; 
   
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", options={"default" : NULL})
      */
-    private $image2;
+    private $image2 = null;
   
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", options={"default" : NULL})
      */
-    private $image3;
+    private $image3 = null;
   
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", options={"default" : NULL})
      */
-    private $image4;
+    private $image4 = null;
   
      /**
      * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
@@ -62,13 +62,13 @@ class Creations
     private $imageFile2;
   
      /**
-     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image3")
      * @var File
      */
     private $imageFile3;
   
      /**
-     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image4")
      * @var File
      */
     private $imageFile4;

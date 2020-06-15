@@ -36,15 +36,15 @@ easy_admin:
       form:
         fields:
           - { property: titre, label: Titre de la création }
-          - { property: description, label: Description, type: 'fos_ckeditor' }
+          - { property: description, label: Description, type: 'fos_ckeditor', type_options: { required: true } }
           - { property: miseEnAvant, label: Création mise en avant }
-          - { property: imageFile, type: file }
+#          - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
-          - { property: imageFile2, type: file }
+#          - { property: imageFile2, type: file }
           - { property: imageFile2, type: vich_image, label: Création - Ajout d'images }
-          - { property: imageFile3, type: file }
+#          - { property: imageFile3, type: file }
           - { property: imageFile3, type: vich_image, label: Création - Ajout d'images }
-          - { property: imageFile4, type: file }
+#          - { property: imageFile4, type: file }
           - { property: imageFile4, type: vich_image, label: Création - Ajout d'images }
       list:
         fields:
