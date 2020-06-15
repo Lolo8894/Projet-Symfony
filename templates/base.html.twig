@@ -3,15 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">  
         
 
         <title>{% block title %}Bienvenue sur mon site{% endblock %}</title>
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+       
         <link rel="stylesheet" href="{{ asset('css/mediaqueries.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
        
 
         {% block stylesheets %}{% endblock %}
@@ -49,7 +50,7 @@
         
   <footer class="footer">
     <h6 class="copyright">&copy; <script>document.write(new Date(). getFullYear());</script> Les créations de Lyline - Tous droits réservés</h6>
-    <h6 class="confidentialite"><a class="politique_de_confidentialite" href="{{ path('politique_de_confidentialite') }}">Politique de confidentialité</a></h6>
+    <h6 class="confidentialite"><a class="politique_de_confidentialite" href="{{ path('politique_de_confidentialite') }}">Conditions générales d'utilisation</a></h6>
     <img class="instagram" src="{{ asset('images/instagram-logo.jpg') }}" alt="instagram-logo">
   </footer>
   

@@ -147,6 +147,11 @@ h5 {
 
 .lien-inscription {
   color: #0086ad;
+  transition: .5s ease-in-out;
+}
+
+.lien-inscription:hover {
+  color: #cb8fff;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -164,11 +169,11 @@ h5 {
   font-size: 50px;
   text-shadow: 1px 1px 2px #00000078;
   text-align: center;
-  padding: 50px 0 40px 0;
+  padding-top: 100px;
 }
 
 .transparent {
-  height: 190px;
+  height: 155px;
   border-radius: 0 0 20px 20px;
   box-shadow: 1px 1px 3px #00000078;
   background: #00000036;
@@ -214,7 +219,7 @@ h5 {
 #carrousel {
   display: flex;
   justify-content: center;
-  margin-left: 0 auto; /* Espace entre la bitmojo et le carrousel */
+  margin-left: 0 auto; /* Espace entre la bitmoji et le carrousel */
 }
 
 .slider {
