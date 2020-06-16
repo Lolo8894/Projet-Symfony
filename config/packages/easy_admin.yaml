@@ -29,6 +29,7 @@ easy_admin:
         fields:
           - { property: email, label: Mail }
           - { property: pseudo, label: Identifiant }
+          - { property: image, type: image, base_path: '%app.path.project_image%', label: Image }
           - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
     Creations :

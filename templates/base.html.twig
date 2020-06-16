@@ -18,26 +18,25 @@
         {% block stylesheets %}{% endblock %}
     </head>
 
-    <body class="container-site">
-         <!-- HEADER - NAVIGATION -->
+    <body class="body">
+                                        <!-- HEADER - NAVIGATION -->
+    <header class="header">
+      <h1 id= "logo"><a class="logo" href="{{ path('general_accueil') }}">Les créations de Lyline</a><span class="violet">.</span></h1>   
 
-  <header class="header">
-    <h1 id= "logo"><a href="{{ path('general_accueil') }}">Les créations de Lyline</a><span class="violet">.</span></h1>   
-
-      <nav>
-        <ul>
-          <li><a class="nav-bar" href="{{ path('general_accueil') }}"><span class="couleurs">.</span>Accueil</a></li>
-          <li><a class="nav-bar" href="{{ path('general_mes_creations') }}"><span class="couleurs">.</span>Mes créations</a></li>
-          <li><a class="nav-bar" href="{{ path('general_a_propos') }}"><span class="couleurs">.</span>A propos de moi</a></li>
-          <li><a class="nav-bar" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
-        </ul>
-      </nav>
-      
-       <div class="connexion-inscription">
-      <input class="connexion" value="Se connecter" type="submit">
-        <h5>Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
-    </div>
-  </header>
+        <nav>
+          <ul>
+            <li><a class="nav-bar" href="{{ path('general_accueil') }}"><span class="couleurs">.</span>Accueil</a></li>
+            <li><a class="nav-bar" href="{{ path('general_mes_creations') }}"><span class="couleurs">.</span>Mes créations</a></li>
+            <li><a class="nav-bar" href="{{ path('general_a_propos') }}"><span class="couleurs">.</span>A propos de moi</a></li>
+            <li><a class="nav-bar" href="{{ path('general_accueil') }}#formulaire"><span class="couleurs">.</span>Contactez-moi !</a></li>
+          </ul>
+        </nav>
+        
+        <div class="connexion-inscription">
+        	<input class="connexion" value="Se connecter" type="submit">
+          <h5 class="h5">Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
+      </div>
+    </header>
 
       {% block body %} {% endblock %}
        
@@ -46,13 +45,15 @@
         <script src="{{ asset('js/script.js') }}"></script>
         <script src="{{ asset('js/parallax.min.js') }}"></script>
         
-        {% block javascripts %}{% endblock %}
-        
-  <footer class="footer">
-    <h6 class="copyright">&copy; <script>document.write(new Date(). getFullYear());</script> Les créations de Lyline - Tous droits réservés</h6>
-    <h6 class="confidentialite"><a class="politique_de_confidentialite" href="{{ path('politique_de_confidentialite') }}">Conditions générales d'utilisation</a></h6>
-    <img class="instagram" src="{{ asset('images/instagram-logo.jpg') }}" alt="instagram-logo">
-  </footer>
+				{% block javascripts %}{% endblock %}
+				
+																				<!-- FOOTER -->
+    <footer class="footer">
+      <h6 class="copyright">&copy; <script>document.write(new Date(). getFullYear());</script> Les créations de Lyline - Tous droits réservés</h6>
+      <h6 class="confidentialite"><a class="politique_de_confidentialite" href="{{ path('politique_de_confidentialite') }}">Conditions générales d'utilisation</a></h6>
+      <h5 class="insta">Visiter mon compte instagram en cliquant ici<img class="arrow-right" src="{{ asset('images/arrow.png') }}" alt="arrow-right"></h5>
+      <a class="lien-instagram" href="https://www.instagram.com/lylineboutique/" target="new"><img class="logo-instagram" src="{{ asset('images/instagram-logo.jpg') }}" alt="instagram-logo"></a>
+    </footer>
   
    <!-- UN PETIT CODE JAVASCRIPT QUI PERMET A LA DATE DE SE GENERER ET DE SE METTRE A JOUR AUTOMATIQUEMENT -->
    

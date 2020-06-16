@@ -3,24 +3,25 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
-
+																				<!-- MES CREATIONS -->
 <section id="mes-creations">
 
   {% if creations|length == 0 %}
-    Pas de créations disponible.
+    Pas de création disponible.
   {% else %}
    {% for creation in creations %}
  <!-- Boucle for relié à celle définie dans mon controller General  -->
 
     <div class="carte">
       <div class="div-image">
-        <img class ="ensemble-creations" src="{{ asset('/images/' ~ creation.image) }}
+        <img class="ensemble-creations" src="{{ asset('/images/' ~ creation.image) }}
       " alt="Image">
         <h3 class="titre"><a class="lien-description" href="{{ path('description-creation', {id: creation.id}) }}">{{ creation.titre }}</a></h3>
       </div>
-           
-      <p class="description">{{ creation.description | raw }}</p> 
-   <!-- | raw permet de prendre en compte les balises et l'utf-8 de twig -->
+      <div class="div-description">    
+        <p class="sous-description">{{ creation.description | raw }}</p> 
+        <!-- | raw permet de prendre en compte les balises et l'utf-8 de twig -->
+      </div> 
     </div>
 
     {% endfor %}

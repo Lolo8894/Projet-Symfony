@@ -8,16 +8,28 @@
   outline: none;
   border: none;
 }
-/* Réinitialisation des paramètres de la page web */
-/* Outline, Border concernent les anciens navigateurs */
+/* réinitialisation des paramètres de la page web */
+/* Outline et Border concernent les anciens navigateurs */
 
+a {
+  display: inline-block; /* liens (et donc la navbar) alignés */
+} /* empêche les liens bootstrap, d'impacter mon CSS */
+
+a:hover {
+  display: inline-block;
+  text-decoration: none;
+} /* retire le soulignement des liens au survol */
+
+
+/* ------------------------------ base.html.twig ---------------------------- */
 /* -------------------------------------------------------------------------- */
 /*---------------------------------- BODY ----------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-.container-site {
+.body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   padding-bottom: 100px;
   position: relative;
@@ -28,11 +40,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-}
-/* Style par défaut si pas de style précis appliqué */
+} /* style du site par défaut si pas de style précis appliqué */
 
-
-/* ----------------------------- PAGE D'ACCUEIL ----------------------------- */
 
 /* -------------------------------------------------------------------------- */
 /*----------------------------- HEADER - NAVIGATION ------------------------- */
@@ -44,89 +53,69 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  position: sticky;
+  position: sticky; /* position fixe de la navbar avec Sticky et absolute sur le footer */
   top: 0;
-  z-index: 9999; /* Permet à la navbar de se superposer au-dessus du caroussel */
+  z-index: 9999; /* permet à la navbar de se superposer au-dessus du caroussel */
   width: 100%;
-  height: 100px; /*Hauteur du container contenant logo + navbar */
+  height: 87px; /* hauteur du container contenant logo + navbar */
   background-color:#fff;
-}
-/* Position fixe de la navbar avec Sticky et absolute sur le footer */
+} /* header contient tous les éléments (logo + navbar + bouton connexion + lien inscription) */
 
 #logo {
-  font-family: 'Pacifico', cursive;
-  margin-top: 10px;
+  font-family: 'Pacifico', cursive; /* font appliquée sur le logo */
+} /* id du h1 logo */
+
+.logo {
+  color: #ffb3ba;
+  font-size: 29px;
+  margin-bottom: 0.5rem; /* Couleur du texte du logo + taille du logo + positionnement */
+} /* classe du lien sur le logo */
+
+.logo:hover {
+  color: #ffb3ba;
+  font-size: 29px;
+  text-decoration: none;
 }
-/* Ajustement écart du haut du logo */
 
 .violet {
-  font-size: 32px;
+  font-size: 32px; /* taille du point */
   color: #cb8fff;
-}
-/* Style du point sur le logo */
-
-.nav-bar{
-  padding-top: 10px;
-  display: inline-block;
-  
-}
-/* Ajustement écart du haut de la navbar */
+} /* classe appliquée au span représentant le point du logo */
 
 nav ul li {
   display: inline-block;
   margin-right: 20px;
-}
-/* La navbar alignée sur une ligne + Espacement entre les éléments de la nav*/
+} /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
 
 nav ul li a {
-  font-family: 'Indie Flower', cursive;
-  color: #0086ad;
+  font-family: 'Indie Flower', cursive; /* Font + couleur appliquée sur la navbar */
+  color: #0086ad; 
   font-weight: bold;
   font-size: 25px;
   transition: .4s ease-in-out;
-}
-/* Font + couleur appliquée sur la navbar */
+} /* style appliqué sur la liste non ordonnée + liens de la navbar */
 
 nav ul li a:hover {
   font-family: 'Indie Flower', cursive;
-  color: #0086ad;
   font-weight: bold;
   font-size: 25px;
   color: #cb8fff;
-}
-
-.couleurs {
-  font-size: 32px;
-  color: #fa8072;
-}
-/* Style des points sur chaque élément de la nav */
-
-a {
-  color: #ffb3ba;
-  font-size: 29px;
-  margin-top: 25px;
-} /* Couleur du texte du logo + taille du logo + positionnement */
-
-a:hover {
-  color: #ffb3ba;
-  font-size: 29px;
-  text-decoration: none;
-}
-
-.nav {
-  text-decoration: none;
-  transition: .5s ease-in-out;
-}
-/* Supprime le soulignement des liens de la navnar */
+} /* effet au survol */
 
 ul {
   list-style: none;
+  margin-bottom: 0;
 }
-/* Supprime les puces de la navbar */
+/* supprime les puces de la navbar */
+
+.couleurs {
+  font-size: 32px; /* taille de chaque point */
+  color: #fa8072;
+} /* classe appliquée au span représentant les points sur la navbar */
 
 .connexion-inscription {
-  margin-top: 12px; 
-} /* Règlage en hauteur de la div .connexion-inscription */
+  margin-top: 0.5rem; /* Règlage en hauteur de la div .connexion-inscription */
+} /* div contenant l'input .connexion + .h5 + .lien-inscription */
 
 .connexion {
   margin-bottom: 12px; /* Règlage espace entre bouton connexion et lien vers inscription */
@@ -141,8 +130,8 @@ ul {
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
   height: 3rem; 
-}
-/* Styliser le bouton "Connexion" */
+} /* Style du bouton "Connexion" */
+
 
 .connexion:hover {
   background: #fff;
@@ -150,14 +139,14 @@ ul {
   border: 0.5px solid #777;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   height: 3rem; /* Associé à la hauteur du .connexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
-}
-/* Styliser le bouton "Connexion" au survol */
+} /* effet au survol */
 
-h5 {
+
+.h5 {
   font-family: 'Varela Round', sans-serif;
   font-size: 13px;
   color: #777;
-}
+} /* style appliqué sur "Pas encore inscrit ?" */
 
 .lien-inscription {
   font-family: 'Varela Round', sans-serif;
@@ -165,63 +154,64 @@ h5 {
   font-weight: bold;
   color: #0086ad;
   transition: .5s ease-in-out;
-}
+} /* class du lien vers inscription (encapsulé dans la .h5) */
 
 .lien-inscription:hover {
   font-family: 'Varela Round', sans-serif;
   font-size: 13px;
   color: #cb8fff;
-}
+} /* effet au survol */
 
+/* ------------------------- END - base.html.twig --------------------------- */
+
+
+/* -------------------------- accueil.html.twig ----------------------------- */
 /* -------------------------------------------------------------------------- */
-/*------------------------------- IMAGE PRINCIPALE -------------------------- */
+/*--------------------------- IMAGE PRINCIPALE ------------------------------ */
 /* -------------------------------------------------------------------------- */
 
 #image_principale {
   height: 280px;
+  width: 100%;
   background: url("/images/multiwools.jpg") no-repeat;
   border-radius: 0 0 20px 20px;
-}
+} /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-#image_principale h2 {
+.transparent {
+  /* STYLE DU MESSAGE DE BIENVENUE */
   color: #f5f5f5;
   font-size: 50px;
   text-shadow: 1px 1px 2px #00000078;
   text-align: center;
   padding-top: 100px;
-}
 
-.transparent {
-  height: 280px;
+  /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+  background: #00000036; /* film transparent noir léger */
+  height: 280px; /* hauteur du film transparent (identique à celle de la section) */
   border-radius: 0 0 20px 20px;
   box-shadow: 1px 1px 3px #00000078;
-  background: #00000036;
-}
+} /* class donnée au h2 */
+
 
 /* -------------------------------------------------------------------------- */
-/*------------------------------- IMAGES SUR LE COTE DU CARROUSEL ------------------------ */
+/*------------------------------- CARROUSEL D'IMAGES ------------------------ */
 /* -------------------------------------------------------------------------- */
 
- @keyframes movetop {
-   from {
-        top: 0px;
-    }
-    to {       
-        top: 26rem;
-    }
-} 
+#carrousel {
+  margin-left: 0 auto; /* Espace entre la bitmoji et le carrousel */
+} /* section qui contient carrousel + bitmoji */
+
+
+/* ------------------------------- Image Bitmoji ---------------------------- */
 
 .bitmoji-image-principale {
-/*  background: yellow; / Pour y voir plus clair LOL */
-  display: flex;
-  justify-content: center;
   margin-top: 120px;
-  margin-left: 110px; /* Espace de la div côté gauche */
+  margin-left: 129px; /* Espace de la div côté gauche */
   position: absolute;
   top: 26rem; /* Permet au bloc de se fixer suite à l'animation */
   left: 0;
-  animation: 3s movetop;
-} /* Animation qui fonctionne avec la Keyframes juste au-dessus */
+  animation: 3s movetop; /* animation de la bitmoji qui fonctionne avec la Keyframes juste au-dessous */
+} /* div qui contient l'image comportant la .bitmoji-coeur */
 
 .bitmoji-coeur {
   height: 302px;
@@ -229,39 +219,41 @@ h5 {
   border-radius: 90px;
   border: 1px solid #808080;
   box-shadow: 0 0 7px 0 #cb8fff;
-}
+} /* classe de l'image bitmoji-coeur */
 
-/* -------------------------------------------------------------------------- */
-/*------------------------------- CARROUSEL D'IMAGES ------------------------ */
-/* -------------------------------------------------------------------------- */
+@keyframes movetop {
+  from {
+       top: 0;
+   }
+   to {       
+       top: 26rem;
+   }
+} 
+/* la bitmoji va partir de 0 (du haut) et s'arrêter à 26 rem (sur le même axe) */
 
-#carrousel {
-  display: flex;
-  justify-content: center;
-  margin-left: 0 auto; /* Espace entre la bitmoji et le carrousel */
-}
+/* ---------------------------- END - Image Bitmoji ------------------------- */
+
 
 .slider {
-  overflow: hidden;
+  overflow: hidden; /* permet de cacher les photos pour qu'elles ne s'affichent que dans l'écran du carrousel */
   width: 800px;
-  height: 500px;
+  height: 500px; /* dimensions du carrousel */
   border: 30px solid white;
   box-shadow: 1px 1px 3px #00000078;
-} /* div qui contient le carrousel + dimensions du carrousel */
+} /* div qui contient le carrousel */
 
-figure {
+.div-images-carrousel {
   position: relative;
   width: 500%;
   margin: 0;
   left: 0;
-  animation: 20s slider infinite;
-} /* div qui contient les images */
+  animation: 20s slider infinite; /* animation du carrousel qui fonctionne avec la Keyframes juste au-dessous */
+} /* div qui contient les images du carrousel */
 
 .images-carrousel {
-  float: left;
-  width: 20%;
-} /* Chaque image 
-     Le width: 20% place correctement une image par séquence */ 
+  float: left; /* nécessaire au bon positionnement des images dans le carrousel */
+  width: 20%; /* place correctement chaque image par séquence */ 
+} /* classe donnée à chaque image du carrousel */
 
 @keyframes slider {
   0% {
@@ -300,40 +292,12 @@ figure {
     left: -400%;
   }
 }
+/* Indique de manière progressive comment les images vont s'enchaîner verticalement */
+
 
 /* -------------------------------------------------------------------------- */
 /*-------------------------- FORMULAIRE DE CONTACT -------------------------- */
 /* -------------------------------------------------------------------------- */
-
-@keyframes movelyline {
-  from {
-      right: 50%;
-  }
-  to {       
-      right: 0px;
-  }
-}
-
-.bitmoji-image {
-/*  background: blue; Pour y voir plus clair LOL */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  position: relative;
-  top: 0;
-  right: 0; /* Permet au bloc de se fixer suite à l'animation */
-  animation: 3s movelyline;
-}
-
-.bitmoji-enveloppe {
-  height: 302px;
-  width: 302px;
-  border-radius: 90px;
-  border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff;
-}
 
 #formulaire {
   padding: 20px 0px 60px 0px;
@@ -344,66 +308,62 @@ figure {
   margin: 0 auto;
   color: #777;
   font-size: 15px;
-  box-shadow: 0 0px 3px 3px #c39797;
-}
-/* Style de la box-shaddow qui contient tout */
+  box-shadow: 0 0px 3px 3px #c39797; /* style de la box-shaddow */
+} /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
 
 .titre-formulaire {
   font-weight: bold;
   color: #777;
   font-size: 21px;
-}
-/* Intéressé ? Contactez-moi ! */
+} /* h3 "Intéressé ? Contactez-moi !" */
 
 .contact {
   border: 0.07px solid #CFACAC;
   background-color:#c39797;
-}
-/* Style de la div .contact à l'intérieur du bloc #formulaire */
+} /* style de la div .contact à l'intérieur de la section #formulaire */
 
 .champs {
   color: #0A4589;
   font-size: 18px;
-  font-weight: bold;
-}
-/* Style des labels nom, prénom, email et message */
+  font-weight: bold; /* style des labels nom, prénom, email et message */
+} /* div qui contient les labels */
+
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
 
 #contact_Nom, #contact_Prenom, #contact_email {
-/*  background-color: aqua;*/
-  width: 290px; /* largeur de l'input */
+  width: 290px; /* largeur des inputs */
   padding: 5px; /* hauteur des inputs */
   font-size: 15px;
   border: 1px solid #777;
   border-radius: 5px;
-  margin-left: 147px; /* Règlage au centre de l'input */
-} /* Inputs nom, prénom et email */
+  margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
 
 .form-group {
-/*  background-color: blueviolet;*/
-  display: flex;
-  flex-direction: column; /* Centre le tout en colonne */
-  padding-top: 5px; /* Espace en haut entre input et submit */
+  padding-top: 5px; /* espace en haut entre input et submit */
   padding-bottom: 5px; /* complète le padding-top: 5px; */
 } /* div entourant les labels + les inputs */
 
 .control-label {
-/*  background-color: brown;*/
-  margin-bottom: 5px; /* Espacement du haut entre label et input */
+  margin-bottom: 5px; /* espacement du haut entre label et input */
 } /* div contenant les labels nom / prénom / email /message */
 
 #contact_Message {
-  margin-left: 147px; /* Règlage au centre de l'input */
+  margin-left: 147px; /* règlage au centre de l'input */
   width: 300px;
   height: 300px;
   font-size: 15px;
-  resize: none;
+  resize: none; /* fixe le textarea et empêche qu'on l'étire */
   border: 1px solid #777;
   border-radius: 5px;
   font-family: 'Varela Round', sans-serif;
-} /* Input textarea */
+} /* input textarea */
 
 #contact_Envoyer {
-  margin-left: 249px; /* Règlage au centre du submit */
+  display: flex;
+  flex-direction: column; /* centre le bouton en colonne */
+  margin-left: 249px; /* règlage au centre du submit */
   width: 100px;
   margin-bottom: 21px;
   line-height: 36px; 
@@ -412,13 +372,12 @@ figure {
   font-size:18px;
   font-weight: bold;
   background:#fff;
-  padding: 8px;
   cursor: pointer; 
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
   height: 3rem;
-} /* Bouton Envoyer */
+} /* bouton "Envoyer" */
 
 #contact_Envoyer:hover {
   background: #0A4589;
@@ -427,11 +386,49 @@ figure {
   border: 1px solid grey;
   box-shadow: 3px 3px 3px 0px #fff;
   height: 3.5rem;
-} /* Animation au survol du bouton Envoyer */
+} /* animation au survol du bouton Envoyer */
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
 
 
+/* ------------------------------- Image Bitmoji ---------------------------- */
+
+.bitmoji-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  right: 0; /* permet au bloc de se fixer suite à l'animation */
+  animation: 3s movelyline; /* fonctionne avec la keyframes ci-dessous */
+} /* div qui contient la .bitmoji-enveloppe */
+
+.bitmoji-enveloppe {
+  height: 302px;
+  width: 302px;
+  border-radius: 90px;
+  border: 1px solid #808080;
+  box-shadow: 0 0 7px 0 #cb8fff;
+} /* image de la bitmoji identifiée par sa classe */
+
+@keyframes movelyline {
+  from {
+      right: 50%;
+  }
+  to {       
+      right: 0;
+  }
+}
+/* la bitmoji va partir de 50% de la droite (commande inversée) et s'arrêter à 0 (sur le même axe) */
+
+/* ---------------------------- END - Image Bitmoji ------------------------- */
+
+
+/* ------------------------ END - accueil.html.twig ------------------------- */
+
+
+/* ------------------------ mes_creations.html.twig ------------------------- */
 /* -------------------------------------------------------------------------- */
-/*-------------------------- MES CREATIONS -------------------------- */
+/*------------------------------ MES CREATIONS ------------------------------ */
 /* -------------------------------------------------------------------------- */
 
 #mes-creations {
@@ -440,7 +437,7 @@ figure {
   justify-content: flex-start;
   align-items: center;
   padding: 30px 30px 0 30px;
-}
+} /* section qui contient toutes les cartes */
 
 .carte {
   height: 25rem;
@@ -450,241 +447,320 @@ figure {
   border-radius: 5px;
   background-color: #f7f7f7;
   box-shadow: 1px 1px 6px grey;
-}
+} /* div de la carte */
 
 .div-image {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #00000028;
-}
+} /* div contient image + le h3 */
 
 .ensemble-creations {
   max-height: 10rem;
   border-radius: 10px;
-}
-
-.description {
-  text-align: justify;
-  font-size: 1rem;
-}
+} /* classe de chaque image */
 
 .lien-description {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: #777;
   transition: .2s ease-in-out;
-}
+} /* classe associée au lien du h3 */
 
 .lien-description:hover {
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: bold;
   color: #0086ad;
-}
+} /* effet au survol de la classe associée au lien du h3 */
 
-/* ----------------------------- DESCRIPTION 1 ------------------------------ */
+.div-description {
+  width: 600px;
+  height: 400px; 
+} /* div contenant la description sur chaque carte */
+
+.sous-description {
+  width: 0;
+  height: 0;
+   text-align: justify;
+} /* classe du paragraphe de chaque description */
+
+/* --------------------- END - mes_creations.html.twig ---------------------- */
+
+
+/* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 .titre-creation {
   text-align: center;
-  padding: 40px 0 40px 0;
-  /* Pour régler le top et le bottom les 0 correspondent au règlage gauche et droite du heading  */
+  width: 65rem;
+  padding: 30px 0 20px 0;
   margin: 30px 290px 0 290px;
   background-color: #fff;
-  font-size: 35px;
-}
+  font-size: 27px;
+  font-weight: bold;
+} /* classe du h3 */
 
-#affichage {
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
   display:flex;
-  align-items: center; /* Ajuster l'espace en haut du block centré */
+  align-items: center;
+  justify-content: center; /* bloc centré avec Flex box */
+  width: 65rem;
+  height: 48rem;
+  background: Rgba(255, 255, 255, 0.5); /* transparent */
+} /* section qui contient images */
+
+.description {
+  display:flex;
+  align-items: center;
   justify-content: center;
-  background: Rgba(255, 255, 255, 0.5);
-  margin: 0 290px 0 290px; /* règlage bloc transparent gauche et droite */
-} /* Le bloc qui contient toutes les images avec filtre transparent */
+  width: 600px;
+  height: 600px;
+  font-size: 1rem;
+} /* div qui contient l'image principale */
 
 #picture {
-  width: 600px;
-  height: 600px; /* Dimensions contenant de l'image */
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Dimensions de l'image dans la div description */
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
   margin-right: 50px;
   border: 3px solid #c39797;
   border-radius: 8px;
-} /* L'image sélectionnée */
+} /* id de l'image principale */
 
 .choix {
-  padding: 20px 0 20px 0;
-} /* La div qui entoure toutes les vignettes */
+  padding: 20px 0 20px 20px;
+} /* La div qui entoure toutes les vignettes (div .creation) */
 
 .creation img {
-  margin-top: 5px; /* Espace entre les vignettes */
+  margin-top: 5px; /* Espace vertical entre les vignettes */
   width: 110px;
   border: 3px solid #c39797;
   border-radius: 8px;
   cursor: pointer;
-} /* Les vignettes alignées les unes en dessous des autres */
-
-.details {
-  padding: 20px 0 20px 0;
-  margin: 0 290px 0 290px;
-  background-color: #fff;
-  line-height: 30px;
-} /* Texte de la description */
-
-.description-creation {
-  margin-left: 150px;
-}
-
-.texte {
-  text-align: justify;
-/*  line-height: 30px;*/
-}
-
-                            /* COMMENTAIRE */
-
-.commentaires {
-  padding-top: 30px;
-  padding: 20px 0 20px 0;
-  margin: 0 290px 0 290px;
-  background-color: Rgba(255, 255, 255, 0.5);
-  line-height: 30px;
-  
-}
-
-.commentaires-creation {
-  margin-left: 150px;
-}
-
-/* ----------------------------- A PROPOS DE MOI ---------------------------- */
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
 
 /* -------------------------------------------------------------------------- */
-/*------------------------------- QUI SUIS-JE ? ----------------------------- */
+/* ----------------------------- DESCRIPTION -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.details {
+  width: 65rem;
+  min-height: 15rem;
+  padding: 20px 0 20px 0;
+  background-color: #fff;
+  line-height: 30px;
+} /* div qui entoure le h3 .description-creation et le p .texte */
+
+.description-creation {
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+} /* h3 de l'encadré description */
+
+.texte-description {
+  text-align: justify;
+  margin-left: 2rem;
+} /* classe du paragraphe */
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+  padding-top: 1rem;
+  margin-bottom: 30px;
+  width: 65rem;
+  min-height: 15rem;
+  background-color: Rgba(255, 255, 255, 0.5);
+  line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+.commentaires-creation {
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: bold;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+/* ---------------------- END - description1.html.twig ---------------------- */
+
+
+/* ------------------------ general_a_propos.html.twig ---------------------- */
+/* -------------------------------------------------------------------------- */
+/*------------------------------ A PROPOS DE MOI ---------------------------- */
 /* -------------------------------------------------------------------------- */
 
 #lyline-hello {
   display: flex;
   justify-content: center;
   align-items: center;
-} /* La section qui contient l'image de Lyline */
+} /* section qui contient l'image de Lyline */
 
 .lyline-se-presente {
   margin-top: 30px;
   width: 280px;
   border: 1px solid #808080;
   border-radius: 200px;
-} /* L'image en elle-même de Lyline */
+} /* classe de l'image de Lyline */
 
-/* ------ PARTIE QUI SUIS-JE ? ------ */
+
+/* -------------------------------------------------------------------------- */
+/*------------------------------- QUI SUIS-JE ? ----------------------------- */
+/* -------------------------------------------------------------------------- */
 
 #qui-suis-je {
-  width: 80%;
-  margin: 0 auto;
+  width: 80%; /* largeur de l'encadré */
   margin-top: 30px;
   margin-bottom: 30px;
   background: #fff;
   min-width: 480px;
-  box-shadow: 0 0 7px 0 #fa8072;
-}
-/* Stylisation de l'encadré */
+  box-shadow: 0 0 7px 0 #fa8072; /* Stylisation de chaque encadré */
+} /* section qui contient tout l'encadré "Qui suis-je ?" */
 
-h2 {
+
+.qui-suis-je {
+  margin-top: 30px;
   color: #0086ad;
   font-size: 30px;
   text-align: center;
-  padding: 25px 0 25px 0;
-} /* Qui suis-je ? */
+} /* h2 "Qui suis-je ?" */
 
 .paragraphe-a-propos {
   color: #777;
   font-size: 20px;
   text-align: center;
-  margin-right: 150px;
-  margin-left: 150px;
-} /* Le texte */
+} /* chaque paragraphe contenant les textes */
 
 .salutations {
+  margin-bottom: 30px;
   text-align: center;
-} /* La signature "Lyline." centrée */
+} /* div contenant la signature */
 
 .signature {
   color: #ffb3ba;
   font-family: 'Pacifico', cursive;
   text-align: center;
   font-size: 30px;
-} /* Style octroyé à la signature */
+} /* Stylisation du h2 de la signature */
 
-/* ------ PARTIE MES FOURNISSEURS ------ */
+
+/* -------------------------------------------------------------------------- */
+/*---------------------------- MES FOURNISSEURS ----------------------------- */
+/* -------------------------------------------------------------------------- */
 
 #mes-fournisseurs {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
+  width: 80%; /* largeur de l'encadré */
   margin-bottom: 30px;
   background: #fff;
   min-width: 480px;
-  box-shadow: 0 0 7px 0 #fa8072;
-} /* Stylisation de l'encadré */
+  box-shadow: 0 0 7px 0 #fa8072; /* Stylisation de l'encadré */
+} /* section qui contient tout l'encadré "Mes fournisseurs" */
 
-.zeeman-yarnparadis {
+.mes-fournisseurs {
+  margin-top: 30px;
+  color: #0086ad;
+  font-size: 30px;
+  text-align: center;
+} /* h2 "Mes fournisseurs" */
+
+.zeeman-iceyarns {
   color: #777;
   font-size: 20px;
-}
+  transition: .5s ease-in-out;
+} /* class apposée sur les 2 liens vers des pages internet */
 
-/* ------ PARTIE MES INSPIRATIONS ET ASTUCES ------ */
+.zeeman-iceyarns:hover {
+  color: #ffb3ba;
+  font-size: 20px;
+} /* effet au survol */
+
+
+/* -------------------------------------------------------------------------- */
+/*----------------------- MES INSPIRATIONS ET ASTUCES  ---------------------- */
+/* -------------------------------------------------------------------------- */
 
 #mes-inspirations-astuces {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
+  width: 80%; /* largeur de l'encadré */
   margin-bottom: 30px;
   background: #fff;
   min-width: 480px;
-  box-shadow: 0 0 7px 0 #fa8072;
-} /* Stylisation de l'encadré */
+  box-shadow: 0 0 7px 0 #fa8072; /* Stylisation de l'encadré */
+} /* section qui contient tout l'encadré "Mes inspirations et astuces" */
 
-/* ------ PARTIE MES ACTIONS CARITATIVES ------ */
+.mes-inspirations-astuces {
+  margin-top: 30px;
+  color: #0086ad;
+  font-size: 30px;
+  text-align: center;
+} /* h2 "Mes inspirations et astuces" */
+
+
+/* -------------------------------------------------------------------------- */
+/*-------------------------- MES ACTIONS CARITATIVES ------------------------ */
+/* -------------------------------------------------------------------------- */
 
 #actions-caritatives {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 80%; /* largeur de l'encadré */
   background: #fff;
   min-width: 480px;
-  box-shadow: 0 0 7px 0 #fa8072;
+  box-shadow: 0 0 7px 0 #fa8072; 
 } /* Stylisation de l'encadré */
 
+.actions-caritatives {
+  margin-top: 30px;
+  color: #0086ad;
+  font-size: 30px;
+  text-align: center;
+} /* h2 "Mes actions caritatives" */
+
 #bonnet-innocent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
+} /* section qui contient les images des bonnets Innocent */
 
-.affiche-innocent {
-  border: 1px solid #808080;
-  width: 380px;
-}
-
-.bonnet1 {
+.bonnet-innocent-1 {
   margin-right: 200px;
   height: 302px;
   width: 302px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff;
-}
+  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+} /* classe donnée à la première image */
 
-.bonnet2 {
+.affiche-innocent {
+  border: 1px solid #808080;
+  width: 380px;
+} /* classe donnée à la deuxième image */
+
+.bonnet-innocent-2 {
   margin-left: 200px;
   height: 300px;
   width: 350px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54;
-}
+  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+} /* classe donnée à la troisième image */
+
+/* -------------------- END - general_a_propos.html.twig -------------------- */
 
 
+/* ------------------------------ base.html.twig ---------------------------- */
 /* -------------------------------------------------------------------------- */
 /*---------------------------------- FOOTER --------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -702,55 +778,79 @@ h2 {
   background: #fff;
   font-size: 19px;
   box-shadow: 0 0 7px 0 #cb8fff;
-}
+} /* div contenant tous les éléments du footer */
 
 .copyright {
   padding-top: 40px;
   margin-right: 5rem; /* Distance entre les élements du footer */
   text-align: center;
   color: #808080;
-}
+} /* classe du h6 "Copyright" */
 
 .confidentialite {
   padding-top: 40px;
   margin-right: 5rem;
   text-align: center;
   color: #808080;
-}
-
-.instagram {
-  margin-top: 1.5rem;
-  height: 3rem;
-  width: 3rem;
-}
-
-                  /*PAGE POLITIQUE DE CONFIDENTIALITE ET CGU*/
-
-#CGU-container {
-  background-color: #00000028;
-  color: black;
-  padding: 30px 30px 30px 30px;
-  text-align: center;
-}
-
-.CGU-h1 {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.CGU-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-}
+} /* classe du h6 "Conditions générales d'utilisation" */
 
 .politique_de_confidentialite {
   font-size: 15px;
   color: #ffb3ba;
   text-shadow: 1px 1px 1.5px #00000007;
-}
+  transition: 0.5s ease-in-out;
+} /* classe associée au lien */
 
 .politique_de_confidentialite:hover {
   font-size: 15px;
   color: #0086ad;
+} /* effet au survol */
+
+.lien-instagram {
+  margin-top: 0;
+} /* classe associée au lien vers la page instagram de Lyline */
+
+.logo-instagram {
+  margin-top: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  transition: 0.5s ease-in-out;
+} /* classe associée au logo instagram (encapsulé dans le lien) */
+
+.insta {
+  font-size: 13px;
+  color: #777;
+  padding-top: 1.7rem;
 }
+
+.arrow-right {
+  height: 3rem;
+  width: 3rem;
+}
+
+/* ------------------------- END - base.html.twig --------------------------- */
+
+
+/* ----------------- politique_de_confidentialite.html.twig ----------------- */
+/* -------------------------------------------------------------------------- */
+/*------------------- POLITIQUE DE CONFIDENTIALITE ET CGU ------------------- */
+/* -------------------------------------------------------------------------- */
+
+#CGU-container {
+  color: black;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+} /* section qui contient tous les éléments */
+
+.CGU-h1 {
+  font-size: 20px;
+  font-weight: bold;
+} /* classe associée au h1 */
+
+.CGU-h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+} /* classe associée aux h2 */
+
+/* -------------- END - politique_de_confidentialite.html.twig -------------- */

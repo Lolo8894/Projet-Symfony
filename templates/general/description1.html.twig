@@ -3,12 +3,12 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
-
+																				<!-- TITRE -->
 <h3 class="titre-creation">{{ creation.titre }}</h3>
-
-	<section id ="affichage">
+																				<!-- IMAGES -->
+	<section class="affichage">
 		<div class="description">
-			<img src="{{ asset('/images/' ~ creation.image) }}" alt="imageCiblée" id="picture">
+			<img id="picture" src="{{ asset('/images/' ~ creation.image) }}" alt="imageCiblée">
 		</div>		
 	<!-- Ne fonctionne que s'il y a un id -->
 	<!-- Ne s'affiche que si il y a une seconde image -->
@@ -35,17 +35,17 @@
 		</div>   
 	{% endif %}	
     </section>
-    
+																				<!-- DESCRIPTION -->
         <div class="details">
           <h3 class="description-creation">Description :</h3>
       
-          <p class="texte">{{ creation.description | raw }}</p>
+          <p class="texte-description">{{ creation.description | raw }}</p>
         </div>  
-        
+																				<!-- COMMENTAIRES -->
         <div class="commentaires">
           <h3 class="commentaires-creation">Commentaires :</h3>
       
-          <p class="texte">Pseudo</p>
+          <p class="texte-commentaires">Pseudo</p>
         </div>    
   
 <script src="{{ asset('js/script.js') }}"></script>
