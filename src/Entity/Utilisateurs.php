@@ -5,6 +5,7 @@ use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  *@ORM\Entity(repositoryClass="App\Repository\UtilisateursRepository")
@@ -31,16 +32,21 @@ class Utilisateurs
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(min="8", minMessage="Votre mot de passe doit faire au minimum 8 caractères.")
      */
     private $motdepasse;
 
+    /**
+     * @Assert\EqualTo(propertyPath="motdepasse", message="Votre mot de passe doit être identique.")
+     */
     public $confirm_motdepasse;
-  
+        // L'annotation @Assert\EqualTo est relié à confirm_motdepasse car cette méthode s'assure que le mot de passe saisi dans
+        // mot de passe soit identique à la confirmation de celui-ci.
     /**
      * @ORM\Column(type="string", length=255)
      * @var string
      */
-    private $image;
+    private $avatar;
 
     /**
      * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
@@ -59,14 +65,14 @@ class Utilisateurs
         return $this->id;
     }
   
-    public function setImageFile(File $image = null)
+    public function setImageFile(File $avatar = null)
     {
-        $this->imageFile = $image;
+        $this->imageFile = $avatar;
 
         // VERY IMPORTANT:
         // It is required that at least one field changes if you are using Doctrine,
         // otherwise the event listeners won't be called and the file is lost
-        if ($image) {
+        if ($avatar) {
             // if 'updatedAt' is not defined in your entity, use another property
             $this->updatedAt = new \DateTime('now');
         }
@@ -77,14 +83,14 @@ class Utilisateurs
         return $this->imageFile;
     }
 
-    public function setImage($image)
+    public function setAvatar($avatar)
     {
-        $this->image = $image;
+        $this->avatar = $avatar;
     }
 
-    public function getImage()
+    public function getAvatar()
     {
-        return $this->image;
+        return $this->Avatar;
     }
 
     public function getEmail(): ?string

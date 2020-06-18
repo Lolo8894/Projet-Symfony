@@ -17,6 +17,7 @@ class InscriptionType extends AbstractType
             ->add('pseudo')
             ->add('motdepasse', PasswordType::class)
             ->add('confirm_motdepasse', PasswordType::class)
+            ->add('avatar')
         ; // PasswordType est une classe de Symfony qui permet de cacher les mots de passe par des puces.
     }
 

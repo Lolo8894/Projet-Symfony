@@ -22,11 +22,12 @@ class SecurityController extends AbstractController
         $form = $this->createForm(InscriptionType::class, $utilisateurs);
 
         $form->handleRequest($request);
-
+        // Analyse la requête qui sera envoyée via le formulaire d'inscription.
         if($form->isSubmitted() && $form->isValid()) {
             $manager->persist($utilisateurs);
             $manager->flush();
-        }
+        } // Si le formulaire est soumis et que ses champs sont valide
+          // Alors fait persister le formulaire et envoi les données.
       
         return $this->render('security/inscription.html.twig', [
           'form' => $form->createView()
