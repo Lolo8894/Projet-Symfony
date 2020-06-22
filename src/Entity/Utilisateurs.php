@@ -51,7 +51,7 @@ class Utilisateurs
 
 
     /**
-     * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
+     * @Vich\UploadableField(mapping="project_image", fileNameProperty="avatar")
      * @var File
      */
     private $imageFile;
