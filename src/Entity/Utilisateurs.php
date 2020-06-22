@@ -59,7 +59,12 @@ class Utilisateurs
      * @var \DateTime
      */
     private $updatedAt;
-  
+
+    public function __construct()
+    {
+        $this->updatedAt = new \DateTime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
