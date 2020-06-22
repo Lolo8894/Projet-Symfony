@@ -90,7 +90,7 @@ class Utilisateurs
 
     public function getAvatar()
     {
-        return $this->Avatar;
+        return $this->avatar;
     }
 
     public function getEmail(): ?string
