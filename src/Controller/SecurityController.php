@@ -5,10 +5,11 @@ namespace App\Controller;
 use App\Entity\Utilisateurs;
 use App\Form\InscriptionType;
 
-use Symfony\Component\HttpFoundation\Request;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
 {
@@ -34,5 +35,23 @@ class SecurityController extends AbstractController
         return $this->render('security/inscription.html.twig', [
           'form' => $form->createView()
       ]);
+    }
+
+
+    /**
+    * @Route("/connexion", name="security_connexion")
+    */
+    public function connexion(AuthenticationUtils $authenticationUtils) {
+
+      $error = $authenticationUtils->getLastAuthenticationError();
+      // Erreur d'authentification
+
+      $lastUsername = $authenticationUtils->getLastUsername();
+      // Garde en mémoire le pseudo en cas d'erreur de saisie.
+
+      return $this->render('security/connexion.html.twig', [
+        'last_username' => $lastUsername,
+        'error' => $error ]
+      );
     }
 }

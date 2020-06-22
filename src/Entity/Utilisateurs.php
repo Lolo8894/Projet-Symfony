@@ -1,17 +1,18 @@
 <?php
 
 namespace App\Entity;
-use Symfony\Component\HttpFoundation\File\File;
-use Vich\UploaderBundle\Mapping\Annotation as Vich;
-
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  *@ORM\Entity(repositoryClass="App\Repository\UtilisateursRepository")
  *@Vich\Uploadable
  */
-class Utilisateurs
+class Utilisateurs implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -133,5 +134,31 @@ class Utilisateurs
         $this->motdepasse = $motdepasse;
 
         return $this;
+    }
+
+    public function getRoles() {         
+    
+        return [];
+    }
+    
+    public function getPassword() {
+        
+        return $this->getMotdepasse();
+
+    }      
+    
+    public function getSalt() {         
+        
+        return null;
+
+    }      
+    public function getUsername() {         
+        
+        return $this->getEmail();
+    }      
+
+    public function eraseCredentials() {         
+        
+        // TODO: Implement eraseCredentials() method.     
     }
 }
