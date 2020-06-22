@@ -43,10 +43,12 @@ class Utilisateurs
         // L'annotation @Assert\EqualTo est relié à confirm_motdepasse car cette méthode s'assure que le mot de passe saisi dans
         // mot de passe soit identique à la confirmation de celui-ci.
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      * @var string
      */
     private $avatar;
+    // nullable=true, autorise à ce que l'avatar reste vide.
+
 
     /**
      * @Vich\UploadableField(mapping="project_image", fileNameProperty="image")
@@ -59,7 +61,11 @@ class Utilisateurs
      * @var \DateTime
      */
     private $updatedAt;
-  
+    
+    public function __construct() {
+        $this->updatedAt=new \DateTime();
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -90,7 +96,7 @@ class Utilisateurs
 
     public function getAvatar()
     {
-        return $this->Avatar;
+        return $this->avatar;
     }
 
     public function getEmail(): ?string
