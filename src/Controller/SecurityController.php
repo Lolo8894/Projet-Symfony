@@ -26,6 +26,9 @@ class SecurityController extends AbstractController
         if($form->isSubmitted() && $form->isValid()) {
             $manager->persist($utilisateurs);
             $manager->flush();
+
+            $this->addFlash('success', 'Inscription réussi');
+            return $this->redirectToRoute('general_accueil');
         } // Si le formulaire est soumis et que ses champs sont valide
           // Alors fait persister le formulaire et envoi les données.
       
