@@ -33,7 +33,8 @@
         </nav>
         
         <div class="connexion-inscription">
-        	<input class="connexion" value="Se connecter" type="submit">
+
+          <form action="{{ path('security_connexion') }}"><input class="connexion" value="Se connecter" type="submit"></form>
           <h5 class="h5">Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
       </div>
     </header>
