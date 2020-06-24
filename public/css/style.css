@@ -141,6 +141,34 @@ ul {
   height: 3rem; /* Associé à la hauteur du .connexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
 } /* effet au survol */
 
+.deconnexion-logout {
+  margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+} /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+
+.deconnexion {
+  margin-bottom: 12px; /* Règlage espace entre bouton déconnexion et lien vers inscription */
+  line-height: 36px;
+  text-align: center;
+  color:#fff;
+  font-size:18px;
+  background-color: #0A4589;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 9px 24px;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  transition: .5s ease-in-out;
+  height: 3rem; 
+} /* Style du bouton "Déconnexion" */
+
+
+.deconnexion:hover {
+  background: #fff;
+  color: #777;
+  border: 0.5px solid #777;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  height: 3rem; /* Associé à la hauteur du .deconnexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
+} /* effet au survol */
+
 
 .h5 {
   font-family: 'Varela Round', sans-serif;

@@ -7,10 +7,15 @@ use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  *@ORM\Entity(repositoryClass="App\Repository\UtilisateursRepository")
  *@Vich\Uploadable
+ *@UniqueEntity(
+ *  fields={"email"},
+ *  message="L'email que vous avez indiqué est déjà utilisé."
+ * )
  */
 class Utilisateurs implements UserInterface
 {
@@ -23,8 +28,11 @@ class Utilisateurs implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Email()
      */
     private $email;
+    // Assert permet de rajouter une contrainte à l'email.
+
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -138,24 +146,25 @@ class Utilisateurs implements UserInterface
 
     public function getRoles() {         
     
-        return [];
+        return ['ROLE_USER'];
     }
-    
-    public function getPassword() {
-        
-        return $this->getMotdepasse();
-
-    }      
     
     public function getSalt() {         
         
         return null;
 
     }      
-    public function getUsername() {         
+    public function getUsername(): ?string {         
         
-        return $this->getEmail();
+        return $this->username;
     }      
+
+    public function setUsername(string $username):self {         
+        
+        $this->username = $username;
+
+        return $this;
+    } 
 
     public function eraseCredentials() {         
         

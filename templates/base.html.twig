@@ -32,11 +32,17 @@
           </ul>
         </nav>
         
-        <div class="connexion-inscription">
+        {% if not app.utilisateurs %}
+          <div class="connexion-inscription">
+            <form action="{{ path('security_connexion') }}"><input class="connexion" value="Se connecter" type="submit"></form>
+            <h5 class="h5">Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
+          </div>
+        {% else %}
+          <div class="deconnexion-logout">
+            <form action="{{ path('security_deconnexion') }}"><input class="deconnexion" value="Se déconnecter" type="submit"></form>
+          </div>
+        {% endif %}
 
-          <form action="{{ path('security_connexion') }}"><input class="connexion" value="Se connecter" type="submit"></form>
-          <h5 class="h5">Pas encore inscrit ? <a class="lien-inscription" href="{{ path('security_inscription') }}">Venez c'est par ici</a></h5>
-      </div>
     </header>
 
       {% block body %} {% endblock %}

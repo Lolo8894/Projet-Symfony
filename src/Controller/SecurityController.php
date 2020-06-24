@@ -10,14 +10,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class SecurityController extends AbstractController
 {
   /**
   * @Route("/inscription", name="security_inscription")
   */
-    public function inscription(Request $request, EntityManagerInterface $manager) {
-      
+    public function inscription(Request $request, EntityManagerInterface $manager, UserPasswordEncoderInterface $encoder) {
+      //UserPasswordEncoder permet de crypter les mots de passe dans la BDD.
         $utilisateurs = new Utilisateurs();
       
         $form = $this->createForm(InscriptionType::class, $utilisateurs);
@@ -25,6 +26,11 @@ class SecurityController extends AbstractController
         $form->handleRequest($request);
         // Analyse la requête qui sera envoyée via le formulaire d'inscription.
         if($form->isSubmitted() && $form->isValid()) {
+
+            $hash = $encoder->encodePassword($utilisateurs, $utilisateurs->getPassword());
+
+            $utilisateurs->setPassword($hash);
+
             $manager->persist($utilisateurs);
             $manager->flush();
 
@@ -37,21 +43,31 @@ class SecurityController extends AbstractController
       ]);
     }
 
+  /**
+  * @Route("/connexion", name="security_connexion")
+  */
+  public function connexion(AuthenticationUtils $authenticationUtils) {
 
-    /**
-    * @Route("/connexion", name="security_connexion")
-    */
-    public function connexion(AuthenticationUtils $authenticationUtils) {
+    $error = $authenticationUtils->getLastAuthenticationError();
+    // Erreur d'authentification
 
-      $error = $authenticationUtils->getLastAuthenticationError();
-      // Erreur d'authentification
+    $lastUsername = $authenticationUtils->getLastUsername();
+    // Garde en mémoire le pseudo en cas d'erreur de saisie.
 
-      $lastUsername = $authenticationUtils->getLastUsername();
-      // Garde en mémoire le pseudo en cas d'erreur de saisie.
+    return $this->render('security/connexion.html.twig', [
+      'last_username' => $lastUsername,
+      'error' => $error ]
+    );
+  }
 
-      return $this->render('security/connexion.html.twig', [
-        'last_username' => $lastUsername,
-        'error' => $error ]
-      );
-    }
+   /**
+  * @Route("/deconnexion", name="security_deconnexion")
+  */
+  public function deconnexion() {
+
+    return $this->render('security/connexion.html.twig', [
+      'last_username' => $lastUsername,
+      'error' => $error ]
+    );
+  }
 }
