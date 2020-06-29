@@ -1,6 +1,87 @@
 /* -------------------------------------------------------------------------- */
-/* ---------------------------- MEDIA QUERIES ----------------------------- */
+/* ---------------------------- MEDIA QUERIES ------------------------------- */
 /* -------------------------------------------------------------------------- */
+
+@media (max-width: 1196px) {
+
+	.div-icon-1 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 49px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-2 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 50px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-3 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 78px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+}
+
+@media (max-width: 984px) {
+
+	.div-icon-1 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 10px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-2 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 38px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-3 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 150px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+}
+
+@media (max-width: 768px) {
+
+	.div-icon-1 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 0 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-2 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 27px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+
+	.div-icon-3 {
+		border : 2px solid #f5f5f5;
+		border-radius: 10px;
+		margin-bottom: 80px;
+		padding: 50px 50px 141px 50px;
+		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
+	}
+}
 
 
 

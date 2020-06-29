@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50398b89683af64df0219e10849e1f5c",
+    "content-hash": "48599ba34de8ef62817ce4a63af31f86",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -6069,20 +6069,20 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v5.0.8",
+            "version": "v5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "aa5d99bb179b5166cfe15d79dc067f516f3f4343"
+                "reference": "38ef53cf477e4d2d6f69305630534ec180eba2b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/aa5d99bb179b5166cfe15d79dc067f516f3f4343",
-                "reference": "aa5d99bb179b5166cfe15d79dc067f516f3f4343",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/38ef53cf477e4d2d6f69305630534ec180eba2b1",
+                "reference": "38ef53cf477e4d2d6f69305630534ec180eba2b1",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.2.5",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
@@ -6161,7 +6161,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-12T16:45:47+00:00"
+            "time": "2020-06-07T15:38:39+00:00"
         },
         {
             "name": "symfony/serializer-pack",
