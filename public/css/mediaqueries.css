@@ -7,270 +7,45 @@
 @media (max-width: 1900px) {
 
     .logo {
-        font-size: 29px;
+        font-size: 2.5rem;
+        padding-top: .5rem;
       }
 
     .logo:hover {
-        font-size: 29px;
-      }
-
-    .bitmoji-image-principale {
-        margin-left: 129px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1860px) {
-      
-    .bitmoji-image-principale {
-        margin-left: 111px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-    
-}
-
-@media (max-width: 1800px) {
-      
-    .bitmoji-image-principale {
-        margin-left: 97px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-    
-@media (max-width: 1760px) {
-    
-    .bitmoji-image-principale {
-        margin-left: 83px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}    
-
-@media (max-width: 1700px) {
-
-    .bitmoji-image-principale {
-        margin-left: 68px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1660px) {
-
-    .bitmoji-image-principale {
-        margin-left: 65px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1600px) {
-
-    .bitmoji-image-principale {
-        margin-left: 45px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1560px) {
-
-    .bitmoji-image-principale {
-        margin-left: 35px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1500px) {
-
-    .bitmoji-image-principale {
-        margin-left: 20px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-}
-
-@media (max-width: 1460px) {
-
-    .bitmoji-image-principale {
-        margin-left: 35px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 250px;
-        width: 250px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1400px) {
-
-    .bitmoji-image-principale {
-        margin-left: 21px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 250px;
-        width: 250px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1360px) {
-
-    .bitmoji-image-principale {
-        margin-left: 10px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 250px;
-        width: 250px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1350px) {
-
-    .bitmoji-image-principale {
-        margin-left: 19px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 230px;
-        width: 230px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1345px) {
-
-    .bitmoji-image-principale {
-        margin-left: 19px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 230px;
-        width: 230px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1330px) {
-
-    .bitmoji-image-principale {
-        margin-left: 12px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 230px;
-        width: 230px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1315px) {
-
-    .bitmoji-image-principale {
-        margin-left: 9px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 230px;
-        width: 230px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1300px) {
-
-    .bitmoji-image-principale {
-        margin-left: 14px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 215px;
-        width: 215px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1280px) {
-
-    .bitmoji-image-principale {
-        margin-left: 14px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 205px;
-        width: 205px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1260px) {
-
-    .bitmoji-image-principale {
-        margin-left: 11px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1245px) {
-
-    .bitmoji-image-principale {
-        margin-left: 11px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 195px;
-        width: 195px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-}
-
-@media (max-width: 1232px) {
-
-    .bitmoji-image-principale {
-        margin-left: 33px; /* Espace de la div côté gauche */
-    } /* div qui contient la .bitmoji-enveloppe */
-
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-
-    .slider {
-        width: 700px;
-        height: 460px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
+        font-size: 2.5rem;
+        padding-top: .5rem;
 }
 
 @media (max-width: 1200px) {
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
     }  /* classe du lien sur le logo */
 
     .logo:hover {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
       }
 
     .violet {
-        font-size: 22px; /* taille du point */
-        color: #cb8fff;
+        font-size: 3rem; /* taille du point */
       } /* classe appliquée au span représentant le point du logo */
-
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
       
       nav ul li a {
-        font-size: 18px;
+        font-size: 2rem;
       } /* style appliqué sur la liste non ordonnée + liens de la navbar */
       
       nav ul li a:hover {
-        font-size: 18px;
+        font-size: 2rem;
       } /* effet au survol */
 
       .couleurs {
-        font-size: 22px; /* taille de chaque point */
+        font-size: 3rem; /* taille de chaque point */
       }  /* classe appliquée au span représentant les points sur la navbar */
 
       .connexion {
-        font-size: 15px;
+        font-size: 1.5rem;
       } /* Style du bouton "Connexion" */
       
       .deconnexion-logout {
@@ -278,38 +53,27 @@
       } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
       
       .deconnexion {
-        font-size:15px;
+        font-size:1.5rem;
       } /* Style du bouton "Déconnexion" */
 
     #image_principale {
-        height: 180px;
+        height: 21rem;
+        padding-bottom: 28px;
     } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-    .transparent {
-        /* STYLE DU MESSAGE DE BIENVENUE */
-        font-size: 40px;
-        padding-top: 70px;
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
 
-         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
-        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
-    } /* class donnée au h2 */
-  
-    .bitmoji-image-principale {
-        margin-top: 0;
-        margin-left: 46px; /* Espace de la div côté gauche */
-    } /* div qui contient l'image comportant la .bitmoji-coeur */
-    
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
 
-
-    .slider {
-        width: 600px;
-        height: 360px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
+    .h2-bienvenue {
+        font-size: 4.5rem;
+    }
 
 
     #formulaire {
@@ -359,252 +123,92 @@
     } /* image de la bitmoji identifiée par sa classe */
 
     .footer {
-        font-size: 1rem;
-        height: 134px;
-    } /* div contenant tous les éléments du footer */
-    
-    .copyright {
-        padding-top: 4.5rem;
-        margin-right: 2rem; /* Distance entre les élements du footer */
-    } /* classe du h6 "Copyright" */
-    
-    .confidentialite {
-        padding-top: 4.5rem;
-        margin-right: 2rem;
-    } /* classe du h6 "Conditions générales d'utilisation" */
-    
-    .politique_de_confidentialite {
-        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        padding-top: 2.6rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        padding-top: 2.5rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
         color: #ffb3ba;
         text-shadow: 1px 1px 1.5px #00000007;
         transition: 0.5s ease-in-out;
-    } /* classe associée au lien */
-    
-    .politique_de_confidentialite:hover {
-        font-size: 1rem;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
         color: #0086ad;
-    } /* effet au survol */
-    
-    .lien-instagram {
-        margin-top: 0;
-    } /* classe associée au lien vers la page instagram de Lyline */
-    
-    .logo-instagram {
-        margin-top: 4rem;
-        height: 2rem;
-        width: 2rem;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au logo instagram (encapsulé dans le lien) */
-    
-    .insta {
-        font-size: 1rem;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        padding-top: 2rem;
+        font-size: 1.2rem;
         color: #777;
-        padding-top: 4rem;
-    }
-    
-    .arrow-right {
-        height: 2rem;
-        width: 2rem;
-    }
+      }
 }  
 
-@media (max-width: 1140px) {
-
-    .logo {
-        font-size: 1.5rem;
-    }  /* classe du lien sur le logo */
-
-    .violet {
-        font-size: 22px; /* taille du point */
-        color: #cb8fff;
-      } /* classe appliquée au span représentant le point du logo */
-
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
-      
-      nav ul li a {
-        font-size: 18px;
-      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
-      
-      nav ul li a:hover {
-        font-size: 18px;
-      } /* effet au survol */
-
-      .couleurs {
-        font-size: 22px; /* taille de chaque point */
-      }  /* classe appliquée au span représentant les points sur la navbar */
-
-      .connexion {
-        font-size: 15px;
-      } /* Style du bouton "Connexion" */
-      
-      .deconnexion-logout {
-        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
-      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
-      
-      .deconnexion {
-        font-size:15px;
-      } /* Style du bouton "Déconnexion" */
-
-    #image_principale {
-        height: 180px;
-    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
-
-    .transparent {
-        /* STYLE DU MESSAGE DE BIENVENUE */
-        font-size: 40px;
-        padding-top: 70px;
-
-         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
-        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
-    } /* class donnée au h2 */
-  
-    .bitmoji-image-principale {
-        margin-top: 0;
-        margin-left: 34px; /* Espace de la div côté gauche */
-    } /* div qui contient l'image comportant la .bitmoji-coeur */
-    
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
-
-
-    .slider {
-        width: 600px;
-        height: 360px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
-
-
-    #formulaire {
-        width: 425px;
-    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
-
-    /* ------------------- éléments du formulaire Symfony --------------------- */
-
-    #contact_Nom, #contact_Prenom, #contact_email {
-        width: 244px; /* largeur des inputs */
-        margin-left: 93px; /* règle l'input au centre */
-    } /* inputs nom, prénom et email */
-    
-    .form-group {
-        padding-top: 0; /* espace en haut entre input et submit */
-        padding-bottom: 0; /* complète le padding-top: 5px; */
-    } /* div entourant les labels + les inputs */
-    
-    .control-label {
-        margin-bottom: 0; /* espacement du haut entre label et input */
-    } /* div contenant les labels nom / prénom / email /message */
-    
-    #contact_Message {
-        margin-left: 93px; /* règlage au centre de l'input */
-        width: 244px;
-        height: 200px;
-    } /* input textarea */
-    
-    #contact_Envoyer {
-        margin-left: 160px; /* règlage au centre du submit */
-    } /* bouton "Envoyer" */
-    
-    #contact_Envoyer:hover {
-        margin-bottom: 0;
-    } /* animation au survol du bouton Envoyer */
-  
-    /* ------------------- END - éléments du formulaire Symfony ----------------- */
-  
-    .bitmoji-image {
-        margin-bottom: 30px;
-    }
-
-    .bitmoji-enveloppe {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* image de la bitmoji identifiée par sa classe */
-
-    .footer {
-        font-size: 1rem;
-        height: 134px;
-    } /* div contenant tous les éléments du footer */
-    
-    .copyright {
-        padding-top: -1rem;
-        margin-right: 2rem; /* Distance entre les élements du footer */
-    } /* classe du h6 "Copyright" */
-    
-    .confidentialite {
-        padding-top: -1rem;
-        margin-right: 2rem;
-    } /* classe du h6 "Conditions générales d'utilisation" */
-    
-    .politique_de_confidentialite {
-        font-size: 1rem;
-        color: #ffb3ba;
-        text-shadow: 1px 1px 1.5px #00000007;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au lien */
-    
-    .politique_de_confidentialite:hover {
-        font-size: 1rem;
-        color: #0086ad;
-    } /* effet au survol */
-    
-    .lien-instagram {
-        margin-top: 0;
-    } /* classe associée au lien vers la page instagram de Lyline */
-    
-    .logo-instagram {
-        margin-top: -1rem;
-        height: 2rem;
-        width: 2rem;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au logo instagram (encapsulé dans le lien) */
-    
-    .insta {
-        font-size: 1rem;
-        color: #777;
-        padding-top: -1rem;
-    }
-    
-    .arrow-right {
-        height: 2rem;
-        width: 2rem;
-    }
-} 
 
 @media (max-width: 1120px) {
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
     }  /* classe du lien sur le logo */
 
-    .violet {
-        font-size: 22px; /* taille du point */
-        color: #cb8fff;
-      } /* classe appliquée au span représentant le point du logo */
+    .logo:hover {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+      }
 
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+    .violet {
+        font-size: 3rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
       
       nav ul li a {
-        font-size: 18px;
+        font-size: 2rem;
       } /* style appliqué sur la liste non ordonnée + liens de la navbar */
       
       nav ul li a:hover {
-        font-size: 18px;
+        font-size: 2rem;
       } /* effet au survol */
 
       .couleurs {
-        font-size: 22px; /* taille de chaque point */
+        font-size: 3rem; /* taille de chaque point */
       }  /* classe appliquée au span représentant les points sur la navbar */
 
       .connexion {
-        font-size: 15px;
+        font-size: 1.5rem;
       } /* Style du bouton "Connexion" */
       
       .deconnexion-logout {
@@ -612,38 +216,27 @@
       } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
       
       .deconnexion {
-        font-size:15px;
+        font-size:1.5rem;
       } /* Style du bouton "Déconnexion" */
 
     #image_principale {
-        height: 180px;
+        height: 21rem;
+        padding-bottom: 28px;
     } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-    .transparent {
-        /* STYLE DU MESSAGE DE BIENVENUE */
-        font-size: 40px;
-        padding-top: 70px;
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
 
-         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
-        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
-    } /* class donnée au h2 */
-  
-    .bitmoji-image-principale {
-        margin-top: 0;
-        margin-left: 26px; /* Espace de la div côté gauche */
-    } /* div qui contient l'image comportant la .bitmoji-coeur */
-    
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
 
-
-    .slider {
-        width: 600px;
-        height: 360px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
+    .h2-bienvenue {
+        font-size: 4.5rem;
+    }
 
 
     #formulaire {
@@ -693,85 +286,91 @@
     } /* image de la bitmoji identifiée par sa classe */
 
     .footer {
-        font-size: 1rem;
-        height: 134px;
-    } /* div contenant tous les éléments du footer */
-    
-    .copyright {
-        padding-top: -1rem;
-        margin-right: 2rem; /* Distance entre les élements du footer */
-    } /* classe du h6 "Copyright" */
-    
-    .confidentialite {
-        padding-top: -1rem;
-        margin-right: 2rem;
-    } /* classe du h6 "Conditions générales d'utilisation" */
-    
-    .politique_de_confidentialite {
-        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        padding-top: 2.6rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        padding-top: 2.5rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
         color: #ffb3ba;
         text-shadow: 1px 1px 1.5px #00000007;
         transition: 0.5s ease-in-out;
-    } /* classe associée au lien */
-    
-    .politique_de_confidentialite:hover {
-        font-size: 1rem;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
         color: #0086ad;
-    } /* effet au survol */
-    
-    .lien-instagram {
-        margin-top: 0;
-    } /* classe associée au lien vers la page instagram de Lyline */
-    
-    .logo-instagram {
-        margin-top: -1rem;
-        height: 2rem;
-        width: 2rem;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au logo instagram (encapsulé dans le lien) */
-    
-    .insta {
-        font-size: 1rem;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        padding-top: 2rem;
+        font-size: 1.2rem;
         color: #777;
-        padding-top: -1rem;
-    }
-    
-    .arrow-right {
-        height: 2rem;
-        width: 2rem;
-    }
+      }
 } 
 
 @media (max-width: 1100px) {
 
     .logo {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
     }  /* classe du lien sur le logo */
 
-    .violet {
-        font-size: 22px; /* taille du point */
-        color: #cb8fff;
-      } /* classe appliquée au span représentant le point du logo */
+    .logo:hover {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+      }
 
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+    .violet {
+        font-size: 3rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
       
       nav ul li a {
-        font-size: 18px;
+        font-size: 2rem;
       } /* style appliqué sur la liste non ordonnée + liens de la navbar */
       
       nav ul li a:hover {
-        font-size: 18px;
+        font-size: 2rem;
       } /* effet au survol */
 
       .couleurs {
-        font-size: 22px; /* taille de chaque point */
+        font-size: 3rem; /* taille de chaque point */
       }  /* classe appliquée au span représentant les points sur la navbar */
 
       .connexion {
-        font-size: 15px;
+        font-size: 1.5rem;
       } /* Style du bouton "Connexion" */
       
       .deconnexion-logout {
@@ -779,38 +378,27 @@
       } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
       
       .deconnexion {
-        font-size:15px;
+        font-size:1.5rem;
       } /* Style du bouton "Déconnexion" */
 
     #image_principale {
-        height: 180px;
+        height: 21rem;
+        padding-bottom: 28px;
     } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-    .transparent {
-        /* STYLE DU MESSAGE DE BIENVENUE */
-        font-size: 40px;
-        padding-top: 70px;
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
 
-         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
-        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
-    } /* class donnée au h2 */
-  
-    .bitmoji-image-principale {
-        margin-top: 0;
-        margin-left: 12px; /* Espace de la div côté gauche */
-    } /* div qui contient l'image comportant la .bitmoji-coeur */
-    
-    .bitmoji-coeur {
-        height: 200px;
-        width: 200px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
 
-
-    .slider {
-        width: 600px;
-        height: 360px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
+    .h2-bienvenue {
+        font-size: 4.5rem;
+    }
 
 
     #formulaire {
@@ -860,54 +448,59 @@
     } /* image de la bitmoji identifiée par sa classe */
 
     .footer {
-        font-size: 1rem;
-        height: 134px;
-    } /* div contenant tous les éléments du footer */
-    
-    .copyright {
-        padding-top: 40px;
-        margin-right: 2rem; /* Distance entre les élements du footer */
-    } /* classe du h6 "Copyright" */
-    
-    .confidentialite {
-        padding-top: 40px;
-        margin-right: 2rem;
-    } /* classe du h6 "Conditions générales d'utilisation" */
-    
-    .politique_de_confidentialite {
-        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        padding-top: 2.6rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        padding-top: 2.5rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
         color: #ffb3ba;
         text-shadow: 1px 1px 1.5px #00000007;
         transition: 0.5s ease-in-out;
-    } /* classe associée au lien */
-    
-    .politique_de_confidentialite:hover {
-        font-size: 1rem;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
         color: #0086ad;
-    } /* effet au survol */
-    
-    .lien-instagram {
-        margin-top: .5rem;
-    } /* classe associée au lien vers la page instagram de Lyline */
-    
-    .logo-instagram {
-        margin-top: -1.1rem;
-        height: 2rem;
-        width: 2rem;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au logo instagram (encapsulé dans le lien) */
-    
-    .insta {
-        margin-top: -4.3rem;
-        font-size: 1rem;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        padding-top: 2rem;
+        font-size: 1.2rem;
         color: #777;
-        padding-top: -1rem;
-    }
-    
-    .arrow-right {
-        height: 2rem;
-        width: 2rem;
-    }
+      }
 } 
 
 
@@ -915,32 +508,32 @@
 
     .logo {
         font-size: 1.5rem;
+        padding-bottom: 2rem;
     }  /* classe du lien sur le logo */
 
-    .violet {
-        font-size: 22px; /* taille du point */
-        color: #cb8fff;
-      } /* classe appliquée au span représentant le point du logo */
+    .logo:hover {
+        font-size: 1rem;
+        padding-bottom: 2rem;
+      }
 
-      nav ul li {
-        display: inline-block;
-        margin-right: 10px;
-      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+    .violet {
+        font-size: 1rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
       
       nav ul li a {
-        font-size: 18px;
+        font-size: 1rem;
       } /* style appliqué sur la liste non ordonnée + liens de la navbar */
       
       nav ul li a:hover {
-        font-size: 18px;
+        font-size: 1rem;
       } /* effet au survol */
 
       .couleurs {
-        font-size: 22px; /* taille de chaque point */
+        font-size: 1rem; /* taille de chaque point */
       }  /* classe appliquée au span représentant les points sur la navbar */
 
       .connexion {
-        font-size: 15px;
+        font-size: 1.5rem;
       } /* Style du bouton "Connexion" */
       
       .deconnexion-logout {
@@ -948,38 +541,27 @@
       } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
       
       .deconnexion {
-        font-size:15px;
+        font-size:1.5rem;
       } /* Style du bouton "Déconnexion" */
 
     #image_principale {
-        height: 180px;
+        height: 21rem;
+        padding-bottom: 28px;
     } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-    .transparent {
-        /* STYLE DU MESSAGE DE BIENVENUE */
-        font-size: 40px;
-        padding-top: 70px;
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
 
-         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
-        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
-    } /* class donnée au h2 */
-  
-    .bitmoji-image-principale {
-        margin-top: 0;
-        margin-left: 24px; /* Espace de la div côté gauche */
-    } /* div qui contient l'image comportant la .bitmoji-coeur */
-    
-    .bitmoji-coeur {
-        height: 160px;
-        width: 160px;
-        border-radius: 40px;
-    } /* classe de l'image bitmoji-coeur */
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
 
-
-    .slider {
-        width: 600px;
-        height: 360px; /* dimensions du carrousel */
-    } /* div qui contient le carrousel */
+    .h2-bienvenue {
+        font-size: 4.5rem;
+    }
 
 
     #formulaire {
@@ -1018,62 +600,1016 @@
   
     /* ------------------- END - éléments du formulaire Symfony ----------------- */
   
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
     .bitmoji-enveloppe {
-        height: 160px;
-        width: 160px;
+        height: 200px;
+        width: 200px;
         border-radius: 40px;
     } /* image de la bitmoji identifiée par sa classe */
 
     .footer {
-        font-size: 1rem;
-        height: 134px;
-    } /* div contenant tous les éléments du footer */
-    
-    .copyright {
-        padding-top: 40px;
-        margin-right: 2rem; /* Distance entre les élements du footer */
-    } /* classe du h6 "Copyright" */
-    
-    .confidentialite {
-        padding-top: 40px;
-        margin-right: 2rem;
-    } /* classe du h6 "Conditions générales d'utilisation" */
-    
-    .politique_de_confidentialite {
-        font-size: 1rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        padding-top: 2.6rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        padding-top: 2.5rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
         color: #ffb3ba;
         text-shadow: 1px 1px 1.5px #00000007;
         transition: 0.5s ease-in-out;
-    } /* classe associée au lien */
-    
-    .politique_de_confidentialite:hover {
-        font-size: 1rem;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
         color: #0086ad;
-    } /* effet au survol */
-    
-    .lien-instagram {
-        margin-top: 0;
-    } /* classe associée au lien vers la page instagram de Lyline */
-    
-    .logo-instagram {
-        margin-top: -0.5rem;
-        height: 2rem;
-        width: 2rem;
-        transition: 0.5s ease-in-out;
-    } /* classe associée au logo instagram (encapsulé dans le lien) */
-    
-    .insta {
-        font-size: 1rem;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        padding-top: 2rem;
+        font-size: 1.2rem;
         color: #777;
-        /* padding-top: .5rem; */
-    }
-    
-    .arrow-right {
-        height: 2rem;
-        width: 2rem;
-    }
+      }
 }  
 
+@media (max-width: 990px) {
+
+    .logo {
+        font-size: 2rem;
+        padding-bottom: 2.5rem;
+    }  /* classe du lien sur le logo */
+
+    .logo:hover {
+        font-size: 2rem;
+        padding-bottom: 2.5rem;
+      }
+
+    .violet {
+        font-size: 3rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
+      
+      nav ul li a {
+        font-size: 2rem;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 2rem;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 3rem; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        padding: 5px;
+        font-size: 1.5rem;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        padding: 5px;
+        font-size:1.5rem;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 21rem;
+        padding-bottom: 28px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
+
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
+
+    .h2-bienvenue {
+        font-size: 4.5rem;
+    }
 
 
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
 
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        padding-top: 2.6rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        padding-top: 2.5rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
+        color: #0086ad;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        color: #777;
+      }
+}
+
+@media (max-width: 960px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-logo {
+        position: absolute;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }  /* classe du lien sur le logo */
+
+    .logo:hover {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .violet {
+        font-size: 3rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
+
+    .couleurs {
+        font-size: 3rem; /* taille de chaque point */
+    }  /* classe appliquée au span représentant les points sur la navbar */
+
+
+    /* -------------------------- BURGER MENU -------------------------- */
+
+    @-webkit-keyframes slideInLeft {
+        0% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInLeft {
+        0% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+      }
+      @-webkit-keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: hidden;
+        }
+      }
+      @keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: hidden;
+        }
+      }
+      
+      body:after {
+        background: white;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        overflow: auto;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: 100%;
+      }
+      body.open {
+        overflow: hidden;
+      }
+      body.open:after {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .b-nav {
+        position: absolute;
+        z-index: 11;
+      }
+      .b-nav:not(.open) {
+        visibility: hidden;
+      }
+      .b-nav li {
+        color: #444444;
+        list-style-type: none;
+        padding: 10px;
+        text-align: left;
+        -webkit-transform: translateX(-250px);
+                transform: translateX(-250px);
+      }
+      .b-nav li:not(.open) {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideOutLeft;
+                animation-name: slideOutLeft;
+      }
+      .b-nav li:first-child {
+        padding-top: 120px;
+      }
+      .b-nav.open {
+        visibility: visible;
+      }
+      .b-nav.open li {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideInLeft;
+                animation-name: slideInLeft;
+      }
+      
+      .b-link {
+        background: transparent;
+        border-left: rgba(68, 68, 68, 0) solid 2px;
+        color: #444444;
+        font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        margin-left: 30px;
+        text-decoration: none;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: auto;
+      }
+      .b-link:hover, .b-link--active {
+        border-left: #444444 solid 2px;
+        padding-left: 30px;
+      }
+      
+      .b-menu {
+        background: white;
+        border: white solid 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        padding-left: 15.5px;
+        padding-top: 17.5px;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        width: 60px;
+        z-index: 12;
+      }
+      .b-menu:hover {
+        border: #444444 solid 2px;
+      }
+      
+      .b-bun {
+        background: #444444;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+      }
+      .b-bun--top {
+        height: 2px;
+        top: 0;
+        width: 25px;
+      }
+      .b-bun--mid {
+        height: 2px;
+        top: 8px;
+        width: 25px;
+      }
+      .b-bun--bottom {
+        height: 2px;
+        top: 16px;
+        width: 25px;
+      }
+      
+      .b-brand {
+        color: white;
+        font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        margin-left: 30px;
+        position: relative;
+        text-decoration: none;
+        top: -21.4285714286px;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        z-index: 13;
+      }
+      
+      .b-container {
+        height: 60px;
+        left: 30px;
+        position: absolute;
+        top: 10px;
+      }
+      .b-container:hover:not(.open) .bun-top,
+      .b-container:hover:not(.open) .bun-mid,
+      .b-container:hover:not(.open) .bun-bottom {
+        background: white;
+      }
+      .b-container.open .b-main {
+        border: #444444 solid 2px;
+      }
+      .b-container.open .b-bun--top {
+        background: #444444;
+        top: 9px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+      .b-container.open .b-bun--mid {
+        opacity: 0;
+      }
+      .b-container.open .b-bun--bottom {
+        background: #444444;
+        top: 5px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+      }
+      .b-container.open .b-brand {
+        color: #444444;
+      }
+
+ /* ----------------------- END - BURGER MENU -------------------------- */
+
+    .connexion {
+        padding: 0.6rem;
+        margin-left: 72rem;
+        font-size: 1.5rem;
+    } /* Style du bouton "Connexion" */
+      
+    .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+    } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+    .deconnexion {
+        padding: 0.6rem;
+        margin-left: 72rem;
+        font-size: 1.5rem;
+        /* margin-right: 150px; */
+        /* margin-left: 10rem; */
+    } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 21rem;
+        padding-bottom: 28px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
+
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
+
+    .h2-bienvenue {
+        font-size: 4rem;
+    }
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        margin-top: -1.4rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        margin-top: -1.4rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
+        color: #0086ad;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        margin-top: -1.3rem;
+        font-size: 1.2rem;
+        color: #777;
+      }
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-logo {
+        position: absolute;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }  /* classe du lien sur le logo */
+
+    .logo:hover {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .violet {
+        font-size: 3rem; /* taille du point */
+      } /* classe appliquée au span représentant le point du logo */
+
+    .couleurs {
+        font-size: 3rem; /* taille de chaque point */
+    }  /* classe appliquée au span représentant les points sur la navbar */
+
+
+    /* -------------------------- BURGER MENU -------------------------- */
+
+    @-webkit-keyframes slideInLeft {
+        0% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+      }
+      @keyframes slideInLeft {
+        0% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+      }
+      @-webkit-keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: hidden;
+        }
+      }
+      @keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+                  transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-250px, 0, 0);
+                  transform: translate3d(-250px, 0, 0);
+          visibility: hidden;
+        }
+      }
+      
+      body:after {
+        background: white;
+        content: '';
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        overflow: auto;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: 100%;
+      }
+      body.open {
+        overflow: hidden;
+      }
+      body.open:after {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .b-nav {
+        position: absolute;
+        z-index: 11;
+      }
+      .b-nav:not(.open) {
+        visibility: hidden;
+      }
+      .b-nav li {
+        color: #444444;
+        list-style-type: none;
+        padding: 10px;
+        text-align: left;
+        -webkit-transform: translateX(-250px);
+                transform: translateX(-250px);
+      }
+      .b-nav li:not(.open) {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideOutLeft;
+                animation-name: slideOutLeft;
+      }
+      .b-nav li:first-child {
+        padding-top: 120px;
+      }
+      .b-nav.open {
+        visibility: visible;
+      }
+      .b-nav.open li {
+        -webkit-animation-duration: 0.4s;
+                animation-duration: 0.4s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-name: slideInLeft;
+                animation-name: slideInLeft;
+      }
+      
+      .b-link {
+        background: transparent;
+        border-left: rgba(68, 68, 68, 0) solid 2px;
+        color: #444444;
+        font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        margin-left: 30px;
+        text-decoration: none;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: auto;
+      }
+      .b-link:hover, .b-link--active {
+        border-left: #444444 solid 2px;
+        padding-left: 30px;
+      }
+      
+      .b-menu {
+        background: white;
+        border: white solid 2px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: inline-block;
+        height: 60px;
+        padding-left: 15.5px;
+        padding-top: 17.5px;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        width: 60px;
+        z-index: 12;
+      }
+      .b-menu:hover {
+        border: #444444 solid 2px;
+      }
+      
+      .b-bun {
+        background: #444444;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+      }
+      .b-bun--top {
+        height: 2px;
+        top: 0;
+        width: 25px;
+      }
+      .b-bun--mid {
+        height: 2px;
+        top: 8px;
+        width: 25px;
+      }
+      .b-bun--bottom {
+        height: 2px;
+        top: 16px;
+        width: 25px;
+      }
+      
+      .b-brand {
+        color: white;
+        font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        margin-left: 30px;
+        position: relative;
+        text-decoration: none;
+        top: -21.4285714286px;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        z-index: 13;
+      }
+      
+      .b-container {
+        height: 60px;
+        left: 30px;
+        position: absolute;
+        top: 10px;
+      }
+      .b-container:hover:not(.open) .bun-top,
+      .b-container:hover:not(.open) .bun-mid,
+      .b-container:hover:not(.open) .bun-bottom {
+        background: white;
+      }
+      .b-container.open .b-main {
+        border: #444444 solid 2px;
+      }
+      .b-container.open .b-bun--top {
+        background: #444444;
+        top: 9px;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+      }
+      .b-container.open .b-bun--mid {
+        opacity: 0;
+      }
+      .b-container.open .b-bun--bottom {
+        background: #444444;
+        top: 5px;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+      }
+      .b-container.open .b-brand {
+        color: #444444;
+      }
+
+ /* ----------------------- END - BURGER MENU -------------------------- */
+
+    .connexion {
+        padding: 0.6rem;
+        margin-left: 55rem;
+        font-size: 1.5rem;
+    } /* Style du bouton "Connexion" */
+      
+    .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+    } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+    .deconnexion {
+        padding: 0.6rem;
+        margin-left: 55rem;
+        font-size: 1.5rem;
+        /* margin-right: 150px; */
+        /* margin-left: 10rem; */
+    } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 21rem;
+        padding-bottom: 28px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .cont-img-princ {
+        height: 21rem;
+        padding-bottom: 28px;
+    }
+
+    .film-transparent {
+        padding-top: 6rem;
+        height: 21rem;
+    }
+
+    .h2-bienvenue {
+        font-size: 4rem;
+    }
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+        background: #fff;
+        font-size: 19px;
+        box-shadow: 0 0 7px 0 #cb8fff;
+      } /* div principale */
+      
+      .elements-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      } /* div contenant tous les éléments du footer */
+      
+      .copyright {
+        margin-top: -1.4rem;
+        margin-right: 5rem; /* Distance entre les élements du footer */
+        color: #808080;
+      } /* classe du h6 "Copyright" */
+      
+      .confidentialite {
+        margin-top: -1.4rem;
+        margin-right: 5rem;
+        color: #808080;
+      } /* classe du h6 "Conditions générales d'utilisation" */
+      
+      .politique_de_confidentialite {
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+      } /* classe associée au lien */
+      
+      .politique_de_confidentialite:hover {
+        color: #0086ad;
+      } /* effet au survol */
+      
+      .lien-instagram {
+        margin-left: 1rem;
+      } /* classe associée au lien vers la page instagram de Lyline */
+      
+      .logo-instagram {
+        height: 3rem;
+        width: 3rem;
+      } /* classe associée au logo instagram (encapsulé dans le lien) */
+      
+      .insta {
+        margin-top: -1.3rem;
+        font-size: 1.2rem;
+        color: #777;
+      }
+}
+
+@media (max-width: 320px) {
+
+}

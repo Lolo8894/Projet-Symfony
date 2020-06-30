@@ -11,13 +11,14 @@
 /* réinitialisation des paramètres de la page web */
 /* Outline et Border concernent les anciens navigateurs */
 
+
 a {
   display: inline-block; /* liens (et donc la navbar) alignés */
 } /* empêche les liens bootstrap, d'impacter mon CSS */
 
 a:hover {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none !important;
 } /* retire le soulignement des liens au survol */
 
 
@@ -30,8 +31,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 130vh; /* Hauteur du container body entre header et footer */
-  padding-bottom: 130px;
+  min-height: 100vh; /* Hauteur du container body entre header et footer */
+  padding-bottom: 11rem;
   position: relative;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
@@ -39,7 +40,8 @@ a:hover {
   background: url("/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
+  background-attachment: fixed;
 } /* style du site par défaut si pas de style précis appliqué */
 
 
@@ -61,19 +63,21 @@ a:hover {
   background-color:#fff;
 } /* header contient tous les éléments (logo + navbar + bouton connexion + lien inscription) */
 
+
 #logo {
   font-family: 'Pacifico', cursive; /* font appliquée sur le logo */
 } /* id du h1 logo */
 
 .logo {
   color: #ffb3ba;
-  font-size: 29px;
-  padding-bottom: .5rem; /* Couleur du texte du logo + taille du logo + positionnement */
+  font-size: 2.5rem;
+  padding-top: .5rem; /* Couleur du texte du logo + taille du logo + positionnement */
 } /* classe du lien sur le logo */
 
 .logo:hover {
   color: #ffb3ba;
-  font-size: 29px;
+  font-size: 2.5rem;
+  padding-top: .5rem;
   text-decoration: none;
 }
 
@@ -81,6 +85,7 @@ a:hover {
   font-size: 32px; /* taille du point */
   color: #cb8fff;
 } /* classe appliquée au span représentant le point du logo */
+
 
 nav ul li {
   display: inline-block;
@@ -91,14 +96,14 @@ nav ul li a {
   font-family: 'Indie Flower', cursive; /* Font + couleur appliquée sur la navbar */
   color: #0086ad; 
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
   transition: .4s ease-in-out;
 } /* style appliqué sur la liste non ordonnée + liens de la navbar */
 
 nav ul li a:hover {
   font-family: 'Indie Flower', cursive;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #cb8fff;
 } /* effet au survol */
 
@@ -113,6 +118,7 @@ ul {
   color: #fa8072;
 } /* classe appliquée au span représentant les points sur la navbar */
 
+
 .connexion-inscription {
   margin-top: 0.5rem; /* Règlage en hauteur de la div .connexion-inscription */
 } /* div contenant l'input .connexion + .h5 + .lien-inscription */
@@ -122,24 +128,24 @@ ul {
   line-height: 36px;
   text-align: center;
   color:#fff;
-  font-size:18px;
+  font-size: 1.5rem;
   background-color: #0A4589;
-  padding: 8px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
-  height: 3rem; 
+  /* height: 3rem; */
 } /* Style du bouton "Connexion" */
-
 
 .connexion:hover {
   background: #fff;
   color: #777;
   border: 0.5px solid #777;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
-  height: 3rem; /* Associé à la hauteur du .connexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
+  /*height: 3rem; Associé à la hauteur du .connexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
 } /* effet au survol */
+
 
 .deconnexion-logout {
   margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
@@ -150,23 +156,22 @@ ul {
   line-height: 36px;
   text-align: center;
   color:#fff;
-  font-size:18px;
+  font-size: 1.5rem;
   background-color: #0A4589;
-  padding: 8px;
+  padding: 5px;
   cursor: pointer;
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
-  height: 3rem; 
+  /* height: 3rem; */
 } /* Style du bouton "Déconnexion" */
-
 
 .deconnexion:hover {
   background: #fff;
   color: #777;
   border: 0.5px solid #777;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
-  height: 3rem; /* Associé à la hauteur du .deconnexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
+  /*height: 3rem; Associé à la hauteur du .deconnexion, permet suite au survol de la souris de ne pas décaller le bouton qui ne bouge plus */
 } /* effet au survol */
 
 
@@ -199,128 +204,43 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 #image_principale {
-  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  background: url("/images/multiwools.jpg") no-repeat;
-  border-radius: 0 0 20px 20px;
+  height: 280px;
 } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
 
-.transparent {
-  /* STYLE DU MESSAGE DE BIENVENUE */
-  color: #f5f5f5;
-  font-size: 50px;
-  text-shadow: 1px 1px 2px #00000078;
-  text-align: center;
-  padding-top: 100px;
+.cont-img-princ {
+  background: url("/images/multiwools.jpg") no-repeat;
+  height: 280px;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
 
+.film-transparent {
   /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
   background: #00000036; /* film transparent noir léger */
   height: 280px; /* hauteur du film transparent (identique à celle de la section) */
   border-radius: 0 0 20px 20px;
   box-shadow: 1px 1px 3px #00000078;
-} /* class donnée au h2 */
+  padding-top: 100px;
+} /* div contenant le h2 */
+
+.h2-bienvenue {
+  color: #f5f5f5;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #00000078;
+} /* STYLE DU MESSAGE DE BIENVENUE */
 
 
 /* -------------------------------------------------------------------------- */
 /*------------------------------- CARROUSEL D'IMAGES ------------------------ */
 /* -------------------------------------------------------------------------- */
 
-#carrousel {
-  margin-left: 0 auto; /* Espace entre la bitmoji et le carrousel */
-} /* section qui contient carrousel + bitmoji */
-
-
-/* ------------------------------- Image Bitmoji ---------------------------- */
-
-.bitmoji-image-principale {
-  margin-top: 120px;
-  margin-left: 129px; /* Espace de la div côté gauche */
-  position: absolute;
-  top: 26rem; /* Permet au bloc de se fixer suite à l'animation */
-  left: 0;
-  animation: 3s movetop; /* animation de la bitmoji qui fonctionne avec la Keyframes juste au-dessous */
-} /* div qui contient l'image comportant la .bitmoji-coeur */
-
-.bitmoji-coeur {
-  height: 302px;
-  width: 302px;
-  border-radius: 90px;
-  border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff;
-} /* classe de l'image bitmoji-coeur */
-
-@keyframes movetop {
-  from {
-       top: 0;
-   }
-   to {       
-       top: 26rem;
-   }
-} 
-/* la bitmoji va partir de 0 (du haut) et s'arrêter à 26 rem (sur le même axe) */
-
-/* ---------------------------- END - Image Bitmoji ------------------------- */
-
-
-.slider {
-  overflow: hidden; /* permet de cacher les photos pour qu'elles ne s'affichent que dans l'écran du carrousel */
-  width: 800px;
-  height: 500px; /* dimensions du carrousel */
-  border: 30px solid white;
-  box-shadow: 1px 1px 3px #00000078;
-} /* div qui contient le carrousel */
-
-.div-images-carrousel {
-  position: relative;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  animation: 20s slider infinite; /* animation du carrousel qui fonctionne avec la Keyframes juste au-dessous */
-} /* div qui contient les images du carrousel */
-
-.images-carrousel {
-  float: left; /* nécessaire au bon positionnement des images dans le carrousel */
-  width: 20%; /* place correctement chaque image par séquence */ 
-} /* classe donnée à chaque image du carrousel */
-
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  
-  20% {
-    left: 0;
-  }
-  
-  25% {
-    left: -100%;
-  }
-  
-  45% {
-    left: -100%;
-  }
-  
-  50% {
-    left: -200%;
-  }
-  
-  70% {
-    left: -200%;
-  }
-  
-  75% {
-    left: -300%;
-  }
-  
-  95% {
-    left: -300%;
-  }
-  
-  100% {
-    left: -400%;
-  }
-}
-/* Indique de manière progressive comment les images vont s'enchaîner verticalement */
 
 
 /* -------------------------------------------------------------------------- */
@@ -404,7 +324,7 @@ ul {
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
-  height: 3rem;
+  /* height: 3rem; */
 } /* bouton "Envoyer" */
 
 #contact_Envoyer:hover {
@@ -413,7 +333,7 @@ ul {
   color: #fff;
   border: 1px solid grey;
   box-shadow: 3px 3px 3px 0px #fff;
-  height: 3.5rem;
+  /* height: 5rem; */
 } /* animation au survol du bouton Envoyer */
 
 /* ------------------- END - éléments du formulaire Symfony ----------------- */
@@ -793,66 +713,58 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
-  height: 100px;
+  height: 8rem;
   background: #fff;
   font-size: 19px;
   box-shadow: 0 0 7px 0 #cb8fff;
+} /* div principale */
+
+.elements-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 } /* div contenant tous les éléments du footer */
 
 .copyright {
-  padding-top: 40px;
+  padding-top: 2.6rem;
   margin-right: 5rem; /* Distance entre les élements du footer */
-  text-align: center;
   color: #808080;
 } /* classe du h6 "Copyright" */
 
 .confidentialite {
-  padding-top: 40px;
+  padding-top: 2.5rem;
   margin-right: 5rem;
-  text-align: center;
   color: #808080;
 } /* classe du h6 "Conditions générales d'utilisation" */
 
 .politique_de_confidentialite {
-  font-size: 15px;
   color: #ffb3ba;
   text-shadow: 1px 1px 1.5px #00000007;
   transition: 0.5s ease-in-out;
 } /* classe associée au lien */
 
 .politique_de_confidentialite:hover {
-  font-size: 15px;
   color: #0086ad;
 } /* effet au survol */
 
 .lien-instagram {
-  margin-top: 0;
+  margin-left: 1rem;
 } /* classe associée au lien vers la page instagram de Lyline */
 
 .logo-instagram {
-  margin-top: 1.5rem;
   height: 3rem;
   width: 3rem;
-  transition: 0.5s ease-in-out;
 } /* classe associée au logo instagram (encapsulé dans le lien) */
 
 .insta {
-  font-size: 13px;
+  padding-top: 2rem;
+  font-size: 1.2rem;
   color: #777;
-  padding-top: 1.7rem;
-}
-
-.arrow-right {
-  height: 3rem;
-  width: 3rem;
 }
 
 /* ------------------------- END - base.html.twig --------------------------- */

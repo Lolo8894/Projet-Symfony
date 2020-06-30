@@ -8,29 +8,64 @@
 
                                         <!-- IMAGE PRINCIPALE -->
   <section id="image_principale">
-     <h2 class="transparent">Bienvenue dans mon univers !</h2>
+    <div class="cont-img-princ">
+      <div class="film-transparent">
+      <h2 class="h2-bienvenue">Bienvenue dans mon univers !</h2>
+      </div>
+    </div>
   </section>
 
   <br><br>
-                                        <!-- CARROUSEL D'IMAGES + BITMOJI DE LYLINE -->
+                                        <!-- CARROUSEL D'IMAGES -->
 
-<section id="carrousel">
-    <!-- Image bitmoji -->
-  <div class="bitmoji-image-principale">
-    <img class="bitmoji-coeur" src="{{ asset('images/bitmoji(1).jpeg') }}" alt="bitmoji-coeur">
-  </div>
-    <!-- END - Image bitmoji -->
+  <!-- partial:index.partial.html -->
+<div class="div-carrousel">   
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    </ol>
 
-  <div class="slider">
-    <div class="div-images-carrousel">
-      <img class="images-carrousel" src="images/stormtrooper.png" alt="stormtrooper">
-      <img class="images-carrousel" src="images/chats-gris-jaune.jpeg" alt="chats-gris-jaune">
-      <img class="images-carrousel" src="images/licorne.jpeg" alt="licorne">
-      <img  class="images-carrousel"src="images/chaussons-roses.png" alt="chaussons-roses">
-      <img class="images-carrousel" src="images/stormtrooper.png" alt="stormtrooper">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://unsplash.it/1400/600?image=114">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=62">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=315">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=622">
+      </div>
+      <div class="item">
+        <img src="https://unsplash.it/1400/600?image=401">
+      </div>
     </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-</section>
+
+</div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script><script  src="./script.js"></script>
+
 
 <br/><br/>
                                         <!-- FORMULAIRE DE CONTACT -->
@@ -52,5 +87,19 @@
  <div class="bitmoji-image">
     <img class="bitmoji-enveloppe" src="{{ asset('images/bitmoji(6).jpeg') }}" alt="Lyline-enveloppe"> 
  </div>
+
+ <script>
+  $(".carousel").swipe({
+
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+  
+      if (direction == 'left') $(this).carousel('next');
+      if (direction == 'right') $(this).carousel('prev');
+  
+    },
+    allowPageScroll:"vertical"
+  
+  });
+ </script>
 
 {% endblock %}
