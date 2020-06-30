@@ -865,12 +865,12 @@
     } /* div contenant tous les éléments du footer */
     
     .copyright {
-        padding-top: -1rem;
+        padding-top: 40px;
         margin-right: 2rem; /* Distance entre les élements du footer */
     } /* classe du h6 "Copyright" */
     
     .confidentialite {
-        padding-top: -1rem;
+        padding-top: 40px;
         margin-right: 2rem;
     } /* classe du h6 "Conditions générales d'utilisation" */
     
