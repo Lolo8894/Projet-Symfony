@@ -1,87 +1,1079 @@
+
 /* -------------------------------------------------------------------------- */
 /* ---------------------------- MEDIA QUERIES ------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-@media (max-width: 1196px) {
 
-	.div-icon-1 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 49px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
+@media (max-width: 1900px) {
 
-	.div-icon-2 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 50px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
+    .logo {
+        font-size: 29px;
+      }
 
-	.div-icon-3 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 78px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
+    .logo:hover {
+        font-size: 29px;
+      }
+
+    .bitmoji-image-principale {
+        margin-left: 129px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
 }
 
-@media (max-width: 984px) {
-
-	.div-icon-1 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 10px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
-
-	.div-icon-2 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 38px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
-
-	.div-icon-3 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 150px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
+@media (max-width: 1860px) {
+      
+    .bitmoji-image-principale {
+        margin-left: 111px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+    
 }
 
-@media (max-width: 768px) {
-
-	.div-icon-1 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 0 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
-
-	.div-icon-2 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 27px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
-
-	.div-icon-3 {
-		border : 2px solid #f5f5f5;
-		border-radius: 10px;
-		margin-bottom: 80px;
-		padding: 50px 50px 141px 50px;
-		box-shadow: 12px 12px 2px 1px rgba(0, 0, 1, .1);
-	}
+@media (max-width: 1800px) {
+      
+    .bitmoji-image-principale {
+        margin-left: 97px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
 }
+    
+@media (max-width: 1760px) {
+    
+    .bitmoji-image-principale {
+        margin-left: 83px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}    
+
+@media (max-width: 1700px) {
+
+    .bitmoji-image-principale {
+        margin-left: 68px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}
+
+@media (max-width: 1660px) {
+
+    .bitmoji-image-principale {
+        margin-left: 65px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}
+
+@media (max-width: 1600px) {
+
+    .bitmoji-image-principale {
+        margin-left: 45px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}
+
+@media (max-width: 1560px) {
+
+    .bitmoji-image-principale {
+        margin-left: 35px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}
+
+@media (max-width: 1500px) {
+
+    .bitmoji-image-principale {
+        margin-left: 20px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+}
+
+@media (max-width: 1460px) {
+
+    .bitmoji-image-principale {
+        margin-left: 35px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 250px;
+        width: 250px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1400px) {
+
+    .bitmoji-image-principale {
+        margin-left: 21px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 250px;
+        width: 250px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1360px) {
+
+    .bitmoji-image-principale {
+        margin-left: 10px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 250px;
+        width: 250px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1350px) {
+
+    .bitmoji-image-principale {
+        margin-left: 19px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 230px;
+        width: 230px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1345px) {
+
+    .bitmoji-image-principale {
+        margin-left: 19px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 230px;
+        width: 230px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1330px) {
+
+    .bitmoji-image-principale {
+        margin-left: 12px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 230px;
+        width: 230px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1315px) {
+
+    .bitmoji-image-principale {
+        margin-left: 9px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 230px;
+        width: 230px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1300px) {
+
+    .bitmoji-image-principale {
+        margin-left: 14px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 215px;
+        width: 215px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1280px) {
+
+    .bitmoji-image-principale {
+        margin-left: 14px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 205px;
+        width: 205px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1260px) {
+
+    .bitmoji-image-principale {
+        margin-left: 11px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1245px) {
+
+    .bitmoji-image-principale {
+        margin-left: 11px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 195px;
+        width: 195px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+}
+
+@media (max-width: 1232px) {
+
+    .bitmoji-image-principale {
+        margin-left: 33px; /* Espace de la div côté gauche */
+    } /* div qui contient la .bitmoji-enveloppe */
+
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+    .slider {
+        width: 700px;
+        height: 460px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+}
+
+@media (max-width: 1200px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }  /* classe du lien sur le logo */
+
+    .logo:hover {
+        font-size: 1.5rem;
+      }
+
+    .violet {
+        font-size: 22px; /* taille du point */
+        color: #cb8fff;
+      } /* classe appliquée au span représentant le point du logo */
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+      
+      nav ul li a {
+        font-size: 18px;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 18px;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 22px; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        font-size: 15px;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        font-size:15px;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 180px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .transparent {
+        /* STYLE DU MESSAGE DE BIENVENUE */
+        font-size: 40px;
+        padding-top: 70px;
+
+         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
+    } /* class donnée au h2 */
+  
+    .bitmoji-image-principale {
+        margin-top: 0;
+        margin-left: 46px; /* Espace de la div côté gauche */
+    } /* div qui contient l'image comportant la .bitmoji-coeur */
+    
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+
+    .slider {
+        width: 600px;
+        height: 360px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        font-size: 1rem;
+        height: 134px;
+    } /* div contenant tous les éléments du footer */
+    
+    .copyright {
+        padding-top: 4.5rem;
+        margin-right: 2rem; /* Distance entre les élements du footer */
+    } /* classe du h6 "Copyright" */
+    
+    .confidentialite {
+        padding-top: 4.5rem;
+        margin-right: 2rem;
+    } /* classe du h6 "Conditions générales d'utilisation" */
+    
+    .politique_de_confidentialite {
+        font-size: 1rem;
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au lien */
+    
+    .politique_de_confidentialite:hover {
+        font-size: 1rem;
+        color: #0086ad;
+    } /* effet au survol */
+    
+    .lien-instagram {
+        margin-top: 0;
+    } /* classe associée au lien vers la page instagram de Lyline */
+    
+    .logo-instagram {
+        margin-top: 4rem;
+        height: 2rem;
+        width: 2rem;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au logo instagram (encapsulé dans le lien) */
+    
+    .insta {
+        font-size: 1rem;
+        color: #777;
+        padding-top: 4rem;
+    }
+    
+    .arrow-right {
+        height: 2rem;
+        width: 2rem;
+    }
+}  
+
+@media (max-width: 1140px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }  /* classe du lien sur le logo */
+
+    .violet {
+        font-size: 22px; /* taille du point */
+        color: #cb8fff;
+      } /* classe appliquée au span représentant le point du logo */
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+      
+      nav ul li a {
+        font-size: 18px;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 18px;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 22px; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        font-size: 15px;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        font-size:15px;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 180px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .transparent {
+        /* STYLE DU MESSAGE DE BIENVENUE */
+        font-size: 40px;
+        padding-top: 70px;
+
+         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
+    } /* class donnée au h2 */
+  
+    .bitmoji-image-principale {
+        margin-top: 0;
+        margin-left: 34px; /* Espace de la div côté gauche */
+    } /* div qui contient l'image comportant la .bitmoji-coeur */
+    
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+
+    .slider {
+        width: 600px;
+        height: 360px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        font-size: 1rem;
+        height: 134px;
+    } /* div contenant tous les éléments du footer */
+    
+    .copyright {
+        padding-top: -1rem;
+        margin-right: 2rem; /* Distance entre les élements du footer */
+    } /* classe du h6 "Copyright" */
+    
+    .confidentialite {
+        padding-top: -1rem;
+        margin-right: 2rem;
+    } /* classe du h6 "Conditions générales d'utilisation" */
+    
+    .politique_de_confidentialite {
+        font-size: 1rem;
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au lien */
+    
+    .politique_de_confidentialite:hover {
+        font-size: 1rem;
+        color: #0086ad;
+    } /* effet au survol */
+    
+    .lien-instagram {
+        margin-top: 0;
+    } /* classe associée au lien vers la page instagram de Lyline */
+    
+    .logo-instagram {
+        margin-top: -1rem;
+        height: 2rem;
+        width: 2rem;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au logo instagram (encapsulé dans le lien) */
+    
+    .insta {
+        font-size: 1rem;
+        color: #777;
+        padding-top: -1rem;
+    }
+    
+    .arrow-right {
+        height: 2rem;
+        width: 2rem;
+    }
+} 
+
+@media (max-width: 1120px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }  /* classe du lien sur le logo */
+
+    .violet {
+        font-size: 22px; /* taille du point */
+        color: #cb8fff;
+      } /* classe appliquée au span représentant le point du logo */
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+      
+      nav ul li a {
+        font-size: 18px;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 18px;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 22px; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        font-size: 15px;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        font-size:15px;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 180px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .transparent {
+        /* STYLE DU MESSAGE DE BIENVENUE */
+        font-size: 40px;
+        padding-top: 70px;
+
+         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
+    } /* class donnée au h2 */
+  
+    .bitmoji-image-principale {
+        margin-top: 0;
+        margin-left: 26px; /* Espace de la div côté gauche */
+    } /* div qui contient l'image comportant la .bitmoji-coeur */
+    
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+
+    .slider {
+        width: 600px;
+        height: 360px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        font-size: 1rem;
+        height: 134px;
+    } /* div contenant tous les éléments du footer */
+    
+    .copyright {
+        padding-top: -1rem;
+        margin-right: 2rem; /* Distance entre les élements du footer */
+    } /* classe du h6 "Copyright" */
+    
+    .confidentialite {
+        padding-top: -1rem;
+        margin-right: 2rem;
+    } /* classe du h6 "Conditions générales d'utilisation" */
+    
+    .politique_de_confidentialite {
+        font-size: 1rem;
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au lien */
+    
+    .politique_de_confidentialite:hover {
+        font-size: 1rem;
+        color: #0086ad;
+    } /* effet au survol */
+    
+    .lien-instagram {
+        margin-top: 0;
+    } /* classe associée au lien vers la page instagram de Lyline */
+    
+    .logo-instagram {
+        margin-top: -1rem;
+        height: 2rem;
+        width: 2rem;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au logo instagram (encapsulé dans le lien) */
+    
+    .insta {
+        font-size: 1rem;
+        color: #777;
+        padding-top: -1rem;
+    }
+    
+    .arrow-right {
+        height: 2rem;
+        width: 2rem;
+    }
+} 
+
+@media (max-width: 1100px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }  /* classe du lien sur le logo */
+
+    .violet {
+        font-size: 22px; /* taille du point */
+        color: #cb8fff;
+      } /* classe appliquée au span représentant le point du logo */
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+      
+      nav ul li a {
+        font-size: 18px;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 18px;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 22px; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        font-size: 15px;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        font-size:15px;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 180px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .transparent {
+        /* STYLE DU MESSAGE DE BIENVENUE */
+        font-size: 40px;
+        padding-top: 70px;
+
+         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
+    } /* class donnée au h2 */
+  
+    .bitmoji-image-principale {
+        margin-top: 0;
+        margin-left: 12px; /* Espace de la div côté gauche */
+    } /* div qui contient l'image comportant la .bitmoji-coeur */
+    
+    .bitmoji-coeur {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+
+    .slider {
+        width: 600px;
+        height: 360px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-image {
+        margin-bottom: 30px;
+    }
+
+    .bitmoji-enveloppe {
+        height: 200px;
+        width: 200px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        font-size: 1rem;
+        height: 134px;
+    } /* div contenant tous les éléments du footer */
+    
+    .copyright {
+        padding-top: -1rem;
+        margin-right: 2rem; /* Distance entre les élements du footer */
+    } /* classe du h6 "Copyright" */
+    
+    .confidentialite {
+        padding-top: -1rem;
+        margin-right: 2rem;
+    } /* classe du h6 "Conditions générales d'utilisation" */
+    
+    .politique_de_confidentialite {
+        font-size: 1rem;
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au lien */
+    
+    .politique_de_confidentialite:hover {
+        font-size: 1rem;
+        color: #0086ad;
+    } /* effet au survol */
+    
+    .lien-instagram {
+        margin-top: .5rem;
+    } /* classe associée au lien vers la page instagram de Lyline */
+    
+    .logo-instagram {
+        margin-top: -1.1rem;
+        height: 2rem;
+        width: 2rem;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au logo instagram (encapsulé dans le lien) */
+    
+    .insta {
+        margin-top: -4.3rem;
+        font-size: 1rem;
+        color: #777;
+        padding-top: -1rem;
+    }
+    
+    .arrow-right {
+        height: 2rem;
+        width: 2rem;
+    }
+} 
+
+
+@media (max-width: 1024px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }  /* classe du lien sur le logo */
+
+    .violet {
+        font-size: 22px; /* taille du point */
+        color: #cb8fff;
+      } /* classe appliquée au span représentant le point du logo */
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+      } /* la liste non ordonnée de la navbar alignée sur une ligne + Espacement entre les éléments */
+      
+      nav ul li a {
+        font-size: 18px;
+      } /* style appliqué sur la liste non ordonnée + liens de la navbar */
+      
+      nav ul li a:hover {
+        font-size: 18px;
+      } /* effet au survol */
+
+      .couleurs {
+        font-size: 22px; /* taille de chaque point */
+      }  /* classe appliquée au span représentant les points sur la navbar */
+
+      .connexion {
+        font-size: 15px;
+      } /* Style du bouton "Connexion" */
+      
+      .deconnexion-logout {
+        margin-top: 0.5rem; /* Règlage en hauteur de la div .deconnexion-logout*/
+      } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
+      
+      .deconnexion {
+        font-size:15px;
+      } /* Style du bouton "Déconnexion" */
+
+    #image_principale {
+        height: 180px;
+    } /* section contenant le h2 .transparent + image ci-dessus dans CSS */
+
+    .transparent {
+        /* STYLE DU MESSAGE DE BIENVENUE */
+        font-size: 40px;
+        padding-top: 70px;
+
+         /* FILM TRANSPARENT APPLIQUE SUR LE H2 CLASSE TRANSPARENT */
+        height: 180px; /* hauteur du film transparent (identique à celle de la section) */;
+    } /* class donnée au h2 */
+  
+    .bitmoji-image-principale {
+        margin-top: 0;
+        margin-left: 24px; /* Espace de la div côté gauche */
+    } /* div qui contient l'image comportant la .bitmoji-coeur */
+    
+    .bitmoji-coeur {
+        height: 160px;
+        width: 160px;
+        border-radius: 40px;
+    } /* classe de l'image bitmoji-coeur */
+
+
+    .slider {
+        width: 600px;
+        height: 360px; /* dimensions du carrousel */
+    } /* div qui contient le carrousel */
+
+
+    #formulaire {
+        width: 425px;
+    } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+    /* ------------------- éléments du formulaire Symfony --------------------- */
+
+    #contact_Nom, #contact_Prenom, #contact_email {
+        width: 244px; /* largeur des inputs */
+        margin-left: 93px; /* règle l'input au centre */
+    } /* inputs nom, prénom et email */
+    
+    .form-group {
+        padding-top: 0; /* espace en haut entre input et submit */
+        padding-bottom: 0; /* complète le padding-top: 5px; */
+    } /* div entourant les labels + les inputs */
+    
+    .control-label {
+        margin-bottom: 0; /* espacement du haut entre label et input */
+    } /* div contenant les labels nom / prénom / email /message */
+    
+    #contact_Message {
+        margin-left: 93px; /* règlage au centre de l'input */
+        width: 244px;
+        height: 200px;
+    } /* input textarea */
+    
+    #contact_Envoyer {
+        margin-left: 160px; /* règlage au centre du submit */
+    } /* bouton "Envoyer" */
+    
+    #contact_Envoyer:hover {
+        margin-bottom: 0;
+    } /* animation au survol du bouton Envoyer */
+  
+    /* ------------------- END - éléments du formulaire Symfony ----------------- */
+  
+    .bitmoji-enveloppe {
+        height: 160px;
+        width: 160px;
+        border-radius: 40px;
+    } /* image de la bitmoji identifiée par sa classe */
+
+    .footer {
+        font-size: 1rem;
+        height: 134px;
+    } /* div contenant tous les éléments du footer */
+    
+    .copyright {
+        padding-top: 40px;
+        margin-right: 2rem; /* Distance entre les élements du footer */
+    } /* classe du h6 "Copyright" */
+    
+    .confidentialite {
+        padding-top: 40px;
+        margin-right: 2rem;
+    } /* classe du h6 "Conditions générales d'utilisation" */
+    
+    .politique_de_confidentialite {
+        font-size: 1rem;
+        color: #ffb3ba;
+        text-shadow: 1px 1px 1.5px #00000007;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au lien */
+    
+    .politique_de_confidentialite:hover {
+        font-size: 1rem;
+        color: #0086ad;
+    } /* effet au survol */
+    
+    .lien-instagram {
+        margin-top: 0;
+    } /* classe associée au lien vers la page instagram de Lyline */
+    
+    .logo-instagram {
+        margin-top: -0.5rem;
+        height: 2rem;
+        width: 2rem;
+        transition: 0.5s ease-in-out;
+    } /* classe associée au logo instagram (encapsulé dans le lien) */
+    
+    .insta {
+        font-size: 1rem;
+        color: #777;
+        /* padding-top: .5rem; */
+    }
+    
+    .arrow-right {
+        height: 2rem;
+        width: 2rem;
+    }
+}  
+
 
 
 

@@ -30,8 +30,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  padding-bottom: 100px;
+  min-height: 140vh; /* Hauteur du container body entre header et footer */
+  padding-bottom: 130px;
   position: relative;
   font-family: 'Varela Round', sans-serif;
   font-size: 15px;
@@ -68,7 +68,7 @@ a:hover {
 .logo {
   color: #ffb3ba;
   font-size: 29px;
-  margin-bottom: 0.5rem; /* Couleur du texte du logo + taille du logo + positionnement */
+  padding-bottom: .5rem; /* Couleur du texte du logo + taille du logo + positionnement */
 } /* classe du lien sur le logo */
 
 .logo:hover {
@@ -423,7 +423,6 @@ ul {
 
 .bitmoji-image {
   margin-top: 30px;
-  margin-bottom: 30px;
   position: relative;
   top: 0;
   right: 0; /* permet au bloc de se fixer suite à l'animation */
