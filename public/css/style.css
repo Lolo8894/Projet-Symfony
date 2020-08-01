@@ -263,7 +263,7 @@ ul {
   margin: 0 auto;
   color: #777;
   font-size: 15px;
-  box-shadow: 0 0px 3px 3px #c39797; /* style de la box-shaddow */
+  box-shadow: 0 0px 2px 2.5px #c39797; /* style de la box-shaddow */
 } /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
 
 .titre-formulaire {
@@ -273,7 +273,7 @@ ul {
 } /* h3 "Intéressé ? Contactez-moi !" */
 
 .contact {
-  border: 0.07px solid #CFACAC;
+  border: 0.07px solid #fff;
   background-color:#c39797;
 } /* style de la div .contact à l'intérieur de la section #formulaire */
 
@@ -336,7 +336,7 @@ ul {
 #contact_Envoyer:hover {
   background: #0A4589;
   color: #fff;
-  border: 1px solid grey;
+  border: 1px solid #777;
   box-shadow: 3px 3px 3px 0px #fff;
   /* height: 5rem; */
 } /* animation au survol du bouton Envoyer */
@@ -358,7 +358,7 @@ ul {
   height: 302px;
   width: 302px;
   border-radius: 90px;
-  border: 1px solid #808080;
+  border: 1px solid #777;
   box-shadow: 0 0 7px 0 #cb8fff;
 } /* image de la bitmoji identifiée par sa classe */
 
@@ -397,8 +397,8 @@ ul {
   margin: 12px;
   padding: 20px;
   border-radius: 5px;
-  background-color: #f7f7f7;
-  box-shadow: 1px 1px 6px grey;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px #777;
 } /* div de la carte */
 
 .div-image {
@@ -414,14 +414,14 @@ ul {
 } /* classe de chaque image */
 
 .lien-description {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #777;
   transition: .2s ease-in-out;
 } /* classe associée au lien du h3 */
 
 .lien-description:hover {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #0086ad;
 } /* effet au survol de la classe associée au lien du h3 */
@@ -445,9 +445,19 @@ ul {
 /* ---------------------------------- TITRE --------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .titre-creation {
+  display:flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  width: 65rem;
+  width: 100rem;
   padding: 30px 0 20px 0;
   margin: 30px 290px 0 290px;
   background-color: #fff;
@@ -464,8 +474,8 @@ ul {
   display:flex;
   align-items: center;
   justify-content: center; /* bloc centré avec Flex box */
-  width: 65rem;
-  height: 48rem;
+  width: 100rem;
+  height: 70rem;
   background: Rgba(255, 255, 255, 0.5); /* transparent */
 } /* section qui contient images */
 
@@ -479,8 +489,9 @@ ul {
 } /* div qui contient l'image principale */
 
 #picture {
-  display:flex;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%; /* Dimensions de l'image dans la div description */
   /* margin-top: 30px;
@@ -507,7 +518,7 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .details {
-  width: 65rem;
+  width: 100rem;
   min-height: 15rem;
   padding: 20px 0 20px 0;
   background-color: #fff;
@@ -533,7 +544,7 @@ ul {
 .commentaires {
   padding-top: 1rem;
   margin-bottom: 30px;
-  width: 65rem;
+  width: 100rem;
   min-height: 15rem;
   background-color: Rgba(255, 255, 255, 0.5);
   line-height: 30px;
@@ -567,7 +578,7 @@ ul {
 .lyline-se-presente {
   margin-top: 30px;
   width: 280px;
-  border: 1px solid #808080;
+  border: 1px solid #777;
   border-radius: 200px;
 } /* classe de l'image de Lyline */
 
@@ -696,12 +707,12 @@ ul {
   height: 302px;
   width: 302px;
   border-radius: 90px;
-  border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  border: 1px solid #777;
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
-  border: 1px solid #808080;
+  border: 1px solid #777;
   width: 380px;
 } /* classe donnée à la deuxième image */
 
@@ -710,8 +721,8 @@ ul {
   height: 300px;
   width: 350px;
   border-radius: 90px;
-  border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  border: 1px solid #777;
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 /* -------------------- END - general_a_propos.html.twig -------------------- */
@@ -743,13 +754,13 @@ ul {
 .copyright {
   padding-top: 2.6rem;
   margin-right: 5rem; /* Distance entre les élements du footer */
-  color: #808080;
+  color: #777;
 } /* classe du h6 "Copyright" */
 
 .confidentialite {
   padding-top: 2.5rem;
   margin-right: 5rem;
-  color: #808080;
+  color: #777;
 } /* classe du h6 "Conditions générales d'utilisation" */
 
 .politique_de_confidentialite {

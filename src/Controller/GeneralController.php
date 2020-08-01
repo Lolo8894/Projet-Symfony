@@ -47,7 +47,7 @@ class GeneralController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $contact = $form->getData();
 
-          // dd($contact) // pour s'assurer de la récolte des informations du formulaire aid au développeur
+          // dd($contact) // pour s'assurer de la récolte des informations du formulaire aide au développeur
 
           // On met les informations dans la base de données
           $entityManager = $this->getDoctrine()->getManager();
@@ -63,8 +63,8 @@ class GeneralController extends AbstractController
           ->to($contact->getEmail())
           // on crée le message
           ->subject('Un message du site Les créations de Lyline')
-          ->text("{$contact->getMessage()}" )
-          ->html("<h1>{$contact->getMessage()}</h1>" );
+          ->text("{$contact->getMessage()}" ) // Text brut sans images
+          ->html("<h1>{$contact->getMessage()}</h1>" ); // Pour faire apparaître la config de l'UTF-8, fait apparaître les caractères spéciaux et images
 
         // on envoie le message
         $mailer->send($email);

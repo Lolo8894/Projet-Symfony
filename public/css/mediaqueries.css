@@ -176,7 +176,7 @@
         color: #777;
       }
     
-      /* ------------------------ general_a_propos.html.twig ---------------------- */
+/* ------------------------ general_a_propos.html.twig ---------------------- */
 /* -------------------------------------------------------------------------- */
 /*------------------------------ A PROPOS DE MOI ---------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -320,7 +320,7 @@
   width: 202px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -334,7 +334,7 @@
   width: 210px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
     
 }
@@ -662,8 +662,6 @@
         font-size: 1.2rem;
         color: #777;
       }
-} 
-
 
 @media (max-width: 1024px) {
 
@@ -994,7 +992,7 @@ body.open:after {
       margin-top: -1.3rem;
       font-size: 1.2rem;
       color: #777;
-    }
+    }  
 }
 
 @media (max-width: 990px) {
@@ -3480,7 +3478,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -3494,7 +3492,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }
@@ -3991,7 +3989,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -4005,7 +4003,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }
@@ -4503,7 +4501,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -4517,7 +4515,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }
@@ -5020,7 +5018,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -5034,7 +5032,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }
@@ -5537,7 +5535,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -5551,7 +5549,7 @@ color: #444444;
   width: 80px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }
@@ -6055,7 +6053,7 @@ color: #444444;
   width: 60px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #cb8fff; /* ombre violette qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre violette qui entoure l'image */
 } /* classe donnée à la première image */
 
 .affiche-innocent {
@@ -6069,7 +6067,7 @@ color: #444444;
   width: 60px;
   border-radius: 90px;
   border: 1px solid #808080;
-  box-shadow: 0 0 7px 0 #98CE54; /* ombre verte qui entoure l'image */
+  box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
 
 }

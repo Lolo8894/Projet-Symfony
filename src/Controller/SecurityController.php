@@ -66,7 +66,7 @@ class SecurityController extends AbstractController
   */
   public function deconnexion() {
 
-    return $this->render('security/connexion.html.twig', [
+    return $this->render('security/deconnexion.html.twig', [
       'last_username' => $lastUsername,
       'error' => $error ]
     );

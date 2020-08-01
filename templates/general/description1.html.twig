@@ -3,10 +3,12 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block body %}
+
+<section class="container-principal">
 																				<!-- TITRE -->
 <h3 class="titre-creation">{{ creation.titre }}</h3>
 																				<!-- IMAGES -->
-	<section class="affichage">
+	<div class="affichage">
 		<div class="description">
 			<img id="picture" src="{{ asset('/images/' ~ creation.image) }}" alt="imageCiblée">
 		</div>		
@@ -34,7 +36,8 @@
 			{% endif %}	
 		</div>   
 	{% endif %}	
-    </section>
+	</div>
+   
 																				<!-- DESCRIPTION -->
         <div class="details">
           <h3 class="description-creation">Description :</h3>
@@ -46,7 +49,8 @@
           <h3 class="commentaires-creation">Commentaires :</h3>
       
           <p class="texte-commentaires">Pseudo</p>
-        </div>    
+		</div>  
+</section>  
   
 <script src="{{ asset('js/script.js') }}"></script>
 
