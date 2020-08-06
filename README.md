@@ -13,7 +13,7 @@ Pour installer le projet, faire un clone du projet :
 ```
 git clone https://github.com/Lolo8894/Projet-Symfony.git
 ```
-Puis penser à faire un composer install juste après en ligne de commande.
+Puis penser à faire un `composer install` juste après en ligne de commande.
 
 ## ASTUCES
 
