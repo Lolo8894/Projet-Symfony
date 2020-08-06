@@ -19,15 +19,16 @@ class SecurityController extends AbstractController
   * @Route("/inscription", name="security_inscription")
   */
     public function inscription(Request $request, EntityManagerInterface $manager, UserPasswordEncoderInterface $encoder) {
-      //UserPasswordEncoder permet de crypter les mots de passe dans la BDD.
+      //UserPasswordEncoder permet de crypter les mots de passe dans la BDD
         $utilisateurs = new Utilisateurs();
       
         $form = $this->createForm(InscriptionType::class, $utilisateurs);
+        // Ici on relie les champs du formulaire aux champs de l'utilisateur
 
         $form->handleRequest($request);
-        // Analyse la requête qui sera envoyée via le formulaire d'inscription.
+        // Analyse la requête qui sera envoyée via le formulaire d'inscription
         if($form->isSubmitted() && $form->isValid()) {
-
+        // si le formulaire est soumi et qu'il est valide
             $hash = $encoder->encodePassword($utilisateurs, $utilisateurs->getPassword());
 
             $utilisateurs->setPassword($hash);

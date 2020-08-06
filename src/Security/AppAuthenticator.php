@@ -12,31 +12,33 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Symfony\Component\Security\Guard\AbstractGuardAuthenticator;
 use Symfony\Component\Security\Core\Exception\AuthenticationException;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Core\Exception\CustomUserMessageAuthenticationException;
 
 class AppAuthenticator extends AbstractGuardAuthenticator
 {
     private $entityManager;
     private $urlGenerator;
+    private $encoder;
 
-    public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator)
+    public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator, UserPasswordEncoderInterface $encoder)
     {
         $this->entityManager = $entityManager;
         $this->urlGenerator = $urlGenerator;
+        $this->encoder = $encoder;
     }
 
     public function supports(Request $request)
     {
         return $request->attributes->get('_route') === 'security_connexion' && $request->isMethod('POST');
-    } // 
+    } 
       // 1) Permet de savoir si l'on est sur la page d'authentification. Méthode supports doit retourner true quand on est sur la page de connexion et que le formulaire est envoyé.
-      // 2) 
 
     public function getCredentials(Request $request)
     {
         $credentials = [
-            'email' => $request->request->get('email'),
-            'password' => $request->request->get('password'),
+            'email' => $request->request->get('_username'),
+            'password' => $request->request->get('_password'),
             'csrf_token' => $request->request->get('_csrf_token'),
         ];
 
@@ -57,7 +59,9 @@ class AppAuthenticator extends AbstractGuardAuthenticator
 
     public function checkCredentials($credentials, UserInterface $utilisateur)
     {
-        return $utilisateur->getMotdepasse() === $credentials['password'];
+        //dd($utilisateur->getPassword(), $credentials['password']);
+        $hash = $this->encoder->encodePassword($utilisateur, $credentials['password']);
+        return $utilisateur->getPassword() === $hash;
     }
 
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception)

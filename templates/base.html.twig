@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">  
         
+        <link rel="icon" type="image/png" href="{{ asset('images/favicon.jpg') }}" />
+        <!-- Favicon -->
 
         <title>{% block title %}Bienvenue sur mon site{% endblock %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -55,7 +57,7 @@
 
 
         
-        {% if is_granted('ROLE_AUTHENTICATED_REMEMBERED') %}
+        {% if not is_granted('IS_AUTHENTICATED_REMEMBERED') %}
         <div class="div-connexion-deco">
           <div class="connexion-inscription">
             <form action="{{ path('security_connexion') }}"><input class="connexion" value="Se connecter" type="submit"></form>

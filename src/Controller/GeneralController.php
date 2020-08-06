@@ -18,20 +18,19 @@ class GeneralController extends AbstractController
 {
 
     /**
-     * @Route("/", methods={"POST", "GET"})
-     * @Route("/", name="general_accueil", methods={"POST", "GET"})
+     * @Route("/", name="general_accueil")
      */
 //    public function accueil(Request $request, EntityManagerInterface $manager) { // "/" c'est l'URL et name est le nom de la route quand on l'appelle
-//      
-//        $repo = $this->getDoctrine()->getRepository(Accueil::class);
-//
-//        $home = $repo->findAll();
-//        
+     
+//     $repo = $this->getDoctrine()->getRepository(Creations::class);
+
+//     $creations = $repo->findAll();
+//        dd($creations);
 //        return $this->render('general/accueil.html.twig', [
 //            'title' => "Les créations de Lyline",
-//            'home' => $home
+//            'creations' => $creations
 //        ]);
-//    }
+//    } // Code devait être relié au carrousel mais pour une raison inconnu, cela ne fonctionne pas.
   
     /**
      * @Route("/", methods={"POST", "GET"})
@@ -69,7 +68,7 @@ class GeneralController extends AbstractController
         // on envoie le message
         $mailer->send($email);
 
-        $this->addFlash('message', "Votre message a été transmis, merci de m'avoir contacté !"); // Permet un message flash de renvoi, ce message apparaît dans easyadmin
+        $this->addFlash('message', "Votre message a été transmis, merci de m'avoir contacté !"); // Permet un message flash de renvoi
 
         // on redirige vers la page de confirmation d'envoi de mail
         return $this->redirectToRoute('general_accueil');
@@ -80,11 +79,7 @@ class GeneralController extends AbstractController
          'general/accueil.html.twig', [
          'title' => 'Les créations de Lyline',
          'form'  => $form->createView(),
-        ]);
-      
-        //return $this->render('general/accueil.html.twig',[
-        //  'form'=> $form->createView(),
-        //]);
+        ]); // Création de l'affichage du formulaire Symfony avec Twig      
     }
 
 

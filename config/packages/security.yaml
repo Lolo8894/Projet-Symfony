@@ -1,7 +1,8 @@
 security:
     encoders:
         App\Entity\Utilisateurs:
-            algorithm: bcrypt # Encrypte un mot de passe
+            algorithm: md5
+    # Encrypte un mot de passe avec md5
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
         users_in_memory: { memory: null }

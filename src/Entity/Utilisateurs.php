@@ -37,20 +37,20 @@ class Utilisateurs implements UserInterface
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $pseudo;
+    private $username;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(min="8", minMessage="Votre mot de passe doit faire au minimum 8 caractères.")
      */
-    private $motdepasse;
+    private $password;
 
     /**
-     * @Assert\EqualTo(propertyPath="motdepasse", message="Votre mot de passe doit être identique.")
+     * @Assert\EqualTo(propertyPath="password", message="Votre mot de passe doit être identique.")
      */
-    public $confirm_motdepasse;
-        // L'annotation @Assert\EqualTo est relié à confirm_motdepasse car cette méthode s'assure que le mot de passe saisi dans
-        // mot de passe soit identique à la confirmation de celui-ci.
+    public $confirm_password;
+        // L'annotation @Assert\EqualTo est relié à confirm_password car cette méthode s'assure que le mot de passe saisi dans soit identique
+
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      * @var string
@@ -120,54 +120,43 @@ class Utilisateurs implements UserInterface
         return $this;
     }
 
-    public function getPseudo(): ?string
+    public function getUsername(): ?string
     {
-        return $this->pseudo;
+        return $this->username;
     }
 
-    public function setPseudo(string $pseudo): self
+    public function setUsername(string $username): self
     {
-        $this->pseudo = $pseudo;
+        $this->username = $username;
 
         return $this;
     }
 
-    public function getMotdepasse(): ?string
+    public function getPassword(): ?string
     {
-        return $this->motdepasse;
+        return $this->password;
     }
 
-    public function setMotdepasse(string $motdepasse): self
+    public function setPassword(string $password): self
     {
-        $this->motdepasse = $motdepasse;
+        $this->password = $password;
 
         return $this;
     }
+
+    public function eraseCredentials() {         
+        
+        // TODO: Implement eraseCredentials() method.     
+    }
+
+    public function getSalt() {         
+        
+        return null;
+    } // Pas utilisé car algorithm de cryptage mis en md5 dans security.yaml
 
     public function getRoles() {         
     
         return ['ROLE_USER'];
     }
     
-    public function getSalt() {         
-        
-        return null;
-
-    }      
-    public function getUsername(): ?string {         
-        
-        return $this->username;
-    }      
-
-    public function setUsername(string $username):self {         
-        
-        $this->username = $username;
-
-        return $this;
-    } 
-
-    public function eraseCredentials() {         
-        
-        // TODO: Implement eraseCredentials() method.     
-    }
 }
