@@ -728,6 +728,169 @@ ul {
 /* -------------------- END - general_a_propos.html.twig -------------------- */
 
 
+/* ------------------------- inscription.html.twig -------------------------- */
+/* -------------------------------------------------------------------------- */
+/*-------------------------- FORMULAIRE D'INSCRIPTION ----------------------- */
+/* -------------------------------------------------------------------------- */
+
+#section-inscription {
+  padding: 0 0 50px 0;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  width: 590px;
+  margin: 70px;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 15px;
+  box-shadow: 0 0px 2px 2.5px #c39797; /* style de la box-shaddow */
+} /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+.titre-inscription {
+  font-weight: bold;
+  color: #777;
+  font-size: 21px;
+} /* "Inscription" */
+
+.div-inscription {
+  border: 0.07px solid #fff;
+  background-color:#c39797;
+} /* style de la .div-inscription à l'intérieur de la #section-inscription */
+
+.champs-inscription {
+  color: #0A4589;
+  font-size: 18px;
+  font-weight: bold; /* labels en gras */
+} /* div qui contient les labels */
+
+.btn {
+  display: flex;
+  flex-direction: column; /* centre le bouton en colonne */
+  margin-left: 250px; /* règlage au centre du submit */
+  padding-left: 18px; /* Centre le "Valider" à l'intérieur du bouton */
+  width: 95px;
+  line-height: 36px; 
+  text-align: center;
+  color:#777;
+  font-size:18px;
+  font-weight: bold;
+  background:#fff;
+  cursor: pointer; 
+  border-radius: 9px 24px;
+  box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
+  transition: .5s ease-in-out;
+  /* height: 3rem; */
+} /* bouton "Valider" présent sur formulaires inscription + connexion */
+
+.btn:hover {
+  background: #0A4589;
+  color: #fff;
+  border: 1px solid #777;
+  box-shadow: 3px 3px 3px 0px #fff;
+  /* height: 5rem; */
+} /* animation au survol du bouton */
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#inscription_username {
+  width: 190px; /* largeur des inputs */
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 1rem; /* règle l'input au centre */
+}
+
+#inscription_email, #inscription_password, #inscription_confirm_password {
+  margin-top: 15px;
+  width: 190px; /* largeur des inputs */
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 1rem; /* règle l'input au centre */
+} /* inputs ou champs de saisi du formulaire*/
+
+.form-group {
+  padding-top: 5px; /* espace en haut entre input et submit */
+  padding-bottom: 5px; /* complète le padding-top: 5px; */
+} /* div entourant les labels + les inputs */
+
+#inscription_imageFile {
+  font-size: inherit;
+  color: #fff;
+  margin-bottom: 18px;
+  margin-left: 120px;
+  margin-top: 15px;;
+}
+
+label {
+  margin-right: 202px;
+  margin-left: 210px;
+}
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
+
+/* ----------------------- END - inscription.html.twig ---------------------- */
+
+
+/* ------------------------- connexion.html.twig -------------------------- */
+/* ------------------------------------------------------------------------ */
+/*-------------------------- FORMULAIRE DE CONNEXION ---------------------- */
+/* ------------------------------------------------------------------------ */
+
+#section-connexion {
+  padding: 0 0 50px 0;
+  background: #fff;
+  border-radius: 15px;
+  text-align: center;
+  width: 590px;
+  margin: 210px;
+  margin-bottom: 0;
+  color: #777;
+  font-size: 15px;
+  box-shadow: 0 0px 2px 2.5px #c39797; /* style de la box-shaddow */
+} /* div qui contient intégralement le formulaire (éléments de Symfony + mes éléments) */
+
+.titre-connexion {
+  font-weight: bold;
+  color: #777;
+  font-size: 21px;
+} /* "Inscription" */
+
+.div-connexion {
+  border: 0.07px solid #fff;
+  background-color:#c39797;
+} /* style de la .div-connexion à l'intérieur de la #section-connexion */
+
+.champs-connexion {
+  color: #0A4589;
+  font-size: 18px;
+  font-weight: bold; /* labels en gras */
+} /* div qui contient les labels */
+
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#inputEmail {
+  width: 290px;
+  margin-bottom: 15px;
+  margin-left: 150px;
+}
+
+#inputPassword {
+  width: 290px;
+  margin-bottom: 15px;
+  margin-left: 150px;
+}
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
+
+/* ----------------------- END - inscription.html.twig ---------------------- */
+
+
 /* ------------------------------ base.html.twig ---------------------------- */
 /* -------------------------------------------------------------------------- */
 /*---------------------------------- FOOTER --------------------------------- */
