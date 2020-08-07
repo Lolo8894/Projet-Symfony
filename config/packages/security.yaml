@@ -5,18 +5,15 @@ security:
     # Encrypte un mot de passe avec md5
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
-        users_in_memory: { memory: null }
-        in_database:
-            entity:
-                class: App\Entity\Utilisateurs
-                property: email
+        user_provider:
+            id: App\Security\UserProvider
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             anonymous: lazy
-            provider: users_in_memory
+            provider: user_provider
 
             form_login:
                 login_path: security_connexion
