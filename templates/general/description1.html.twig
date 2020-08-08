@@ -46,10 +46,33 @@
         </div>  
 																				<!-- COMMENTAIRES -->
         <div class="commentaires">
-          <h3 class="commentaires-creation">Commentaires :</h3>
-      
-          <p class="texte-commentaires">Pseudo</p>
+		  <h3 class="commentaires-creation">{{ creation.comments | length }} Commentaires :</h3>
+		  {% for comment in creation.comments %}
+			<div class="comment">
+				<div class="row">
+					<div class="col-3">
+						{{ comment.author }} (<small>{{ comment.createdAt | date('d/m/m') }}</small>)
+					</div>
+					<div class="col">
+						{{ comment.content | raw }}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
 		</div>  
+		{% if app.user %}
+		{{ form_start(commentForm) }}
+		{{ form_row(commentForm.author, {'attr': {'placeholder': "Votre nom"}}) }}
+		{{ form_row(commentForm.content, {'attr': {'placeholder': "Votre commentaire"}}) }}
+
+		<button class="btn" type="submit">Valider</button>
+		{{ form_end(commentForm) }}
+
+		{% else %}
+		<h2>Vous ne pouvez pas commenter si vous n'êtes pas connecté !</h2>
+		<a href="{{path('security_connexion')}}" class="btn">Connexion</a>
+		{% endif %}
 </section>  
   
 <script src="{{ asset('js/script.js') }}"></script>

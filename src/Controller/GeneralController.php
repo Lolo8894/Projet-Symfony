@@ -2,16 +2,18 @@
 
 namespace App\Controller;
 
-use App\Form\ContactType;
+use App\Entity\Accueil;
+use App\Entity\Comment;
 use App\Entity\Contact;
 use App\Entity\Creations;
-use App\Entity\Accueil;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Mailer\MailerInterface;
+use App\Form\CommentType;
+use App\Form\ContactType;
 use Symfony\Component\Mime\Email;
 use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 class GeneralController extends AbstractController
@@ -98,10 +100,10 @@ class GeneralController extends AbstractController
         ]);
     }
   
-    /**
+      /**
        * @Route("/description/{id}", name="description-creation")
        */
-      public function description1($id) { 
+      public function description1($id, Request $request, EntityManagerInterface $manager) { 
         
           $repo = $this->getDoctrine()->getRepository(Creations::class);
 
@@ -110,12 +112,28 @@ class GeneralController extends AbstractController
           if ($creation === null) {
           Throw $this->createNotFoundException();
           }
+
+          $comment = new Comment();
+          $form = $this->createForm(CommentType::class, $comment);
+
+          $form->handleRequest($request);
+
+          if($form->isSubmitted() && $form->isValid()) {
+            $comment->setCreatedAt(new \DateTime())
+                    ->setCreation($creation);
+
+            $manager->persist($comment);
+            $manager->flush();
+
+            return $this->redirectToRoute('description-creation', ['id' => $creation->getId()]);
+          }
         
           return $this->render('general/description1.html.twig', [
               'title' => "Les créations de Lyline",
-              'creation' => $creation
+              'creation' => $creation,
+              'commentForm' => $form->createView()
           ]);
-      }
+    }
 
   
      /**
