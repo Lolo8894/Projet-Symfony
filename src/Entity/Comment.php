@@ -19,11 +19,6 @@ class Comment
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $author;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $title;
 
     /**
@@ -41,21 +36,21 @@ class Comment
      */
     private $comment;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Utilisateurs")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $author;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Creations", inversedBy="comments")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $creation;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getAuthor(): ?string
-    {
-        return $this->author;
-    }
-
-    public function setAuthor(string $author): self
-    {
-        $this->author = $author;
-
-        return $this;
     }
 
     public function getTitle(): ?string
@@ -102,6 +97,30 @@ class Comment
     public function setComment(string $comment): self
     {
         $this->comment = $comment;
+
+        return $this;
+    }
+
+    public function getAuthor(): ?Utilisateurs
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?Utilisateurs $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    public function getCreation(): ?Creations
+    {
+        return $this->creation;
+    }
+
+    public function setCreation(?Creations $creation): self
+    {
+        $this->creation = $creation;
 
         return $this;
     }

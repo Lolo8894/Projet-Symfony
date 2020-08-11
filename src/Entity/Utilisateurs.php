@@ -178,4 +178,10 @@ class Utilisateurs implements UserInterface, \Serializable
         $this->username = $data['username'];
         $this->avatar = $data['avatar'];
     }
+
+    public function __toString() {
+
+        return $this->email;
+
+    } // Méthode pour transformer un objet en chaîne de caractères
 }
