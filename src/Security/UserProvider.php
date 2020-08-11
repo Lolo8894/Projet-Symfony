@@ -24,7 +24,9 @@ class UserProvider implements UserProviderInterface
 
     public function refreshUser(UserInterface $user)
     {
-        return $user;
+        return $this->doctrine->getRepository(Utilisateurs::class)->findOneBy([
+            'email' => $user->getEmail()
+        ]);
     }
 
     public function supportsClass(string $class)

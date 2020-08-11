@@ -51,10 +51,11 @@
 			<div class="comment">
 				<div class="row">
 					<div class="col-3">
-						{{ comment.author }} (<small>{{ comment.createdAt | date('d/m/m') }}</small>)
+						{{ comment.author }} (<small>{{ comment.date | date('d/m/Y') }}</small>)
+						{{ comment.title }}
 					</div>
 					<div class="col">
-						{{ comment.content | raw }}
+						{{ comment.comment | raw }}
 					</div>
 				</div>
 			</div>
@@ -63,8 +64,7 @@
 		</div>  
 		{% if app.user %}
 		{{ form_start(commentForm) }}
-		{{ form_row(commentForm.author, {'attr': {'placeholder': "Votre nom"}}) }}
-		{{ form_row(commentForm.content, {'attr': {'placeholder': "Votre commentaire"}}) }}
+		{{ form_row(commentForm) }}
 
 		<button class="btn" type="submit">Valider</button>
 		{{ form_end(commentForm) }}

@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\EquatableInterface;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
@@ -17,7 +18,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
  *  message="L'email que vous avez indiqué est déjà utilisé."
  * )
  */
-class Utilisateurs implements UserInterface, \Serializable
+class Utilisateurs implements UserInterface, \Serializable, EquatableInterface
 {
     /**
      * @ORM\Id()
@@ -182,6 +183,12 @@ class Utilisateurs implements UserInterface, \Serializable
     public function __toString() {
 
         return $this->email;
+
+    } // Méthode pour transformer un objet en chaîne de caractères
+
+    public function isEqualTo(UserInterface $user) {
+
+        return $this->id === $user->getId();
 
     } // Méthode pour transformer un objet en chaîne de caractères
 }

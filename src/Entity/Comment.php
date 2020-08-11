@@ -22,14 +22,9 @@ class Comment
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="datetime", length=255)
      */
     private $date;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $hour;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -65,26 +60,14 @@ class Comment
         return $this;
     }
 
-    public function getDate(): ?string
+    public function getDate(): ?\DateTime
     {
         return $this->date;
     }
 
-    public function setDate(string $date): self
+    public function setDate(\DateTime $date): self
     {
         $this->date = $date;
-
-        return $this;
-    }
-
-    public function getHour(): ?string
-    {
-        return $this->hour;
-    }
-
-    public function setHour(string $hour): self
-    {
-        $this->hour = $hour;
 
         return $this;
     }
