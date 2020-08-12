@@ -568,6 +568,21 @@ h2 {
   margin-left: 2rem;
 }
 
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+  width: 290px; /* largeur des inputs */
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
+
+
 /* ---------------------- END - description1.html.twig ---------------------- */
 
 

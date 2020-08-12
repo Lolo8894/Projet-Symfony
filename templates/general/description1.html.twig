@@ -65,7 +65,9 @@
 
 			{% if app.user %}
 		{{ form_start(commentForm) }}
-		{{ form_row(commentForm) }}
+
+		{{ form_row(commentForm.title, {'label': 'Titre','attr': {'placeholder': 'Donner un titre à votre commentaire'}}) }} <!-- Pour définir les champs du formulaire -->
+		{{ form_row(commentForm.comment, {'label': 'Commentaire','attr': {'placeholder': 'Ecrivez un commentaire'}}) }}
 
 		<button class="btn" type="submit">Valider</button>
 		{{ form_end(commentForm) }}

@@ -37,7 +37,7 @@ easy_admin:
       form:
         fields:
           - { property: titre, label: Titre de la création }
-          - { property: description, label: Description, type: 'fos_ckeditor', type_options: { required: true } }
+          - { property: description, label: Description, type: 'fos_ckeditor', type_options: { required: true } } # Pour avoir un éditeur de texte
           - { property: miseEnAvant, label: Création mise en avant }
 #          - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
@@ -52,6 +52,16 @@ easy_admin:
           - { property: miseEnAvant, label: Création mise en avant }
           - { property: image, type: image, base_path: '%app.path.project_image%', label: Image }
           - { property: titre, label: Titre de la création }
+    Commentaires :
+      class: App\Entity\Comment
+      form:
+        fields:
+          - { property: title, label: Titre }
+          - { property: comment, label: Commentaire }
+      list:
+        fields:
+          - { property: title, label: Titre }
+          - { property: comment, label: Commentaire }
     Accueil :
       class: App\Entity\Accueil
       form:
