@@ -564,7 +564,6 @@ h2 {
 .commentaires-creation {
   font-size: 18px;
   font-weight: bold;
-  border-bottom: 1px solid #fff;
   width: 95rem;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -577,14 +576,32 @@ h2 {
 
 /* ------------------- éléments du formulaire Symfony --------------------- */
 
-#comment_title, #comment_comment {
-  width: 290px; /* largeur des inputs */
+.test {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#comment_title {
+  width: 660px; /* largeur des inputs */
   padding: 5px; /* hauteur des inputs */
   font-size: 15px;
   border: 1px solid #777;
   border-radius: 5px;
   margin-left: 147px; /* règle l'input au centre */
 } /* inputs nom, prénom et email */
+
+#comment_comment {
+  width: 660px; /* largeur des inputs */
+  height: 200px;
+  resize: none;
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 147px; /* règle l'input au centre */
+}
 
 
 /* ------------------- END - éléments du formulaire Symfony ----------------- */

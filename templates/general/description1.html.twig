@@ -46,7 +46,7 @@
         </div>  
 																				<!-- COMMENTAIRES -->
         <div class="commentaires">
-		  <h3 class="commentaires-creation">{{ creation.comments | length }} - Commentaires :</h3>
+		  <h3 class="commentaires-creation">{{ creation.comments | length }} Commentaires :</h3>
 		  {% for comment in creation.comments %}
 			<div class="comment">
 				<div class="row">
@@ -63,20 +63,21 @@
 
 			<hr class="hr-commentaire">
 
-			{% if app.user %}
-		{{ form_start(commentForm) }}
+			<div class="test">
+					{% if app.user %}
+				{{ form_start(commentForm) }}
 
-		{{ form_row(commentForm.title, {'label': 'Titre','attr': {'placeholder': 'Donner un titre à votre commentaire'}}) }} <!-- Pour définir les champs du formulaire -->
-		{{ form_row(commentForm.comment, {'label': 'Commentaire','attr': {'placeholder': 'Ecrivez un commentaire'}}) }}
+				{{ form_row(commentForm.title, {'label': 'Titre','attr': {'placeholder': 'Donner un titre à votre commentaire'}}) }} <!-- Pour définir les champs du formulaire -->
+				{{ form_row(commentForm.comment, {'label': 'Commentaire','attr': {'placeholder': 'Ecrivez un commentaire'}}) }}
 
-		<button class="btn" type="submit">Valider</button>
-		{{ form_end(commentForm) }}
+				<button class="btn" type="submit">Valider</button>
+				{{ form_end(commentForm) }}
 
-		{% else %}
-		<h2>Vous ne pouvez pas commenter si vous n'êtes pas connecté !</h2>
-		<a href="{{path('security_connexion')}}" class="btn">Connexion</a>
-		{% endif %}      
-
+				{% else %}
+				<h2>Vous ne pouvez pas commenter si vous n'êtes pas connecté !</h2>
+				<a href="{{path('security_connexion')}}" class="btn">Connexion</a>
+				{% endif %}      
+			</div>
 		</div>  
 </section>  
   
