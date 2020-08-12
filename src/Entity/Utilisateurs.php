@@ -71,6 +71,11 @@ class Utilisateurs implements UserInterface, \Serializable, EquatableInterface
      * @var \DateTime
      */
     private $updatedAt;
+
+    /**
+     * @ORM\Column(type="simple_array", nullable=true)
+     */
+    private $roles = [];
     
     public function __construct() {
         $this->updatedAt=new \DateTime();
@@ -157,7 +162,15 @@ class Utilisateurs implements UserInterface, \Serializable, EquatableInterface
 
     public function getRoles() {         
     
-        return ['ROLE_USER'];
+        return array_merge($this->roles, ['ROLE_USER']);
+    } // Pour définir les rôles admin et simple utilisateur
+      // Merge 2 tableaux et donc les fusionnent ensemble
+
+    public function setRoles(?array $roles): self
+    {
+        $this->roles = $roles;
+
+        return $this;
     }
 
     public function serialize()
@@ -191,4 +204,5 @@ class Utilisateurs implements UserInterface, \Serializable, EquatableInterface
         return $this->id === $user->getId();
 
     } // Méthode pour transformer un objet en chaîne de caractères
+
 }

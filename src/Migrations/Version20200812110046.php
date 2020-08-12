@@ -10,7 +10,7 @@ use Doctrine\Migrations\AbstractMigration;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-final class Version20200612103432 extends AbstractMigration
+final class Version20200812110046 extends AbstractMigration
 {
     public function getDescription() : string
     {
@@ -19,17 +19,18 @@ final class Version20200612103432 extends AbstractMigration
 
     public function up(Schema $schema) : void
     {
-        // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE creations ADD description LONGTEXT NOT NULL, CHANGE titre titre VARCHAR(255) NOT NULL');
+        $this->addSql("INSERT INTO `utilisateurs` (`id`, `email`, `avatar`, `updated_at`, `username`, `password`, `roles`) VALUES
+        (10, 'celinegana.mc@gmail.com', '5f2ae5d62c258_lyline-hello.jpeg', '2020-08-11 19:33:11', 'celstuv', 'RY90BBuieFZg76KfPi4/0A==', 'ROLE_ADMIN'),
+        (11, 'exemple@exemple.fr', NULL, '2020-08-05 19:03:36', 'Shini_Lina', 'ToCGBjWuOPMI4HZGzbpcNw==', NULL);
+        ");
+
     }
 
     public function down(Schema $schema) : void
     {
         // this down() migration is auto-generated, please modify it to your needs
-        $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE creations DROP description, CHANGE titre titre LONGTEXT CHARACTER SET utf8mb4 NOT NULL COLLATE `utf8mb4_general_ci`');
     }
 }
