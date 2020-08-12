@@ -336,7 +336,7 @@
   border: 1px solid #808080;
   box-shadow: 0 0 7px 0 #000000; /* ombre verte qui entoure l'image */
 } /* classe donnée à la troisième image */
-    
+
 }
 
 
@@ -994,7 +994,94 @@
             font-size: 1.2rem;
             color: #777;
           }  
-      }
+
+/* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+          .container-principal {
+            width: 800px;
+          }
+
+          .titre-creation {
+            width: 800px;
+            margin: 30px 0 0 0;
+            font-size: 25px;
+          } /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+  width: 80rem;
+  height: 60rem;
+} /* section qui contient images */
+
+.description {
+  width: 500px;
+  height: 500px;
+  font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+  width: 100%; /* Dimensions de l'image dans la div description */
+  margin-right: 50px;
+  border: 3px solid #c39797;
+  border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+  width: 110px;
+  border: 3px solid #c39797;
+  border-radius: 8px;
+  cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 800px;
+  min-height: 15rem;
+  background-color: Rgba(255, 255, 255, 0.5);
+  line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.commentaires-creation {
+  width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+  text-align: justify;
+  margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+  width: 290px; /* largeur des inputs */
+  padding: 5px; /* hauteur des inputs */
+  font-size: 15px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
+
+
+}
 
 @media (max-width: 1025px) {
 
@@ -1327,6 +1414,91 @@ body.open:after {
       font-size: 1.2rem;
       color: #777;
     }  
+
+    /* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container-principal {
+  width: 800px;
+}
+
+.titre-creation {
+  width: 800px;
+  margin: 30px 0 0 0;
+  font-size: 25px;
+} /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+width: 80rem;
+height: 60rem;
+} /* section qui contient images */
+
+.description {
+width: 500px;
+height: 500px;
+font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+width: 100%; /* Dimensions de l'image dans la div description */
+margin-right: 50px;
+border: 3px solid #c39797;
+border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+width: 110px;
+border: 3px solid #c39797;
+border-radius: 8px;
+cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 800px;
+min-height: 15rem;
+background-color: Rgba(255, 255, 255, 0.5);
+line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+.commentaires-creation {
+width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+text-align: justify;
+margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+width: 290px; /* largeur des inputs */
+padding: 5px; /* hauteur des inputs */
+font-size: 15px;
+border: 1px solid #777;
+border-radius: 5px;
+margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
 }
 
 @media (max-width: 990px) {
@@ -1658,6 +1830,91 @@ color: #444444;
     font-size: 1.2rem;
     color: #777;
   }
+
+  /* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container-principal {
+  width: 800px;
+}
+
+.titre-creation {
+  width: 800px;
+  margin: 30px 0 0 0;
+  font-size: 25px;
+} /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+width: 80rem;
+height: 60rem;
+} /* section qui contient images */
+
+.description {
+width: 500px;
+height: 500px;
+font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+width: 100%; /* Dimensions de l'image dans la div description */
+margin-right: 50px;
+border: 3px solid #c39797;
+border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+width: 110px;
+border: 3px solid #c39797;
+border-radius: 8px;
+cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 800px;
+min-height: 15rem;
+background-color: Rgba(255, 255, 255, 0.5);
+line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+.commentaires-creation {
+width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+text-align: justify;
+margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+width: 290px; /* largeur des inputs */
+padding: 5px; /* hauteur des inputs */
+font-size: 15px;
+border: 1px solid #777;
+border-radius: 5px;
+margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
 }
 
 @media (max-width: 975px) {
@@ -2654,6 +2911,91 @@ color: #444444;
     font-size: 1.2rem;
     color: #777;
   }
+
+  /* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container-principal {
+  width: 700px;
+}
+
+.titre-creation {
+  width: 700px;
+  margin: 30px 0 0 0;
+  font-size: 25px;
+} /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+width: 80rem;
+height: 60rem;
+} /* section qui contient images */
+
+.description {
+width: 500px;
+height: 500px;
+font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+width: 100%; /* Dimensions de l'image dans la div description */
+margin-right: 50px;
+border: 3px solid #c39797;
+border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+width: 110px;
+border: 3px solid #c39797;
+border-radius: 8px;
+cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 700px;
+min-height: 15rem;
+background-color: Rgba(255, 255, 255, 0.5);
+line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+.commentaires-creation {
+width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+text-align: justify;
+margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+width: 290px; /* largeur des inputs */
+padding: 5px; /* hauteur des inputs */
+font-size: 15px;
+border: 1px solid #777;
+border-radius: 5px;
+margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
 }
 
 @media (max-width: 800px) {
@@ -2986,6 +3328,91 @@ color: #444444;
       font-size: 1.2rem;
       color: #777;
     }
+
+    /* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container-principal {
+  width: 800px;
+}
+
+.titre-creation {
+  width: 800px;
+  margin: 30px 0 0 0;
+  font-size: 25px;
+} /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+width: 80rem;
+height: 60rem;
+} /* section qui contient images */
+
+.description {
+width: 500px;
+height: 500px;
+font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+width: 100%; /* Dimensions de l'image dans la div description */
+margin-right: 50px;
+border: 3px solid #c39797;
+border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+width: 110px;
+border: 3px solid #c39797;
+border-radius: 8px;
+cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 800px;
+min-height: 15rem;
+background-color: Rgba(255, 255, 255, 0.5);
+line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+.commentaires-creation {
+width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+text-align: justify;
+margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+width: 290px; /* largeur des inputs */
+padding: 5px; /* hauteur des inputs */
+font-size: 15px;
+border: 1px solid #777;
+border-radius: 5px;
+margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
   }
 
 @media (max-width: 768px) {
@@ -3319,6 +3746,91 @@ color: #444444;
     font-size: 1.2rem;
     color: #777;
   }
+
+  /* -------------------------- description1.html.twig ------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- TITRE --------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.container-principal {
+  width: 800px;
+}
+
+.titre-creation {
+  width: 800px;
+  margin: 30px 0 0 0;
+  font-size: 25px;
+} /* classe du h3 */
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------------- IMAGES -------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.affichage {
+width: 80rem;
+height: 60rem;
+} /* section qui contient images */
+
+.description {
+width: 500px;
+height: 500px;
+font-size: 1rem;
+} /* div qui contient l'image principale */
+
+#picture {
+width: 100%; /* Dimensions de l'image dans la div description */
+margin-right: 50px;
+border: 3px solid #c39797;
+border-radius: 8px;
+} /* id de l'image principale */
+
+.creation img {
+width: 110px;
+border: 3px solid #c39797;
+border-radius: 8px;
+cursor: pointer;
+} /* div creation + chaques vignettes alignées les unes en dessous des autres */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------- COMMENTAIRE ----------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.commentaires {
+padding-top: 30px;
+padding-bottom: 30px;
+width: 800px;
+min-height: 15rem;
+background-color: Rgba(255, 255, 255, 0.5);
+line-height: 30px;
+} /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+font-size: 18px;
+text-align: center;
+}
+
+.commentaires-creation {
+width: 75rem;
+} /* h3 de l'encadré commentaires */
+
+.texte-commentaires {
+text-align: justify;
+margin-left: 2rem;
+}
+
+/* ------------------- éléments du formulaire Symfony --------------------- */
+
+#comment_title, #comment_comment {
+width: 290px; /* largeur des inputs */
+padding: 5px; /* hauteur des inputs */
+font-size: 15px;
+border: 1px solid #777;
+border-radius: 5px;
+margin-left: 147px; /* règle l'input au centre */
+} /* inputs nom, prénom et email */
+
+
+/* ------------------- END - éléments du formulaire Symfony ----------------- */
 }
 
 @media (max-width: 726px) {

@@ -533,10 +533,11 @@ ul {
   font-weight: bold;
 } /* h3 de l'encadré description */
 
-.texte-description {
+p {
   text-align: justify;
-  margin-left: 2rem;
-} /* classe du paragraphe */
+  padding-left: 30px;
+  padding-right: 30px;
+} /* paragraphes description */
 
 
 /* -------------------------------------------------------------------------- */
@@ -544,6 +545,9 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .commentaires {
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100rem;
@@ -558,9 +562,12 @@ h2 {
 }
 
 .commentaires-creation {
-  margin-left: 2rem;
   font-size: 18px;
   font-weight: bold;
+  border-bottom: 1px solid #fff;
+  width: 95rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 } /* h3 de l'encadré commentaires */
 
 .texte-commentaires {
