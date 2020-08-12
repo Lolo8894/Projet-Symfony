@@ -124,11 +124,12 @@ ul {
 } /* div contenant l'input .connexion + .h5 + .lien-inscription */
 
 .connexion {
-  margin-bottom: 12px; /* Règlage espace entre bouton connexion et lien vers inscription */
+  margin-bottom: 1px; /* Règlage espace entre bouton connexion et lien vers inscription */
   line-height: 36px;
   text-align: center;
   color:#fff;
-  font-size: 1.5rem;
+  font-size: 16px;
+  font-family: inherit;
   background-color: #0A4589;
   padding: 5px;
   cursor: pointer;
@@ -139,6 +140,7 @@ ul {
 } /* Style du bouton "Connexion" */
 
 .connexion:hover {
+  margin-bottom: 1px;
   background: #fff;
   color: #777;
   border: 0.5px solid #777;
@@ -152,11 +154,12 @@ ul {
 } /* div contenant l'input .deconnexion + .h5 + .lien-inscription */
 
 .deconnexion {
-  margin-bottom: 12px; /* Règlage espace entre bouton déconnexion et lien vers inscription */
+  margin-bottom: 1px; /* Règlage espace entre bouton déconnexion et lien vers inscription */
   line-height: 36px;
   text-align: center;
   color:#fff;
-  font-size: 1.5rem;
+  font-size: 16px;
+  font-family: inherit;
   background-color: #0A4589;
   padding: 5px;
   cursor: pointer;
@@ -167,6 +170,7 @@ ul {
 } /* Style du bouton "Déconnexion" */
 
 .deconnexion:hover {
+  margin-bottom: 1px;
   background: #fff;
   color: #777;
   border: 0.5px solid #777;
@@ -318,19 +322,19 @@ ul {
 #contact_Envoyer {
   display: flex;
   flex-direction: column; /* centre le bouton en colonne */
+  align-items: center;
   margin-left: 249px; /* règlage au centre du submit */
   width: 100px;
   line-height: 36px; 
   text-align: center;
   color:#777;
-  font-size:18px;
-  font-weight: bold;
+  font-size: 17px;
+  font-family: inherit;
   background:#fff;
   cursor: pointer; 
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
-  /* height: 3rem; */
 } /* bouton "Envoyer" */
 
 #contact_Envoyer:hover {
@@ -338,7 +342,6 @@ ul {
   color: #fff;
   border: 1px solid #777;
   box-shadow: 3px 3px 3px 0px #fff;
-  /* height: 5rem; */
 } /* animation au survol du bouton Envoyer */
 
 /* ------------------- END - éléments du formulaire Symfony ----------------- */
@@ -541,13 +544,18 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .commentaires {
-  padding-top: 1rem;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100rem;
   min-height: 15rem;
   background-color: Rgba(255, 255, 255, 0.5);
   line-height: 30px;
 } /* div qui contient le h3 .commentaires-creation et le p .texte */
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
 
 .commentaires-creation {
   margin-left: 2rem;
@@ -765,28 +773,32 @@ ul {
 .btn {
   display: flex;
   flex-direction: column; /* centre le bouton en colonne */
-  margin-left: 250px; /* règlage au centre du submit */
-  padding-left: 18px; /* Centre le "Valider" à l'intérieur du bouton */
-  width: 95px;
+  align-items: center;
+  margin-left: 249px; /* règlage au centre du submit */
+  width: 100px;
   line-height: 36px; 
   text-align: center;
   color:#777;
-  font-size:18px;
+  font-size:17px;
+  font-family: inherit;
   font-weight: bold;
   background:#fff;
   cursor: pointer; 
   border-radius: 9px 24px;
   box-shadow: 3px 3px 3px 0px rgba(10, 8, 8, 0.99);
   transition: .5s ease-in-out;
-  /* height: 3rem; */
 } /* bouton "Valider" présent sur formulaires inscription + connexion */
 
 .btn:hover {
+  display: flex;
+  flex-direction: column; /* centre le bouton en colonne */
+  align-items: center;
   background: #0A4589;
   color: #fff;
   border: 1px solid #777;
+  font-size:17px;
+  font-weight: bold;
   box-shadow: 3px 3px 3px 0px #fff;
-  /* height: 5rem; */
 } /* animation au survol du bouton */
 
 /* ------------------- éléments du formulaire Symfony --------------------- */

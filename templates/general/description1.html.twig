@@ -46,7 +46,7 @@
         </div>  
 																				<!-- COMMENTAIRES -->
         <div class="commentaires">
-		  <h3 class="commentaires-creation">{{ creation.comments | length }} Commentaires :</h3>
+		  <h3 class="commentaires-creation">{{ creation.comments | length }} - Commentaires :</h3>
 		  {% for comment in creation.comments %}
 			<div class="comment">
 				<div class="row">
@@ -61,8 +61,9 @@
 			</div>
 			{% endfor %}
 
-		</div>  
-		{% if app.user %}
+			<hr class="hr-commentaire">
+
+			{% if app.user %}
 		{{ form_start(commentForm) }}
 		{{ form_row(commentForm) }}
 
@@ -72,7 +73,9 @@
 		{% else %}
 		<h2>Vous ne pouvez pas commenter si vous n'êtes pas connecté !</h2>
 		<a href="{{path('security_connexion')}}" class="btn">Connexion</a>
-		{% endif %}
+		{% endif %}      
+
+		</div>  
 </section>  
   
 <script src="{{ asset('js/script.js') }}"></script>
