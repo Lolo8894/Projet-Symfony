@@ -9,11 +9,15 @@ easy_admin:
       -
         entity : Utilisateurs
         label : Utilisateurs
-        icon: home
+        icon: users
       -
         entity : Creations
         label : Créations
-        icon: file
+        icon: pencil-square-o
+      -
+        entity : Commentaires
+        label : Commentaires
+        icon: comment
   entities:
     Utilisateurs :
       class: App\Entity\Utilisateurs
