@@ -31,7 +31,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* Hauteur du container body entre header et footer */
+  min-height: 160vh; /* Hauteur du container body entre header et footer */
   padding-bottom: 11rem;
   position: relative;
   font-family: 'Varela Round', sans-serif;
@@ -433,11 +433,12 @@ ul {
   height: 100%;
 } /* div contenant la description sur chaque carte */
 
-.sous-description {
+p > .sous-description {
   width: 0;
   height: 0;
-   text-align: justify;
+  text-align: justify;
 } /* classe du paragraphe de chaque description */
+
 
 /* --------------------- END - mes_creations.html.twig ---------------------- */
 

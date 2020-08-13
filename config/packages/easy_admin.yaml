@@ -24,15 +24,15 @@ easy_admin:
       form:
         fields:
           - { property: email, label: Mail }
-          - { property: pseudo, label: Identifiant }
-          - { property: motdepasse, label: Mot de passe }
-          - { property: confirm_motdepasse, label: Text }
+          - { property: username, label: Identifiant }
+          - { property: password, label: Mot de passe }
+          - { property: confirm_password, label: Text }
           - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
       list:
         fields:
           - { property: email, label: Mail }
-          - { property: pseudo, label: Identifiant }
+          - { property: username, label: Identifiant }
           - { property: avatar, type: image, base_path: '%app.path.project_image%', label: Avatar }
           - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Profil - Ajout d'images }
@@ -41,7 +41,7 @@ easy_admin:
       form:
         fields:
           - { property: titre, label: Titre de la création }
-          - { property: description, label: Description, type: 'fos_ckeditor', type_options: { required: true } } # Pour avoir un éditeur de texte
+          - { property: description, label: Brève description, type: 'fos_ckeditor', type_options: { required: true } } # Pour avoir un éditeur de texte
           - { property: miseEnAvant, label: Création mise en avant }
 #          - { property: imageFile, type: file }
           - { property: imageFile, type: vich_image, label: Création - Ajout d'images }
